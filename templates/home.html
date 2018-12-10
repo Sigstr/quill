@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Welcome!</h1>
+    <p> These are my latest posts</p>
+    <ul>
+        {% for post in posts %}
+            <li><a href="{% url "post", post %}">{{ post.title }}</a></li>li>
+        {% endfor %}
+    </ul>
+{% endblock %}
