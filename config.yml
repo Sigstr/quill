@@ -1,2 +1,7 @@
-project-name: Your project name
+project-name: My Project's Name
 base-path: /
+context:
+  static:
+    site-title: My Site Title
+  dynamic:
+    all-authors: session.query(Author).all()
