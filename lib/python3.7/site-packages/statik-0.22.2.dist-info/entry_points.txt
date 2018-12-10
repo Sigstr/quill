@@ -1,0 +1,3 @@
+[console_scripts]
+statik = statik.cmdline:main
+
