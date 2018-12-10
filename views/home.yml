@@ -1,0 +1,7 @@
+path: /
+template: home
+context:
+  static:
+    page-title: Welcome to the world!
+  dynamic:
+    posts: session.query(Post).filter(Post.published != None).order_by(Post.published.desc()).all()
