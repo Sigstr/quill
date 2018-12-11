@@ -2,6 +2,13 @@
 
 {% block body %}
     <h1>{{ component.title }}</h1>
+    <span style="color: peru;"><strong>[ {{ component.status }} ]</strong></span>
+    <br>
+    <span style="color:darkgrey">Last Updated {{ component.updated }} by {{ component.author.email }}</span>
+    <hr>
+    <h2>Summary</h2>
+    <p>{{ component.summary }}</p>
+    <hr>
     <div class="content">
         {{ component.content|safe }}
     </div>
