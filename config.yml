@@ -1,7 +1,10 @@
-project-name: My Project's Name
+project-name: Quill
 base-path: /
+assets:
+    source: assets
+    dest: static
 context:
   static:
-    site-title: My Site Title
+    site-title: Quill
   dynamic:
     all-authors: session.query(Author).all()
