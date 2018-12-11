@@ -11,13 +11,13 @@ status: Beta
 ##  Examples
 
 ### Information
-Integration message goes here
+![Information Message](/static/message-info.png)
 
 ### Warning
-Not in SF message
+![Warning Message](/static/message-warning.png)
 
-### Error message
-Fix list errors message
+### Prompt message
+![Prompt Message](/static/message-prompt.png)
 
 ## Modifiers
 
