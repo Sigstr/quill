@@ -3,14 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% block title %} {% if page_title %}{{ page_title }} {% else %} {{ site_title }} {% endif %} {% endblock %}</title>
+    <title>{% block title %}{% if page_title %} {{ page_title }} - {% endif %} {{ site_title }}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
 <body>
-    <div>
-        {% block body %}{% endblock %}
+    <div style="display: flex;">
+        <nav style="width: 312px">
+            <a href="/"><&nbsp;Back to Home</a>
+            <h4>Components</h4>
+            <ul>
+                {% for component in components %}
+                    <li><a href="{% url "component", component %}">{{ component.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div>
+            {% block body %}{% endblock %}
+        </div>
     </div>
 </body>
 </html>

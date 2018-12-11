@@ -3,3 +3,7 @@ path:
   for-each:
     component: session.query(Component).filter(Component.published != None).all()
 template: component
+
+context:
+  dynamic:
+    page-title: session.query(Component).filter(Component.published != None).all()[0].title

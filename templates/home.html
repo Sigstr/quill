@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <h1>Welcome!</h1>
-    <p> These are my latest components</p>
+    <h1>Welcome to Quill!</h1>
+    <p>Quill is Sigstr's design system. Quill is intended to be used across all paid products within the Sigstr platform. This includes:</p>
     <ul>
-        {% for component in components %}
-            <li><a href="{% url "component", component %}">{{ component.title }}</a></li>
-        {% endfor %}
+        <li>app.sigstr.com</li>
+        <li>pulse.sigstr.com</li>
+        <li>csportal</li>
+        <li>Chrome Extension</li>
     </ul>
 {% endblock %}

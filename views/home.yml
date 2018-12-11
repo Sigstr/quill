@@ -2,6 +2,4 @@ path: /
 template: home
 context:
   static:
-    page-title: All Components
-  dynamic:
-    components: session.query(Component).filter(Component.published != None).order_by(Component.published.desc()).all()
+    page-title: Home
