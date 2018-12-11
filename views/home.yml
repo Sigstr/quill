@@ -2,6 +2,6 @@ path: /
 template: home
 context:
   static:
-    page-title: Welcome to the world!
+    page-title: All Components
   dynamic:
-    posts: session.query(Post).filter(Post.published != None).order_by(Post.published.desc()).all()
+    components: session.query(Component).filter(Component.published != None).order_by(Component.published.desc()).all()

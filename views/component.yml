@@ -1,0 +1,5 @@
+path:
+  template: /{{ component.published|date("%Y/%m/%d") }}/{{ component.slug }}
+  for-each:
+    component: session.query(Component).filter(Component.published != None).all()
+template: component

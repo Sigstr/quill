@@ -2,10 +2,10 @@
 
 {% block body %}
     <h1>Welcome!</h1>
-    <p> These are my latest posts</p>
+    <p> These are my latest components</p>
     <ul>
-        {% for post in posts %}
-            <li><a href="{% url "post", post %}">{{ post.title }}</a></li>
+        {% for component in components %}
+            <li><a href="{% url "component", component %}">{{ component.title }}</a></li>
         {% endfor %}
     </ul>
 {% endblock %}

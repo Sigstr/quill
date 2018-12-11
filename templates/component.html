@@ -1,0 +1,8 @@
+{% extends  "base.html" %}
+
+{% block body %}
+    <h1>{{ component.title }}</h1>
+    <div class="content">
+        {{ component.content|safe }}
+    </div>
+{% endblock %}
