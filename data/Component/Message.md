@@ -23,4 +23,5 @@ status: Beta
 
 * Width: (Defaults to auto)
 * Color: (Defaults to $slate) One color is set for the component affecting the background (2% opacity), and the border (40% opacity)
-* Button: Include Small Text button (only for use when it is a single line message)
+* Button: Include Small Text button (only for use when it is a single line and regular sized message)
+* Size: Small (11px font-size, 10px padding)
