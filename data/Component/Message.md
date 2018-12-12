@@ -13,11 +13,11 @@ status: Beta
 ### Information
 ![Information Message](/static/message-info.png)
 
-### Warning
-![Warning Message](/static/message-warning.png)
-
 ### Prompt message
 ![Prompt Message](/static/message-prompt.png)
+
+### Warning (Small)
+![Warning Message](/static/message-warning-small.png)
 
 ## Modifiers
 
