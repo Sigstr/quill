@@ -4,7 +4,7 @@ slug: notification
 summary: Use notifications when communicating high priority alerts. Content can include saving, loading, confirmation, and error messages. It is important to specify which of these the content of the notification falls under in order to choose the colors and icons
 published: 2018-12-11
 author: michael
-updated: 2018-12-11
+updated: 2018-12-12
 status: Stable
 ---
 
