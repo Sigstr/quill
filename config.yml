@@ -8,4 +8,4 @@ context:
     site-title: Quill
   dynamic:
     all-authors: session.query(Author).all()
-    components: session.query(Component).filter(Component.published != None).order_by(Component.published.desc()).all()
+    elements: session.query(Element).filter(Element.published != None).order_by(Element.published.desc()).all()

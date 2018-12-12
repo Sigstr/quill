@@ -1,5 +1,6 @@
 title: String
 slug: String
+type: String
 summary: String
 published: DateTime
 author: Author

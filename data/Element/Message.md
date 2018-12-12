@@ -1,6 +1,7 @@
 ---
 title: Message
 slug: message
+type: component
 summary: Use messages when communicating conditions or indicating an event. Content can include authentication, information, confirmation, warnings, and error messages. It is important to specify which of these the content of the message falls under in order to choose the colors
 published: 2018-12-11
 author: michael

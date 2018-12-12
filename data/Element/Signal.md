@@ -1,6 +1,7 @@
 ---
 title: Signal
 slug: signal
+type: component
 summary: Use Signal when indicating relatonship strength, both personal and network. There are 6 levels of signal, Strong, Good, Moderate, Below Average, Weak, and None.
 published: 2018-12-12
 author: michael

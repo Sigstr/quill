@@ -1,0 +1,9 @@
+path:
+  template: /{{ element.slug }}
+  for-each:
+    element: session.query(Element).filter(Element.published != None).all()
+template: element
+
+context:
+  dynamic:
+    page-title: session.query(Element).filter(Element.published != None).all()[0].title

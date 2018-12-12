@@ -14,8 +14,8 @@
             <a href="/"><&nbsp;Back to Home</a>
             <h4>Components</h4>
             <ul>
-                {% for component in components %}
-                    <li><a href="{% url "component", component %}">{{ component.title }}</a></li>
+                {% for element in elements %}
+                    <li><a href="{% url "element", element %}">{{ element.title }}</a></li>
                 {% endfor %}
             </ul>
         </nav>

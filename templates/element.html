@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>{{ element.title }}</h1>
+    <span style="color: peru;"><strong>[ {{ element.status }} ]</strong></span>
+    <br>
+    <span style="color:darkgrey">Last Updated {{ element.updated|date("%Y/%m/%d") }} by {{ element.author.email }}</span>
+    <hr>
+    <h2>Summary</h2>
+    <p>{{ element.summary }}</p>
+    <hr>
+    <div class="content">
+        {{ element.content|safe }}
+    </div>
+{% endblock %}
