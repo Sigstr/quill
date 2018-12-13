@@ -3,3 +3,5 @@ template: home
 context:
   static:
     page-title: Home
+  dynamic:
+    colors: session.query(Post).all()
