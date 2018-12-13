@@ -12,10 +12,16 @@
     <div style="display: flex;">
         <nav style="width: 312px">
             <a href="/"><&nbsp;Back to Home</a>
+            <h4>Foundations</h4>
+            <ul>
+                {% for foundation in foundations %}
+                    <li><a href="{% url "element", foundation %}">{{ foundation.title }}</a></li>
+                {% endfor %}
+            </ul>
             <h4>Components</h4>
             <ul>
-                {% for element in elements %}
-                    <li><a href="{% url "element", element %}">{{ element.title }}</a></li>
+                {% for component in components %}
+                    <li><a href="{% url "element", component %}">{{ component.title }}</a></li>
                 {% endfor %}
             </ul>
         </nav>

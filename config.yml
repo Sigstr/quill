@@ -7,5 +7,5 @@ context:
   static:
     site-title: Quill
   dynamic:
-    all-authors: session.query(Author).all()
-    elements: session.query(Element).filter(Element.published != None).order_by(Element.published.desc()).all()
+    components: session.query(Element).filter(Element.type == "component").all()
+    foundations: session.query(Element).filter(Element.type == "foundation").all()
