@@ -1,0 +1,9 @@
+.color-container {
+    width: 120px;
+    border: 1px solid #ececec;
+}
+
+.color-container .fill {
+    width: 100%;
+    height: 40px;
+}

@@ -10,4 +10,3 @@ status: Stable
 ---
 
 ## All Colors
-
