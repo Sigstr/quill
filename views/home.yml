@@ -4,4 +4,4 @@ context:
   static:
     page-title: Home
   dynamic:
-    colors: session.query(Post).all()
+    posts: session.query(Post).all()
