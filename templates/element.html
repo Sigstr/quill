@@ -12,13 +12,15 @@
     <div class="content">
         {{ element.content|safe }}
         {% if element.title == "Color" %}
-            {% for color in colors %}
-                <div class="color-container">
-                    <div class="fill" style="background-color: #{{ color.hex }}"></div>
-                    <h3>{{ color.title }}</h3>
-                    <pre>{{ color.hex }}</pre>
-                </div>
-            {% endfor %}
+            <div class="colors">
+                {% for color in colors %}
+                    <div class="color-container">
+                        <div class="fill" style="background-color: #{{ color.hex }}"></div>
+                        <h3>{{ color.name }}</h3>
+                        <pre>{{ color.hex }}</pre>
+                    </div>
+                {% endfor %}
+            </div>
         {% endif %}
     </div>
 {% endblock %}
