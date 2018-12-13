@@ -12,7 +12,7 @@ status: Stable
 ##  Examples
 
 ### Signals ordered by level of strength
-![Signals](/static/signal.png)
+![Signals](/static/images/signal.png)
 
 ## Modifiers
 * Level (0-6) which dictates styling as seen above.

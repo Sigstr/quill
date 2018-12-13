@@ -12,13 +12,13 @@ status: Stable
 ##  Examples
 
 ### Success
-![Success Notification](/static/notification-success.png)
+![Success Notification](/static/images/notification-success.png)
 
 ### Error
-![Error Notification](/static/notification-error.png)
+![Error Notification](/static/images/notification-error.png)
 
 ### Loading (Small)
-![Small Loading Notification](/static/notification-loading-small.png)
+![Small Loading Notification](/static/images/notification-loading-small.png)
 
 ## Modifiers
 * Color: Color set for the component affects the left section containing the icon

@@ -12,13 +12,13 @@ status: Beta
 ##  Examples
 
 ### Information
-![Information Message](/static/message-info.png)
+![Information Message](/static/images/message-info.png)
 
 ### Prompt message
-![Prompt Message](/static/message-prompt.png)
+![Prompt Message](/static/images/message-prompt.png)
 
 ### Warning (Small)
-![Warning Message](/static/message-warning-small.png)
+![Warning Message](/static/images/message-warning-small.png)
 
 ## Modifiers
 
