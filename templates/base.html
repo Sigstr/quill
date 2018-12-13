@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/css/main.css" />
 </head>
 <body>
-    <div style="display: flex;">
-        <nav style="width: 312px">
+    <div class="flex">
+        <nav>
             <a href="/"><&nbsp;Back to Home</a>
             <h4>Foundations</h4>
             <ul>
@@ -24,9 +24,9 @@
                 {% endfor %}
             </ul>
         </nav>
-        <div>
+        <main>
             {% block body %}{% endblock %}
-        </div>
+        </main>
     </div>
 </body>
 </html>

@@ -1,3 +1,12 @@
+.flex {
+    display: flex;
+}
+nav {
+    width: 312px;
+}
+main {
+    width: calc(100% - 312px);
+}
 .colors {
     display: flex;
     flex-wrap: wrap;
