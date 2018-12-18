@@ -7,5 +7,5 @@ context:
   static:
     site-title: Quill
   dynamic:
-    components: session.query(Element).filter(Element.type == "component").all()
-    foundations: session.query(Element).filter(Element.type == "foundation").all()
+    components: session.query(Element).filter(Element.type == "component").filter(Element.published != None).all()
+    foundations: session.query(Element).filter(Element.type == "foundation").filter(Element.published != None).all()
