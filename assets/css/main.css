@@ -1,8 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
 .flex {
     display: flex;
 }
 nav {
     width: 312px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ececec;
+    padding: 40px 24px;
 }
 main {
     width: calc(100% - 312px);
@@ -23,6 +32,35 @@ main {
     height: 120px;
 }
 
-.w-100 {
+table {
+    border: 1px solid lightgrey;
+    border-spacing: 0;
+}
+td, th {
+    padding: 12px;
+}
+th {
+    text-align: left;
+    color: grey;
+}
+th:not(:last-child), td:not(:last-child) {
+    border-right: 1px solid lightgrey;
+}
+tr:not(:last-child) td, tr:not(:last-child) th {
+    border-bottom: 1px solid lightgrey;
+}
+
+.grid {
     width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+pre, code {
+    display: block;
+    width: auto;
+    white-space: pre-wrap;
+    margin: 1rem 0;
+    background-color: #f9f9f9;
+    padding: 24px;
 }

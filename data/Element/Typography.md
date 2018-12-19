@@ -3,7 +3,7 @@ title: Typography
 slug: typography
 type: foundation
 summary: Text is the main way that users visualize content and complete their work, so we've developed a typographic landscape that uses one font for all standard typefaces in Sigstr products. This ensures that the UI is optimized to be highly legible, performs well, and is frictionless as you move between Sigstr products and the rest of the system.
-published:
+published: 2018-12-19
 author: michael
 updated: 2018-12-19
 status: Beta
@@ -13,7 +13,7 @@ status: Beta
 We use sans-serif fonts for most of our type, the exception being when you want to display code then you should defer to monospace fonts. Serif fonts are not used in Sigstr products. All sans-serif fonts default to Source Sans Pro, and then fall back to the system fonts. All mono fonts default to Source Code Pro, and then fall back to the system monospaced fonts.
 
 ### Sans-serif
-<table class="w-100">
+<table>
   <tr>
     <th>OS</th>
     <th>Font</th>
@@ -39,7 +39,7 @@ We use sans-serif fonts for most of our type, the exception being when you want 
 <pre>font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;</pre>
 
 ### Monospaced
-<table class="w-100">
+<table>
   <tr>
     <th>OS</th>
     <th>Font</th>
