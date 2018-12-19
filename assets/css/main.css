@@ -15,6 +15,7 @@ nav {
 }
 main {
     width: calc(100% - 312px);
+    padding: 40px 24px;
 }
 .colors {
     display: flex;
@@ -35,6 +36,7 @@ main {
 table {
     border: 1px solid lightgrey;
     border-spacing: 0;
+    width: 100%;
 }
 td, th {
     padding: 12px;

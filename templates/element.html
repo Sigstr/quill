@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <h1>{{ element.title }}</h1>
+    <h1 id="pageTitle">{{ element.title }}</h1>
     <span style="color: peru;"><strong>[ {{ element.status }} ]</strong></span>
     <br>
     <span style="color:darkgrey">Last Updated {{ element.updated|date("%Y/%m/%d") }} by {{ element.author.email }}</span>
