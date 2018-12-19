@@ -10,17 +10,17 @@ Quill is finally being documented! This website will be a resource for the Sigst
 
 ## 0.0.1 - 2018-12-13
 ### Added
-- Set up and configured the site
-- Update Model (post) to hopefully serve as an evolving example of a
+* Set up and configured the site
+* Update Model (post) to hopefully serve as an evolving example of a
   standardized changelog.
-- Other models (Author, Color, Element)
-- Views and Templates to support the homepage, post pages, element pages, and the base wrapper
-- Populated data with the following
-  - Colors (Foundation)
-  - Message (Component)
-  - Notification (Component)
-  - Signal (Component)
-  - Author (me)
+* Other models (Author, Color, Element)
+* Views and Templates to support the homepage, post pages, element pages, and the base wrapper
+* Populated data with the following
+    * Colors (Foundation)
+    * Message (Component)
+    * Notification (Component)
+    * Signal (Component)
+    * Author (me)
 
 
 
