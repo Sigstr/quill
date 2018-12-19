@@ -17,6 +17,9 @@ main {
     width: calc(100% - 312px);
     padding: 40px 24px;
 }
+main img {
+    border: 1px solid lightgrey;
+}
 .colors {
     display: flex;
     flex-wrap: wrap;
