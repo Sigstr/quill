@@ -11,13 +11,20 @@ status: Stable
 
 ##  Examples
 
-### Rounded
-
 ### Circled
+![Circled Avatar Frame](/static/images/avatar-frame-circled.png)
 
 ### Circled (In Salesforce)
+![Circled avatar frame in Salesforce](/static/images/avatar-frame-salesforce.png)
+
+### Circled (Large)
+![Large circled avatar frame in Salesforce](/static/images/avatar-frame-circled-large.png)
 
 ### Rounded (Small)
+![Small Rounded Avatar Frame](/static/images/avatar-frame-rounded-small.png)
+
+### Rounded (Large)
+![Large rounded avatar frame](/static/images/avatar-frame-rounded-large.png)
 
 ## Modifiers
 * Shape: Defaults to Rounded (Circled)
