@@ -1,12 +1,10 @@
 ---
 title: v0.2
 slug: quill-v0-2
-summary: More documented components, typography, and some style upgrades
+summary: With v0.2 comes more components, a start to typography documentation, and minor style upgrades to the website.
 author: michael
 published: 2018-12-19
 ---
-
-With v0.2 comes more components, a start to typography documentation, and minor style upgrades to the website.
 
 ## 0.0.2 - 2018-12-19
 ### Added
