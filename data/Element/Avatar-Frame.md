@@ -5,7 +5,7 @@ type: component
 summary: Avatar frames contain avatars. Use avatar frames to surround avatars and add statuses and resize.
 published: 2018-12-19
 author: michael
-updated: 2018-12-19
+updated: 2018-12-20
 status: Stable
 ---
 
