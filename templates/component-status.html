@@ -13,10 +13,10 @@
         </tr>
         {% for component in components %}
         <tr>
-            <td><a href="{% url "component-status", component %}">{{ component.title }}</a></td>
+            <td><a href="{% url "element", component %}">{{ component.title }}</a></td>
             <td>{{ component.status_design }}</td>
             <td>{{ component.status_development }}</td>
-            <td>{{ component.updated|date("%Y/%m/%d") }}</td>
+            <td>{{ component.updated|date("%B %d, %Y") }}</td>
         </tr>
         {% endfor %}
     </table>
