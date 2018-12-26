@@ -6,7 +6,7 @@ summary: Use notifications when communicating high priority alerts. Content can 
 published: 2018-12-11
 author: michael
 updated: 2018-12-12
-status: Stable
+status-design: Stable
 ---
 
 ##  Examples

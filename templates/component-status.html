@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1 id="pageTitle">Component Status</h1>
+<hr>
+<div class="content">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Design</th>
+            <th>Development</th>
+            <th>Last Updated</th>
+        </tr>
+        {% for component in components %}
+        <tr>
+            <td><a href="{% url "component-status", component %}">{{ component.title }}</a></td>
+            <td>{{ component.status_design }}</td>
+            <td>{{ component.status_development }}</td>
+            <td>{{ component.updated|date("%Y/%m/%d") }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

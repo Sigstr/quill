@@ -6,7 +6,7 @@ summary: Use tooltips to give additonal information.
 published: 2018-12-19
 author: michael
 updated: 2018-12-19
-status: Stable
+status-design: Stable
 ---
 
 ##  Examples

@@ -6,7 +6,7 @@ summary: Avatars populate avatar frames. An avatar can be either an image (i.e. 
 published: 2018-12-20
 author: michael
 updated: 2018-12-20
-status: Stable
+status-design: Stable
 ---
 
 ##  Examples

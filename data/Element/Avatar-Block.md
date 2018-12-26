@@ -6,7 +6,7 @@ summary: Avatar blocks are rows containing information on an account or a contac
 published: 2018-12-20
 author: michael
 updated: 2018-12-20
-status: Stable
+status-design: Stable
 ---
 
 ##  Examples

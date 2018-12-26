@@ -6,7 +6,7 @@ summary: Avatar frames contain avatars. Use avatar frames to surround avatars an
 published: 2018-12-19
 author: michael
 updated: 2018-12-20
-status: Stable
+status-design: Stable
 ---
 
 ##  Examples
@@ -29,4 +29,4 @@ status: Stable
 ## Modifiers
 * Shape: Defaults to Rounded (Circled)
 * Size: Defaults to Regular (40px) Small (32px), Large (80px)
-* Status: Defaults to Not in Salesforce In Salesforce
+* status-design: Defaults to Not in Salesforce In Salesforce

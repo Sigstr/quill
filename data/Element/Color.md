@@ -6,7 +6,7 @@ summary: This is a list of all approved colors for use across Sigstr's paid UI p
 published: 2018-12-13
 author: michael
 updated: 2018-12-13
-status: Stable
+status-design: Stable
 ---
 
 ## All Colors

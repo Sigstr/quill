@@ -5,5 +5,6 @@ summary: String
 published: DateTime
 author: Author
 updated: DateTime
-status: String
+status-design: String
+status-development: String
 content: Content

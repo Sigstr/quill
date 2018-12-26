@@ -6,7 +6,7 @@ summary: Use checkboxes to allow users to select a number of options. This inclu
 published: 2018-12-19
 author: michael
 updated: 2018-12-19
-status: Stable
+status-design: Stable
 ---
 
 ##  Examples

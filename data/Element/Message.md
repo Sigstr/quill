@@ -6,7 +6,7 @@ summary: Use messages when communicating conditions or indicating an event. Cont
 published: 2018-12-11
 author: michael
 updated: 2018-12-19
-status: Beta
+status-design: Beta
 ---
 
 ##  Examples

@@ -25,6 +25,8 @@
                     <li><a href="{% url "element", component %}">{{ component.title }}</a></li>
                 {% endfor %}
             </ul>
+            <hr>
+            <a href="/component-status">Component Status</a>
         </nav>
         <main class="grid">
             {% block body %}{% endblock %}

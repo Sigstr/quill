@@ -6,7 +6,7 @@ summary: Avatar Letter is can show at three sizes and is a subcomponent of Avata
 published: 2018-12-20
 author: michael
 updated: 2018-12-20
-status: Stable
+status-design: Stable
 ---
 
 ##  Examples
