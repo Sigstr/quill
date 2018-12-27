@@ -17,16 +17,16 @@ status-design: Stable
 ### Circled (In Salesforce)
 ![Circled avatar frame in Salesforce](/static/images/avatar-frame-salesforce.png)
 
-### Circled (Large)
-![Large circled avatar frame in Salesforce](/static/images/avatar-frame-circled-large.png)
+### Circled (Jumbo)
+![Jumbo circled avatar frame in Salesforce](/static/images/avatar-frame-circled-jumbo.png)
 
 ### Rounded (Small)
 ![Small Rounded Avatar Frame](/static/images/avatar-frame-rounded-small.png)
 
-### Rounded (Large)
-![Large rounded avatar frame](/static/images/avatar-frame-rounded-large.png)
+### Rounded (Jumbo)
+![Large rounded avatar frame](/static/images/avatar-frame-rounded-jumbo.png)
 
 ## Modifiers
 * Shape: Defaults to Rounded (Circled)
 * Size: Defaults to Regular (40px) Small (32px), Jumbo (80px)
-* status-design: Defaults to Not in Salesforce In Salesforce
+* In Salesforce: Defaults to False (True shows SF indicator)
