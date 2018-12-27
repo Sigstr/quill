@@ -17,8 +17,8 @@ status-design: Stable
 ### Letter (Small)
 ![Small Letter Avatar](/static/images/avatar-letter-two-small.png)
 
-### Letter (Large)
+### Letter (Jumbo)
 ![Large Letter Avatar](/static/images/avatar-letter-two-large.png)
 
 ## Modifiers
-* Size: Defaults to Regular (Large, Small)
+* Size: Defaults to Regular (Jumbo, Small)

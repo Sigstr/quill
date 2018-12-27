@@ -5,7 +5,7 @@ type: component
 summary: Avatar frames contain avatars. Use avatar frames to surround avatars and add statuses and resize.
 published: 2018-12-19
 author: michael
-updated: 2018-12-20
+updated: 2018-12-27
 status-design: Stable
 ---
 
@@ -28,5 +28,5 @@ status-design: Stable
 
 ## Modifiers
 * Shape: Defaults to Rounded (Circled)
-* Size: Defaults to Regular (40px) Small (32px), Large (80px)
+* Size: Defaults to Regular (40px) Small (32px), Jumbo (80px)
 * status-design: Defaults to Not in Salesforce In Salesforce
