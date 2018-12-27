@@ -4,4 +4,4 @@ context:
   static:
     page-title: Home
   dynamic:
-    posts: session.query(Post).all()
+    posts: session.query(Post).filter(Post.published != None).order_by(Post.published.desc()).all()
