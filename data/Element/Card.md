@@ -9,7 +9,7 @@ updated: 2018-12-27
 status-design: Experimental
 ---
 
-##  Example
+##  Examples
 
 ### Card (1x elevation)
 ![Card at 1x elevation](/static/images/card-1x.png)
