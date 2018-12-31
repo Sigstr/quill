@@ -36,8 +36,18 @@ nav {
     width: 312px;
     background-color: #f9f9f9;
     border-right: 1px solid #ececec;
-    padding: 40px 24px;
+    padding: 3rem 1.5rem;
 }
+
+nav h1 {
+    margin: 0 0 1.5rem;
+}
+
+nav h1 span {
+    font-size: 10px;
+    color: grey;
+}
+
 main {
     width: calc(100% - 312px);
     padding: 40px 80px;
