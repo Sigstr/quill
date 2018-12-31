@@ -5,17 +5,21 @@ type: component
 summary: Menus are used for filtering data. Using them should not incur a page refresh but rather update the data on the page below it in real time. Menus can be set to any width.
 published: 2018-12-20
 author: michael
-updated: 2018-12-20
+updated: 2018-12-31
 status-design: Stable
 ---
 
 ##  Examples
 
-### Closed
-![Menu closed](/static/images/menu-closed.png)
+<figure>
+    <img src="/static/images/menu-closed.png" alt="Closed menu">
+    <figcaption>Closed Menu</figcaption>
+</figure>
 
-### Opened
-![Menu opened](/static/images/menu-opened.png)
+<figure>
+    <img src="/static/images/menu-opened.png" alt="Opened menu">
+    <figcaption>Opened Menu</figcaption>
+</figure>
 
 ## Modifiers
 * Width: Defaults to 120px
