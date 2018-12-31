@@ -5,7 +5,7 @@ type: component
 summary: Use buttons as actions.
 published: 2018-12-19
 author: michael
-updated: 2018-12-19
+updated: 2018-12-31
 status-design: Stable
 ---
 
@@ -14,7 +14,7 @@ status-design: Stable
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## Modifiers
-* Size: (Defaults to Regular) Small, Large
-* Type: (Defaults to Text) Outlined, Contained
-* Icon: Add a fontawesome icon to your button (Defaults to 'plus')
-* Icon position: (Defaults to left) Right
+* Size: Defaults to Regular (Small, Large)
+* Type: Defaults to Text (Outlined, Contained)
+* Icon: Defaults to null
+* Icon position: Defaults to Left (Right)
