@@ -2,26 +2,24 @@
 title: Avatar
 slug: avatar
 type: component
-summary: Avatars populate avatar frames. An avatar can be either an image (i.e. Account logo or Contacts photo), or letters (the fallback for a missing accounts or contacts image). One letter is used if only account domain or email address is available. Two letters are used for first and last name for contacts, and two first words of an account. If an account in only one word, one letter would show. For example, "Sigstr" would show an S, if no image is available. Transversely, "Sigstr Inc." would show SI. Image avatars are unstyled 1:1 images, while Letter avatars have basic text and background styling. To add border radius, indicators, or increase the size of an avatar, use the Avatar Frame component.
+summary: Avatars fill in Avatar Frames and are not meant to be used alone. An Avatar can be two types`\:` Image (i.e. Account logo or Contacts photo), or Letter if no Image is present. Image avatars are unstyled 1:1 images, while Letter avatars have basic text and background styling. To add border radius, indicators, or increase the size of an avatar, use the Avatar Frame component. Avatar Letters change based on Size which is inherited from the Avatar Frame. One letter is used if only account domain or email address is available. Two letters are used for first and last name for contacts, and two first words of an account. If an account has a single-word name, one letter would show. For example, "Sigstr" would show an S, if no image is available. Conversely, "Sigstr Inc." would show SI.
 published: 2018-12-20
 author: michael
-updated: 2018-12-27
+updated: 2018-12-31
 status-design: Stable
 ---
 
 ##  Examples
 
-### Image (Contact)
-![Image contact Avatar](/static/images/avatar-image-contact.png)
+<figure>
+    <img src="/static/images/avatar-image-account.png" alt="Avatar Image">
+    <figcaption>Avatar Image</figcaption>
+</figure>
 
-### Image (Account)
-![Image account Avatar](/static/images/avatar-image-account.png)
-
-### Letter (1 Letter)
-![Letter Avatar](/static/images/avatar-letter.png)
-
-### Letter (2 Letters)
-![Letter Avatar](/static/images/avatar-letter-two.png)
+<figure>
+    <img src="/static/images/avatar-letter.png" alt="Avatar Letter">
+    <figcaption>Avatar Letter</figcaption>
+</figure>
 
 ## Modifiers
 * Type: Defaults to Image (Letter)
