@@ -26,7 +26,19 @@ figure {
     margin: 2rem 0;
     padding-bottom: 1rem;
     text-align: center;
-    border-bottom: 1px dotted #ececec;
+}
+
+figure img {
+    border: 1.5px dotted #ececec;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+figcaption {
+    margin-top: 0.25rem;
+    font-size: 11px;
+    color: #5E686B;
 }
 
 .flex {
