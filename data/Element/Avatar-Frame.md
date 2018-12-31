@@ -2,7 +2,7 @@
 title: Avatar Frame
 slug: avatar-frame
 type: component
-summary: Avatar frames contain avatars. Use avatar frames to surround avatars and add statuses and resize.
+summary: Avatar Frames wrap Avatars to adjust the Size, add Shape, or indicate a status such as "In Salesforce".
 published: 2018-12-19
 author: michael
 updated: 2018-12-31
