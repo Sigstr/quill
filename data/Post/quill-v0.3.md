@@ -6,7 +6,7 @@ author: michael
 published: 2018-12-20
 ---
 
-## 0.0.3 - 2018-12-20
+## 0.3 - 2018-12-20
 
 ### Added
 * Button
