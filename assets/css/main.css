@@ -55,7 +55,7 @@ nav h1 {
     margin: 0 0 1.5rem;
 }
 
-nav h1 span {
+nav h1 span, nav h1 span a {
     font-size: 10px;
     color: #4aa951;
 }
