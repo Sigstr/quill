@@ -2,27 +2,32 @@
 title: Message
 slug: message
 type: component
-summary: Use messages when communicating conditions or indicating an event. Content can include authentication, information, confirmation, warnings, and error messages. It is important to specify which of these the content of the message falls under in order to choose the colors
+summary: Use messages when communicating conditions or indicating an event. Content can include authentication, information, confirmation, warnings, and error messages. It is important to specify which of these the content of the message falls under in order to choose the correct color. Small Text button can be added to single line messages except in the Chrome Extension Form.
 published: 2018-12-11
 author: michael
-updated: 2018-12-27
+updated: 2019-01-02
 status-design: Experimental
 ---
 
 ##  Examples
 
-### Information
-![Information Message](/static/images/message-info.png)
+<figure>
+    <img src="/static/images/message-info.png" alt="Informational Message">
+    <figcaption>Informational Message</figcaption>
+</figure>
 
-### Prompt message
-![Prompt Message](/static/images/message-prompt.png)
+<figure>
+    <img src="/static/images/message-prompt.png" alt="Prompt Message">
+    <figcaption>Prompt Message</figcaption>
+</figure>
 
-### Warning (Chrome Extension)
-![Warning Message](/static/images/message-warning-ce.png)
+<figure>
+    <img src="/static/images/message-warning-ce.png" alt="Prompt Message (Chrome Extension)">
+    <figcaption>Warning Message (Chrome Extension)</figcaption>
+</figure>
 
 ## Modifiers
-
-* Width: (Defaults to auto)
-* Color: (Defaults to $slate) One color is set for the component affecting the background (2% opacity), and the border (40% opacity)
-* Button: Include Small Text button (only for use when it is a single line and not for the chrome extension)
-* Form: (Defaults to null) Chrome extension version available
+* Width: Defaults to auto
+* Color: Defaults to $slate
+* Button: Defaults to False (True)
+* Form: Defaults to null (Chrome extension)
