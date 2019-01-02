@@ -2,26 +2,34 @@
 title: Tag
 slug: tag
 type: component
-summary: Tags are used to call attention to the status of something. Statuses can take on any color affecting the border and background color.
+summary: Tags are used to call attention to the status of something. Tag color dictates the border and background color.
 published: 2018-12-26
 author: michael
-updated: 2018-12-26
+updated: 2019-01-02
 status-design: Experimental
 ---
 
 ##  Examples
 
-### Tag (Mist)
-![Purple tag](/static/images/tag-mist.png)
+<figure>
+    <img src="/static/images/tag-mist.png" alt="Tag (Mist)">
+    <figcaption>Tag (Mist)</figcaption>
+</figure>
 
-### Tag (Purple)
-![Purple tag](/static/images/tag-purple.png)
+<figure>
+    <img src="/static/images/tag-purple.png" alt="Tag (Purple)">
+    <figcaption>Tag (Purple)</figcaption>
+</figure>
 
-### Tag (Yellow)
-![Yellow tag](/static/images/tag-yellow.png)
+<figure>
+    <img src="/static/images/tag-yellow.png" alt="Tag (Yellow)">
+    <figcaption>Tag (Yellow)</figcaption>
+</figure>
 
-### Tag (Green, Inline)
-![Green inline tag](/static/images/tag-green-inline.png)
+<figure>
+    <img src="/static/images/tag-green-inline.png" alt="Tag (Green, Inline)">
+    <figcaption>Tag (Green, Inline)</figcaption>
+</figure>
 
 ## Modifiers
 * Color: Defaults to Mist
