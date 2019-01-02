@@ -17,4 +17,4 @@ status-design: Stable
 * Size: Defaults to Regular (Small, Large)
 * Type: Defaults to Text (Outlined, Contained)
 * Icon: Defaults to null
-* Icon position: Defaults to Left (Right)
+* Icon Position: Defaults to Left (Right)

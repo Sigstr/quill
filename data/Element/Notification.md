@@ -2,26 +2,32 @@
 title: Notification
 slug: notification
 type: component
-summary: Use notifications when communicating high priority alerts. Content can include saving, loading, confirmation, and error messages. It is important to specify which of these the content of the notification falls under in order to choose the colors and icons
+summary: Use Notifications when communicating high priority alerts. Content might include saving, loading, confirmation, or error messages. It is important to specify which of these the content of the notification falls under in order to choose the correct color and icon. A small Text or Icon button can be added to single line Notifications except in the Chrome Extension Form.
 published: 2018-12-11
 author: michael
-updated: 2018-12-27
+updated: 2019-01-02
 status-design: Stable
 ---
 
 ##  Examples
 
-### Success
-![Success Notification](/static/images/notification-success.png)
+<figure>
+    <img src="/static/images/notification-success.png" alt="Success Notification">
+    <figcaption>Sucess Notification</figcaption>
+</figure>
 
-### Error
-![Error Notification](/static/images/notification-error.png)
+<figure>
+    <img src="/static/images/notification-error.png" alt="Error Notification">
+    <figcaption>Error Notification</figcaption>
+</figure>
 
-### Loading (Chrome Extension)
-![Chrome Extension Loading Notification](/static/images/notification-loading-ce.png)
+<figure>
+    <img src="/static/images/notification-loading-ce.png" alt="Chrome Extension Loading Notification">
+    <figcaption>Chrome Extension Loading Notification</figcaption>
+</figure>
 
 ## Modifiers
-* Color: Color set for the component affects the left section containing the icon
-* Icon: Can be switched out for any font awesome pro solid icon
-* Button: Include Small Text button or times icon (close button)
-* Form: (Defaults to null) Chrome extension version available
+* Color: Defaults to $leaf
+* Icon: Defaults to null
+* Button: Defaults to False (True)
+* Form: Defaults to null (Chrome extension)

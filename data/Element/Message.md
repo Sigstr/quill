@@ -2,7 +2,7 @@
 title: Message
 slug: message
 type: component
-summary: Use messages when communicating conditions or indicating an event. Content can include authentication, information, confirmation, warnings, and error messages. It is important to specify which of these the content of the message falls under in order to choose the correct color. Small Text button can be added to single line messages except in the Chrome Extension Form.
+summary: Use messages when communicating conditions or indicating an event. Content can include authentication, information, confirmation, warnings, and error messages. It is important to specify which of these the content of the Message falls under in order to choose the correct color. A small Text button can be added to single line messages except in the Chrome Extension Form.
 published: 2018-12-11
 author: michael
 updated: 2019-01-02
