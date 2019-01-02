@@ -4,21 +4,43 @@
 <h1 id="pageTitle">Component Status</h1>
 <hr>
 <div class="content">
+    <p>Current version: 0.5</p>
     <table>
         <tr>
             <th>Name</th>
             <th>Design</th>
-            <th>Development</th>
             <th>Last Updated</th>
         </tr>
         {% for component in components %}
         <tr>
             <td><a href="{% url "element", component %}">{{ component.title }}</a></td>
-            <td>{{ component.status_design }}</td>
-            <td>{{ component.status_development }}</td>
+            <td>{{ component.status }}</td>
             <td>{{ component.updated|date("%B %d, %Y") }}</td>
         </tr>
         {% endfor %}
+    </table>
+    <h3>Status Descriptions</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Stable</td>
+            <td>This component has been implemented by Engineering and approved by Design.</td>
+        </tr>
+        <tr>
+            <td>In Progress</td>
+            <td>This component is being implemented by Engineering.</td>
+        </tr>
+        <tr>
+            <td>Experimental</td>
+            <td>This component is currently being worked on by Design.</td>
+        </tr>
+        <tr>
+            <td>Deprecated</td>
+            <td>This component has been removed from the Design System and should no longer be used.</td>
+        </tr>
     </table>
 </div>
 {% endblock %}

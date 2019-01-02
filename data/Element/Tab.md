@@ -6,7 +6,7 @@ summary: Tabs seperate content or data of the same type into seperate views.
 published: 2018-12-27
 author: michael
 updated: 2018-12-27
-status-design: Stable
+status: Stable
 ---
 
 ##  Examples

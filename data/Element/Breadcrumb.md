@@ -6,7 +6,7 @@ summary: Breadcrumbs are used as page titles and are wayfinding tools to help us
 published: 2018-12-20
 author: michael
 updated: 2018-12-31
-status-design: Stable
+status: Stable
 ---
 
 ##  Examples

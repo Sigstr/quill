@@ -2,9 +2,7 @@
 
 {% block body %}
     <h1 id="pageTitle">{{ element.title }}</h1>
-    <span style="color: peru;"><strong>[ Design: {{ element.status_design }} ]</strong></span>
-    <br>
-    <span style="color: rosybrown;"><strong>[ Development: {{ element.status_development }} ]</strong></span>
+    <span style="color: peru;"><strong>[ Design: {{ element.status }} ]</strong></span>
     <br>
     <span style="color:darkgrey">Last updated on {{ element.updated|date("%B %d, %Y") }} by {{ element.author.email }}</span>
     <hr>

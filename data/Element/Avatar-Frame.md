@@ -6,7 +6,7 @@ summary: Avatar Frames wrap Avatars to adjust the Size, add Shape, or indicate a
 published: 2018-12-19
 author: michael
 updated: 2018-12-31
-status-design: Stable
+status: Stable
 ---
 
 ##  Examples

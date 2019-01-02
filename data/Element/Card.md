@@ -6,7 +6,7 @@ summary: Cards elevate primary content off of the background. Cards have a degre
 published: 2018-12-27
 author: michael
 updated: 2018-12-31
-status-design: Experimental
+status: Experimental
 ---
 
 ##  Examples

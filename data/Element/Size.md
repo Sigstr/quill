@@ -6,7 +6,7 @@ summary: Size is used as a modifier for several components in Quill. There are c
 published: 2018-12-27
 author: michael
 updated: 2018-12-27
-status-design: Stable
+status: Stable
 ---
 
 ## Components that use Size
