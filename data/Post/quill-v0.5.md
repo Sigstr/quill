@@ -24,8 +24,8 @@ published: 2019-01-02
 * Tag - Updated summary and alt text of some images
 * Tooltip - Updated screenshot
 * Cleaned up Design
-* Update screenshot styling to use semantic html (figure, fig caption)
-* Typographic and usability adjustments
+    * Update screenshot styling to use semantic html (figure, fig caption)
+    * Typographic and usability adjustments
 * Status
     * Using one status again
     * Outline different statuses a component can be in
