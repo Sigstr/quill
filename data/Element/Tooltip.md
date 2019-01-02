@@ -2,7 +2,7 @@
 title: Tooltip
 slug: tooltip
 type: component
-summary: Use tooltips to give additonal information.
+summary: Use Tooltips to give additonal information.
 published: 2018-12-19
 author: michael
 updated: 2018-12-19
@@ -10,7 +10,11 @@ status-design: Stable
 ---
 
 ##  Examples
-![Tooltip](/static/images/tooltip.png)
+
+<figure>
+    <img src="/static/images/tooltip.png" alt="Tooltip">
+    <figcaption>Tooltip</figcaption>
+</figure>
 
 ## Modifiers
 None
