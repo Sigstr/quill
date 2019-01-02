@@ -6,7 +6,7 @@ author: michael
 published: 2018-12-27
 ---
 
-## 0.0.4 - 2018-12-27
+## 0.4 - 2018-12-27
 
 ### Added
 * System status table
