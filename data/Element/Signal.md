@@ -2,17 +2,19 @@
 title: Signal
 slug: signal
 type: component
-summary: Use Signal when indicating relatonship strength, both personal and network. There are 6 levels of signal, Strong, Good, Moderate, Below Average, Weak, and None.
+summary: Use Signal when indicating relatonship strength, both personal and network. There are 6 levels of Signal&#58; Strong, Good, Moderate, Below Average, Weak, and None.
 published: 2018-12-12
 author: michael
-updated: 2018-12-12
+updated: 2019-01-02
 status-design: Stable
 ---
 
 ##  Examples
 
-### Signals ordered by level of strength
-![Signals](/static/images/signal.png)
+<figure>
+    <img src="/static/images/signal.png" alt="Signal ordered relationship strength">
+    <figcaption>Signal ordered relationship strength</figcaption>
+</figure>
 
 ## Modifiers
-* Level (0-6) which dictates styling as seen above.
+* Level: Defaults to 0 or None
