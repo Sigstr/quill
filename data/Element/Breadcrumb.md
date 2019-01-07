@@ -16,5 +16,11 @@ status: Stable
     <figcaption>Breadcrumb examples</figcaption>
 </figure>
 
+<figure>
+    <img src="/static/images/breadcrumb-modal.png" alt="Modal Breadcrumb examples">
+    <figcaption>Modal Breadcrumb examples</figcaption>
+</figure>
+
 ## Modifiers
 * Depth: Defaults to single (double, triple)
+* Form: Defaults to null (Modal)
