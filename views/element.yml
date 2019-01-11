@@ -6,4 +6,5 @@ template: element
 
 context:
   dynamic:
-    colors: session.query(Color).all()
+    colors: session.query(Color).filter(Color.category == None).order_by(Color.name.asc()).all()
+    greys: session.query(Color).filter(Color.category != None).order_by(Color.name.asc()).all()
