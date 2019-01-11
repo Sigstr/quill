@@ -9,5 +9,4 @@ updated: 2018-12-13
 status: Experimental
 ---
 
-## All Colors
 <!-- Generated in templates/element.html -->
