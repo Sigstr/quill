@@ -2,7 +2,7 @@
 title: Button
 slug: button
 type: component
-summary: Use buttons as actions.
+summary: Use buttons as actions. Sometimes, buttons expose more actions in cases like the action menu, which must be exposed by clicking somewhere.
 published: 2018-12-19
 author: michael
 updated: 2018-12-31
@@ -18,3 +18,4 @@ status: Stable
 * Type: Defaults to Text (Outlined, Contained)
 * Icon: Defaults to null
 * Icon Position: Defaults to Left (Right)
+* Form: Defaults to null (Ghost)
