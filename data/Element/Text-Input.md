@@ -51,4 +51,22 @@ status: Experimental
         <td>Used to give additional context to an input. Use sparingly, as they tend to add more confusion in form groups.</td>
         <td>null</td>
     </tr>
+    <tr>
+        <td>Icon</td>
+        <td>String (Font Awesome Icon)</td>
+        <td>Used to give additional context to an input. Can include a tooltip that shows on hover</td>
+        <td>null</td>
+    </tr>
+    <tr>
+        <td>Icon position</td>
+        <td>CSS class</td>
+        <td>Left or Right</td>
+        <td>null</td>
+    </tr>
+    <tr>
+        <td>Clear Button</td>
+        <td>HTML Element</td>
+        <td>Clears input. Only shows when there is a value in the field</td>
+        <td>null</td>
+    </tr>
 </table>
