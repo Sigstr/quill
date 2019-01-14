@@ -119,3 +119,6 @@ dmypy.json
 bin/
 include/
 public/
+
+.npmrc
+node_modules/

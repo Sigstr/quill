@@ -1,0 +1,20 @@
+{
+  "name": "quill",
+  "version": "0.6.0",
+  "description": "## Overview Quill is Sigstr's design system. This is a website documenting the components. This website is powered by [Statik]((https://github.com/thanethomson/statik/wiki/Installation)), a static site generator written in Python.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/sigstr/quill/src/master/"
+  },
+  "author": "",
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.6.3"
+  }
+}

@@ -14,7 +14,11 @@
         {% for component in components %}
         <tr>
             <td><a href="{% url "element", component %}">{{ component.title }}</a></td>
-            <td>{{ component.status }}</td>
+            <td>
+                {% with status=component.status %}
+                    {% include "status-icon.html" %}
+                {% endwith %}
+            </td>
             <td>{{ component.updated|date("%B %d, %Y") }}</td>
         </tr>
         {% endfor %}

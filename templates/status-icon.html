@@ -1,0 +1,11 @@
+{% if status == "available" %}
+    <i class="fas fa-check-circle"></i>
+{% elif status == "in progress" %}
+    <i class="fas fa-wrench"></i>
+{% elif status == "planned" %}
+    <i class="fas fa-clipboard-check-list"></i>
+{% elif status == "deprecated" %}
+    <i class="fas fa-ban"></i>
+{% else %}
+    <i class="fas fa-minus"></i>
+{% endif %}
