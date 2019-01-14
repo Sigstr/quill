@@ -15,5 +15,5 @@ status: Stable
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## Modifiers
-Disabled: Defaults to false
-On: Defaults to true
+* Disabled: Defaults to false
+* On: Defaults to true
