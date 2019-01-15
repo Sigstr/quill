@@ -22,21 +22,13 @@
         {% for component in components %}
         <tr>
             <td><a href="{% url "element", component %}">{{ component.title }}</a></td>
-            <td>
-                {% with status=component.status_design %}
-                    {% include "status-icon.html" %}
-                {% endwith %}
-            </td>
-            <td>
-                {% with status=component.status_sketch_lib %}
-                    {% include "status-icon.html" %}
-                {% endwith %}
-            </td>
-            <td>
-                {% with status=component.status_react %}
-                    {% include "status-icon.html" %}
-                {% endwith %}
-            </td>
+            {% for stat in component.status %}
+                <td>
+                    {% with status=stat.name|lower %}
+                        {% include "status-icon.html" %}
+                    {% endwith %}
+                </td>
+            {% endfor %}
         </tr>
         {% endfor %}
     </table>
