@@ -1,7 +1,7 @@
 - pk: design-available
   name: Available
   category: Design
-- pk: sketch-library-available
+- pk: sketchlibrary-available
   name: Available
   category: Sketch Library
 - pk: react-available
@@ -10,7 +10,7 @@
 - pk: design-none
   name: N/A
   category: Design
-- pk: sketch-library-none
+- pk: sketchlibrary-none
   name: N/A
   category: Sketch Library
 - pk: react-none

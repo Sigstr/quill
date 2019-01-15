@@ -6,8 +6,10 @@ summary: Use checkboxes to allow users to select a number of options. This inclu
 published: 2018-12-19
 author: michael
 updated: 2018-12-31
-status-design: available
-status-sketch-lib: available
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

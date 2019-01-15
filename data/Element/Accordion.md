@@ -6,7 +6,10 @@ summary: The Accordion is used expand and collapse information or user input con
 published: 2019-01-10
 author: michael
 updated: 2019-01-10
-status-design: in progress
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

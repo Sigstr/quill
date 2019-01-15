@@ -6,8 +6,10 @@ summary: Use messages when communicating conditions or indicating an event. Cont
 published: 2018-12-11
 author: michael
 updated: 2019-01-02
-status-design: available
-status-sketch-lib: available
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

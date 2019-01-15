@@ -8,7 +8,7 @@ author: michael
 updated: 2019-01-15
 status:
     - design-available
-    - sketch-library-available
+    - sketchlibrary-available
     - react-none
 ---
 

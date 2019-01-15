@@ -6,7 +6,10 @@ summary: Single Select is used to select single things from a list.
 published: 2019-01-07
 author: michael
 updated: 2019-01-07
-status-design: available
+status:
+    - design-available
+    - sketchlibrary-none
+    - react-none
 ---
 
 ##  Examples

@@ -6,8 +6,10 @@ summary: Use Tooltips to give additonal information. Tooltips have a max-width o
 published: 2018-12-19
 author: michael
 updated: 2018-01-15
-status-design: available
-status-sketch-lib: available
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

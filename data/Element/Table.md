@@ -6,7 +6,10 @@ summary: Use a Table to show lots of information in an organized fashion.
 published: 2018-12-27
 author: michael
 updated: 2019-01-02
-status-design: in progress
+status:
+    - design-inprogress
+    - sketchlibrary-none
+    - react-none
 ---
 
 ## Table Anatomy

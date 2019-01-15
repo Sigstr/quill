@@ -6,8 +6,10 @@ summary: Avatars fill in Avatar Frames and are not meant to be used alone. An Av
 published: 2018-12-20
 author: michael
 updated: 2018-12-31
-status-design: available
-status-sketch-lib: available
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

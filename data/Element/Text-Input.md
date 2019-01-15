@@ -6,7 +6,10 @@ summary: Use Text Inputs to ask for inputs from users. Text Input is a complex c
 published: 2018-12-26
 author: michael
 updated: 2018-12-27
-status-design: in progress
+status:
+    - design-inprogress
+    - sketchlibrary-none
+    - react-none
 ---
 
 ##  Examples

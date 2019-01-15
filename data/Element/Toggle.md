@@ -6,8 +6,10 @@ summary: Toggles are binary controls that enable or disable functionality in the
 published: 2018-12-27
 author: michael
 updated: 2019-01-14
-status-design: available
-status-sketch-lib: available
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

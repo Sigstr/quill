@@ -6,8 +6,10 @@ summary: Menus are used for filtering data. Using them should not incur a page r
 published: 2018-12-20
 author: michael
 updated: 2018-12-31
-status-design: available
-status-sketch-lib: available
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

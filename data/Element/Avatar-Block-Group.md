@@ -6,8 +6,10 @@ summary: The Avatar Block Group is a component that contains a group of Avatar B
 published: 2019-01-09
 author: michael
 updated: 2019-01-09
-status-design: available
-status-sketch-lib: available
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

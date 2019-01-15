@@ -6,8 +6,10 @@ summary: The Date Picker is an special input field used when requesting a date f
 published: 2019-01-10
 author: michael
 updated: 2019-01-10
-status-design: available
-status-sketch-lib: available
+status:
+    - design-available
+    - sketchlibrary-available
+    - react-none
 ---
 
 ##  Examples

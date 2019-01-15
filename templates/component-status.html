@@ -15,9 +15,9 @@
     <table>
         <tr>
             <th>Name<i class="fas fa-arrow-down"></i></th>
-            <th>Design</th>
-            <th>Sketch Library</th>
-            <th>React</th>
+            {% for stat in components[0].status %}
+                <th>{{stat.category}}</th>
+            {% endfor %}
         </tr>
         {% for component in components %}
         <tr>
