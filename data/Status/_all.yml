@@ -1,0 +1,20 @@
+- pk: design-available
+  name: Available
+  category: Design
+- pk: sketch-library-available
+  name: Available
+  category: Sketch Library
+- pk: react-available
+  name: Available
+  category: React
+- pk: design-none
+  name: N/A
+  category: Design
+- pk: sketch-library-none
+  name: N/A
+  category: Sketch Library
+- pk: react-none
+  name: N/A
+  category: React
+- pk: deprecated
+  name: Deprecated

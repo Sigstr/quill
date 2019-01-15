@@ -176,11 +176,11 @@ code {
 }
 
 .status-key {
-    margin: 24px 0 24px 16px;
+    margin: 24px 0;
 }
 
 .status-key span {
-    margin-right: 24px;
+    margin-right: 32px;
     font-size: 14px;
     line-height: 18px;
     color: #5E686B;

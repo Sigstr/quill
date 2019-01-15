@@ -2,7 +2,19 @@
 
 {% block body %}
     <h1 id="pageTitle">{{ element.title }}</h1>
-    <span style="color: peru;"><strong>[ Status: [[ insert here ]] ]</strong></span>
+
+    {% if element.type == "component" %}
+        <div class="status-key">
+            {% for stat in element.status %}
+                <span>
+                    {% with status=stat.name|lower %}
+                        {% include "status-icon.html" %}
+                    {% endwith %}
+                    {{ stat.category }}
+                </span>
+            {% endfor %}
+        </div>
+    {% endif %}
     <br>
     <span style="color:darkgrey">Last updated on {{ element.updated|date("%B %d, %Y") }} by {{ element.author.email }}</span>
     <hr>

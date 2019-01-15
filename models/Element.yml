@@ -9,3 +9,4 @@ status: String
 content: Content
 status-design: String
 status-sketch-lib: String
+status: Status[] -> Element
