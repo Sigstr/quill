@@ -6,7 +6,8 @@ summary: The File Uploader is used to upload files - most commonly, CSVs. code e
 published: 2019-01-10
 author: michael
 updated: 2019-01-10
-status: Experimental
+status-design: available
+status-sketch-lib: available
 ---
 
 ##  Examples

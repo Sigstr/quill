@@ -4,22 +4,32 @@
 <h1 id="pageTitle">Component Status</h1>
 <hr>
 <div class="content">
-    <p>Current version: 0.5</p>
+    <p>Current version: {{ version }}</p>
     <table>
         <tr>
             <th>Name</th>
             <th>Design</th>
-            <th>Last Updated</th>
+            <th>Sketch Library</th>
+            <th>React</th>
         </tr>
         {% for component in components %}
         <tr>
             <td><a href="{% url "element", component %}">{{ component.title }}</a></td>
             <td>
-                {% with status=component.status %}
+                {% with status=component.status_design %}
                     {% include "status-icon.html" %}
                 {% endwith %}
             </td>
-            <td>{{ component.updated|date("%B %d, %Y") }}</td>
+            <td>
+                {% with status=component.status_sketch_lib %}
+                    {% include "status-icon.html" %}
+                {% endwith %}
+            </td>
+            <td>
+                {% with status=component.status_react %}
+                    {% include "status-icon.html" %}
+                {% endwith %}
+            </td>
         </tr>
         {% endfor %}
     </table>

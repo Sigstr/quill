@@ -6,7 +6,8 @@ summary: The Progress Indicator is used to show the progress of an element.
 published: 2019-01-10
 author: michael
 updated: 2019-01-10
-status: Experimental
+status-design: available
+status-sketch-lib: available
 ---
 
 ##  Examples

@@ -6,7 +6,8 @@ summary: Avatar Blocks are componenets containing information on an account or a
 published: 2018-12-20
 author: michael
 updated: 2018-12-31
-status: Stable
+status-design: available
+status-sketch-lib: available
 ---
 
 ##  Examples

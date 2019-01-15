@@ -6,7 +6,7 @@ summary: Statuses indicate the state of an element in the UI.
 published: 2019-01-07
 author: michael
 updated: 2019-01-07
-status: Experimental
+status-design: available
 ---
 
 ##  Examples

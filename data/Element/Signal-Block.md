@@ -6,7 +6,8 @@ summary: Signal Blocks contain two relationship scores - "With Me" and "With Net
 published: 2019-01-09
 author: michael
 updated: 2019-01-09
-status: Stable
+status-design: available
+status-sketch-lib: available
 ---
 
 ##  Examples

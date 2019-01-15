@@ -6,7 +6,6 @@ summary: Text is the main way that users visualize content and complete their wo
 published: 2018-12-19
 author: michael
 updated: 2018-12-19
-status: Experimental
 ---
 
 ## Font Stacks

@@ -101,22 +101,20 @@ main {
 }
 
 table {
-    border: 1px solid lightgrey;
     border-spacing: 0;
     width: 100%;
 }
 td, th {
-    padding: 12px;
+    padding: 0 16px;
+    height: 48px;
+    border-bottom: 1px solid lightgrey;
 }
 th {
     text-align: left;
     color: grey;
 }
-th:not(:last-child), td:not(:last-child) {
+th:first-child, td:first-child {
     border-right: 1px solid lightgrey;
-}
-tr:not(:last-child) td, tr:not(:last-child) th {
-    border-bottom: 1px solid lightgrey;
 }
 
 .grid {

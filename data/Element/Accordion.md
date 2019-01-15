@@ -6,7 +6,7 @@ summary: The Accordion is used expand and collapse information or user input con
 published: 2019-01-10
 author: michael
 updated: 2019-01-10
-status: in progress
+status-design: in progress
 ---
 
 ##  Examples

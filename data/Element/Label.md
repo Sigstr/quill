@@ -6,7 +6,7 @@ summary: The Label is used to give components additional context. Text Input, an
 published: 2019-01-14
 author: michael
 updated: 2019-01-14
-status: Experimental
+status-design: available
 ---
 
 ##  Examples

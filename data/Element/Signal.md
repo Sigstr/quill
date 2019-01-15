@@ -6,7 +6,8 @@ summary: Use Signal when indicating relatonship strength, both personal and netw
 published: 2018-12-12
 author: michael
 updated: 2019-01-02
-status: Stable
+status-design: available
+status-sketch-lib: available
 ---
 
 ##  Examples

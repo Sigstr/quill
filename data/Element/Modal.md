@@ -6,7 +6,7 @@ summary: Modals are prompts that contain non-complex informational flows. Exampl
 published: 2019-01-07
 author: michael
 updated: 2019-01-07
-status: In Progress
+status-design: available
 ---
 
 ##  Examples

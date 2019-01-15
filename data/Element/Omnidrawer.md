@@ -6,7 +6,8 @@ summary: Omnidrawers are used to quickly preview items on a page without navigat
 published: 2019-01-07
 author: michael
 updated: 2019-01-08
-status: Experimental
+status-design: available
+status-sketch-lib: available
 ---
 
 ##  Examples

@@ -6,7 +6,7 @@ summary: Switchers serve the same purpose as tabs - to seperate content or data 
 published: 2018-12-27
 author: michael
 updated: 2019-01-02
-status: Stable
+status-design: available
 ---
 
 ##  Example
