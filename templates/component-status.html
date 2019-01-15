@@ -2,12 +2,19 @@
 
 {% block body %}
 <h1 id="pageTitle">Component Status</h1>
+<p>Current version: {{ version }}</p>
 <hr>
 <div class="content">
-    <p>Current version: {{ version }}</p>
+    <div class="status-key">
+        <span><i class="fas fa-check-circle"></i>Available</span>
+        <span><i class="fas fa-wrench"></i>In Progress</span>
+        <span><i class="fas fa-ballot-check"></i>Planned</span>
+        <span><i class="fas fa-ban"></i>Deprecated</span>
+        <span><i class="fas fa-minus"></i>N/A</span>
+    </div>
     <table>
         <tr>
-            <th>Name</th>
+            <th>Name<i class="fas fa-arrow-down"></i></th>
             <th>Design</th>
             <th>Sketch Library</th>
             <th>React</th>
@@ -32,29 +39,6 @@
             </td>
         </tr>
         {% endfor %}
-    </table>
-    <h3>Status Descriptions</h3>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Stable</td>
-            <td>This component has been implemented by Engineering and approved by Design.</td>
-        </tr>
-        <tr>
-            <td>In Progress</td>
-            <td>This component is being implemented by Engineering.</td>
-        </tr>
-        <tr>
-            <td>Experimental</td>
-            <td>This component is currently being worked on by Design.</td>
-        </tr>
-        <tr>
-            <td>Deprecated</td>
-            <td>This component has been removed from the Design System and should no longer be used.</td>
-        </tr>
     </table>
 </div>
 {% endblock %}

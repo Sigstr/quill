@@ -107,14 +107,30 @@ table {
 td, th {
     padding: 0 16px;
     height: 48px;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #ececec;
+    width: calc(50% / 3);
 }
 th {
     text-align: left;
-    color: grey;
+    color: #5E686B;
+    font-weight: semibold;
+    font-size: 12px;
 }
 th:first-child, td:first-child {
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid #ececec;
+    width: 50%;
+}
+
+th:first-child {
+    color: #333;
+}
+th:first-child i {
+    margin-left: 0.5rem;
+}
+
+td:first-child a {
+    font-size: 14px;
+    color: #333;
 }
 
 .grid {
@@ -147,7 +163,7 @@ code {
     color: #FFC74C;
 }
 
-.fa-clipboard-list-checked {
+.fa-ballot-checked {
     color: #FFAE76;
 }
 
@@ -157,4 +173,20 @@ code {
 
 .fa-minus {
     color: #ACB3B6;
+}
+
+.status-key {
+    margin: 24px 0 24px 16px;
+}
+
+.status-key span {
+    margin-right: 24px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5E686B;
+}
+
+.status-key i {
+    margin-right: 6px;
+    font-size: 16px;
 }
