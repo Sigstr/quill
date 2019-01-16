@@ -6,10 +6,9 @@ summary: Actions Lists are a group of actions that are exposed by clicking on a 
 published: 2019-01-07
 author: michael
 updated: 2019-01-07
-status-design: in progress
 status:
     - design-available
-    - sketchlibrary-none
+    - sketchlibrary-planned
     - react-none
 ---
 

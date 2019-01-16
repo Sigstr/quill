@@ -7,6 +7,24 @@
 - pk: react-available
   name: Available
   category: React
+- pk: design-inprogress
+  name: In Progress
+  category: Design
+- pk: sketchlibrary-inprogress
+  name: In Progress
+  category: Sketch Library
+- pk: react-inprogress
+  name: In Progress
+  category: React
+- pk: design-planned
+  name: Planned
+  category: Design
+- pk: sketchlibrary-planned
+  name: Planned
+  category: Sketch Library
+- pk: react-planned
+  name: Planned
+  category: React
 - pk: design-none
   name: N/A
   category: Design

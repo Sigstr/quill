@@ -7,6 +7,5 @@ author: Author
 updated: DateTime
 status: String
 content: Content
-status-design: String
-status-sketch-lib: String
+experimental: Boolean
 status: Status[] -> Element

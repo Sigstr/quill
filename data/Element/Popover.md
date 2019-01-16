@@ -6,6 +6,7 @@ summary: The Popover is used to quickly edit information.
 published: 2019-01-09
 author: michael
 updated: 2019-01-09
+experimental: true
 status:
     - design-available
     - sketchlibrary-available

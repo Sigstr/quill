@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <h1 id="pageTitle">{{ element.title }}</h1>
+    <h5>{{ element.type|capitalize }}s</h5>
+    <h1 id="pageTitle">{{ element.title }}{% if element.experimental %}<div class="tag">Experimental</div>{% endif %}</h1>
     <span style="color:darkgrey">Last updated on {{ element.updated|date("%B %d, %Y") }} by {{ element.author.email }}</span>
     <br>
     {% if element.type == "component" %}

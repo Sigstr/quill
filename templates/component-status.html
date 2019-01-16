@@ -21,7 +21,12 @@
         </tr>
         {% for component in components %}
         <tr>
-            <td><a href="{% url "element", component %}">{{ component.title }}</a></td>
+            <td>
+                <a href="{% url "element", component %}">{{ component.title }}</a>
+                {% if component.experimental %}
+                    <div class="tag">Experimental</div>
+                {% endif %}
+            </td>
             {% for stat in component.status %}
                 <td>
                     {% with status=stat.name|lower %}

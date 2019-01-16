@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4, p, a, li, span, td, th, figcaption {
+h1, h2, h3, h4, h5, p, a, li, span, td, th, figcaption {
     font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 h1 > a, h1 > a:visited {
@@ -163,7 +163,7 @@ code {
     color: #FFC74C;
 }
 
-.fa-ballot-checked {
+.fa-ballot-check {
     color: #FFAE76;
 }
 
@@ -189,4 +189,34 @@ code {
 .status-key i {
     margin-right: 6px;
     font-size: 16px;
+}
+
+h5 {
+    color: #5E686B;
+    margin: 0;
+}
+
+
+
+.tag {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 5px;
+    color: #333;
+    border: 1px solid #ACB3B6;
+    border-radius: 4px;
+    background-color: rgba(172,179,182, .08);
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 0.75rem;
+}
+
+#pageTitle {
+    margin-top: 0.5rem;
+}
+
+#pageTitle .tag {
+    position: relative;
+    bottom: 4px;
 }
