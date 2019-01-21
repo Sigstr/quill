@@ -26,7 +26,7 @@ pre, code {
     line-height: 1.25;
 }
 
-p {
+p, li {
     color: #333;
     font-size: 15px;
     line-height: 1.5;
