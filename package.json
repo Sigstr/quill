@@ -2,7 +2,8 @@
   "name": "quill",
   "version": "0.7.0",
   "description": "## Overview Quill is Sigstr's design system. This is a website documenting the components. This website is powered by [Statik]((https://github.com/thanethomson/statik/wiki/Installation)), a static site generator written in Python.",
-  "main": "index.js",
+  "main": "assets/js/dist/index.js",
+  "module": "dist/index.es.js",
   "directories": {
     "lib": "lib"
   },

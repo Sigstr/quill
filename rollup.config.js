@@ -2,7 +2,7 @@ import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
 
 export default {
-  input: 'assets/src/index.js',
+  input: 'assets/js/src/index.js',
   output: [
     {
       file: pkg.main,
