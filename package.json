@@ -4,7 +4,7 @@
   "description": "",
   "main": "assets/js/dist/index.js",
   "scripts": {
-    "build": "statik"
+    "build": "gulp && source bin/activate && statik"
   },
   "repository": {
     "type": "git",
