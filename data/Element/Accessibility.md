@@ -16,7 +16,9 @@ All components meet or exceed the following standards:
 
 These rules will help both visually impaired and the unimpaired to recieve the same information.
 
-[Contrast Minimum - WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+### Resources
+* [Contrast Minimum - WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+* [Test Contrast Ratios](https://contrast-ratio.com/#%23000-on-%23fff)
 
 
 ## Semantic Markup
@@ -28,7 +30,7 @@ One example of this would be the usage of the `<nav>` tag. Here's an excerpt fro
 [Read more about the nav element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
 
 ## Text
-Within the suite of Sigstr apps, consise and consistent copy is especcialy important due to the complexity.
+Within the suite of Sigstr apps, consise and consistent copy is especially important due to the complexity.
 
 Here's an example - let's say we have a search text input on a page with a list of Contacts. Labeling the input is very important, so that the user knows what use the input provides. By adding concise placeholder text such as "Search for a Contact", the user knows what to expect upon interaction.
 
