@@ -6,7 +6,7 @@ assets:
 context:
   static:
     site-title: Quill
-    version: 0.6
+    version: 0.7
   dynamic:
     components: session.query(Element).filter(Element.type == "component").filter(Element.published != None).order_by(Element.title).all()
     foundations: session.query(Element).filter(Element.type == "foundation").filter(Element.published != None).order_by(Element.title).all()
