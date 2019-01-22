@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="/static/images/favicon.ico" />
     <link rel="stylesheet" href="/static/css/solid.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/static/css/main.css?v={{ version }}" />
-    <script src="/static/js/index.js?v={{ version }}"></script>
 </head>
 <body>
     <div class="flex">
@@ -33,6 +32,6 @@
             {% block body %}{% endblock %}
         </main>
     </div>
-    <script src="/static/js/bundle.js"></script>
+    <script src="/static/js/bundle.js?v={{ version }}"></script>
 </body>
 </html>
