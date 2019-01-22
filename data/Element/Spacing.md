@@ -3,9 +3,9 @@ title: Spacing
 slug: spacing
 type: foundation
 summary: Spacing guidelines are instituted to promote a consistent and well-design UI. These guidelines also eliminate additional cognitive load when designing the UI. For example - you will not have to decide between putting 7px or 8px between items, as the system works on a base of 8px.
-published: 2019-01-19
+published: 2019-01-21
 author: michael
-updated: 2019-01-19
+updated: 2019-01-21
 ---
 
 ## The rule of 8s

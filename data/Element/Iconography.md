@@ -3,9 +3,9 @@ title: Iconography
 slug: iconography
 type: foundation
 summary: Use FontAwesome Solid for all icons.
-published: 2019-01-20
+published: 2019-01-22
 author: michael
-updated: 2019-01-20
+updated: 2019-01-22
 ---
 
 ## Accessiblity considerations

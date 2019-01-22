@@ -3,9 +3,9 @@ title: Time
 slug: time
 type: foundation
 summary: Time should display consistently across all components and pages in the application.
-published: 2019-01-20
+published: 2019-01-22
 author: michael
-updated: 2019-01-20
+updated: 2019-01-22
 ---
 
 ## Formatting

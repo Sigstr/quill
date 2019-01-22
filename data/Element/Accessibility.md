@@ -3,9 +3,9 @@ title: Accessibility
 slug: accessibility
 type: foundation
 summary: Sigstr takes the accessiblity of our products very seriously. With each new component we design, we do not forgo accessibility for increased visual appeal. The accessiblity which informs the greater usability of our product, comes before the visual aesthetic. However, we also do not believe that making our product accessible should cripple the visual appearance of it. Accessiblity and a polished UI come hand in hand.
-published: 2019-01-19
+published: 2019-01-21
 author: michael
-updated: 2019-01-19
+updated: 2019-01-22
 ---
 
 ## Color
