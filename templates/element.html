@@ -24,8 +24,8 @@
     <div class="content">
         {{ element.content|safe }}
         {% if element.title == "Color" %}
-            <h2>Greys</h2>
-            {% with colorz=greys %}
+            <h2>Neutrals</h2>
+            {% with colorz=neutrals %}
                 {% include "color.html" %}
             {% endwith %}
             <h2>Colors</h2>
