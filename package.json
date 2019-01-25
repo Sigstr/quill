@@ -4,7 +4,9 @@
   "description": "",
   "main": "assets/js/dist/index.js",
   "scripts": {
-    "build": "gulp && source bin/activate && statik"
+    "build": "gulp && source bin/activate && statik",
+    "serve": "http-server -p 8000",
+    "init": "npm i && npm run build && npm run serve"
   },
   "repository": {
     "type": "git",

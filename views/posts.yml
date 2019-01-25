@@ -1,0 +1,7 @@
+path: /updates
+template: posts
+context:
+  static:
+    page-title: Updates
+  dynamic:
+    posts: session.query(Post).filter(Post.published != None).order_by(Post.published.desc()).all()

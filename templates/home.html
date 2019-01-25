@@ -10,11 +10,4 @@
         <li>csportal</li>
         <li>Chrome Extension</li>
     </ul>
-    <hr>
-    <h3>Latest Updates</h3>
-    <ul>
-        {% for post in posts %}
-            <li><h4><a href="{% url "post", post %}">{{ post.title }}</a></h4><p style="color: grey;">Published {{ post.published|date("%Y/%m/%d") }} by {{ post.author.email }}</p></li>
-        {% endfor %}
-    </ul>
 {% endblock %}
