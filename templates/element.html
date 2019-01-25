@@ -2,7 +2,7 @@
 
 {% block body %}
     <h5>{{ element.type|capitalize }}s</h5>
-    <h1 id="pageTitle">{{ element.title }}{% if element.experimental %}<div class="tag">Experimental</div>{% endif %}</h1>
+    <h1><span id="pageTitle">{{ element.title }}</span>{% if element.experimental %}<div class="tag">Experimental</div>{% endif %}</h1>
     <span style="color:darkgrey">Last updated on {{ element.updated|date("%B %d, %Y") }} by {{ element.author.email }}</span>
     <br>
     {% if element.type == "component" %}

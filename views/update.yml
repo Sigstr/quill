@@ -1,0 +1,5 @@
+path:
+  template: /updates/{{ update.published|date("%Y/%m/%d") }}/{{ update.slug }}
+  for-each:
+    update: session.query(Update).filter(Update.published != None).all()
+template: update

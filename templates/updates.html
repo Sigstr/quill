@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>All Updates</h1>
+    <ul>
+        {% for update in updates %}
+            <li><h4><a href="{% url "update", update %}">{{ update.title }}</a></h4><p style="color: grey;">Published {{ update.published|date("%Y/%m/%d") }} by {{ update.author.email }}</p></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

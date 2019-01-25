@@ -29,6 +29,7 @@
             </td>
             {% for stat in component.status %}
                 <td>
+                    <!-- {{ status}} -->
                     {% with status=stat.name|lower %}
                         {% include "status-icon.html" %}
                     {% endwith %}

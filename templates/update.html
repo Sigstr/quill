@@ -1,0 +1,9 @@
+{% extends  "base.html" %}
+
+{% block body %}
+    <h1>{{ update.title }}</h1>
+    <p>{{ update.summary }}</p>
+    <div class="content">
+        {{ update.content|safe }}
+    </div>
+{% endblock %}
