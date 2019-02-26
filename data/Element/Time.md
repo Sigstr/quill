@@ -31,10 +31,6 @@ updated: 2019-01-22
         <td>Yesterday</td>
     </tr>
     <tr>
-        <td>< 1 week</td>
-        <td>x days ago</td>
-    </tr>
-    <tr>
         <td>> 1 week</td>
         <td>MM/DD/YY</td>
     </tr>
