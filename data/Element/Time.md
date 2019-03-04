@@ -5,7 +5,7 @@ type: foundation
 summary: Time should display consistently across all components and pages in the application.
 published: 2019-01-22
 author: michael
-updated: 2019-01-22
+updated: 2018-03-01
 ---
 
 ## Formatting

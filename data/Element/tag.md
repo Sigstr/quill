@@ -5,7 +5,7 @@ type: component
 summary: Tags are used to call attention to the status of something. Tag color dictates the border and background color.
 published: 2018-12-26
 author: michael
-updated: 2019-01-02
+updated: 2018-03-01
 experimental: true
 status:
     - design-available

@@ -5,7 +5,7 @@ type: component
 summary: Switchers serve a similar purpose to tabs. Switchers seperate content or data of the same type into seperate views. Interacting with a Switcher should change the related content below without the usage of an additonal button or other control.
 published: 2018-12-27
 author: michael
-updated: 2019-01-02
+updated: 2018-03-01
 status:
     - design-available
     - sketchlibrary-inprogress

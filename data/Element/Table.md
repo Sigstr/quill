@@ -5,7 +5,7 @@ type: component
 summary: Use a Table to show lots of information in an organized fashion.
 published: 2018-12-27
 author: michael
-updated: 2019-01-02
+updated: 2019-03-04
 status:
     - design-inprogress
     - sketchlibrary-planned
@@ -26,6 +26,11 @@ status:
 <figure>
     <img src="/static/images/table.png" alt="A Table of Accounts">
     <figcaption>A Table of Accounts</figcaption>
+</figure>
+
+<figure>
+    <img src="/static/images/table-text.png" alt="A text-based Table of Accounts">
+    <figcaption>A text-based Table of Accounts</figcaption>
 </figure>
 
 ## Modifiers

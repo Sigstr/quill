@@ -5,7 +5,7 @@ type: component
 summary: The Progress Indicator is used to show the progress of an element.
 published: 2019-01-10
 author: michael
-updated: 2019-01-10
+updated: 2018-03-01
 status:
     - design-available
     - sketchlibrary-available
