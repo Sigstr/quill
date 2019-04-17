@@ -51,7 +51,12 @@ status:
     </tr>
     <tr>
         <td>Icon</td>
-        <td>Used to give additional context to an input. Can include a tooltip that shows on hover</td>
+        <td>Used to give additional context to an input. Can include a tooltip that shows on hover.</td>
+        <td>null</td>
+    </tr>
+    <tr>
+        <td>Button</td>
+        <td>Used to take action on a fields contents.</td>
         <td>null</td>
     </tr>
 </table>
