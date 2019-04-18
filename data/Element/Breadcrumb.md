@@ -5,7 +5,7 @@ type: component
 summary: Breadcrumbs are used as page titles and are wayfinding tools to help users understand where they are in the application. Non-active Breadcrumbs link to the screen they refer to. Breadcrumbs can include an icon to denote a page state. One example of this would be on list details, where you might see an archived or favorited icon.
 published: 2018-12-20
 author: michael
-updated: 2019-01-15
+updated: 2019-04-18
 status:
     - design-available
     - sketchlibrary-available
