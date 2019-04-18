@@ -5,7 +5,7 @@ type: component
 summary: Use buttons as actions. Sometimes, buttons expose more actions in cases like the action menu, which must be exposed by clicking somewhere.
 published: 2018-12-19
 author: michael
-updated: 2019-04-17
+updated: 2019-04-18
 status:
     - design-available
     - sketchlibrary-available
