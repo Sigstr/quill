@@ -19,10 +19,5 @@ status:
     <figcaption>Actions List in the side navigation</figcaption>
 </figure>
 
-<figure>
-    <img src="/static/images/action-list-listdetails.png" alt="Actions List on the List Details page<">
-    <figcaption>Actions List on the List Details page</figcaption>
-</figure>
-
 ## Modifiers
 None
