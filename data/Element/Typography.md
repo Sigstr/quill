@@ -5,11 +5,11 @@ type: foundation
 summary: Text is the main way that users visualize content and complete their work, so we've developed a typographic landscape that uses one font for all standard typefaces in Sigstr products. This ensures that the UI is optimized to be highly legible, performs well, and is frictionless as you move between Sigstr products and the rest of the system.
 published: 2018-12-19
 author: michael
-updated: 2018-12-19
+updated: 2019-04-18
 ---
 
 ## Font Stacks
-We use sans-serif fonts for most of our type, the exception being when you want to display code then you should defer to monospace fonts. Serif fonts are not used in Sigstr products. All sans-serif fonts default to Source Sans Pro, and then fall back to the system fonts. All mono fonts default to Source Code Pro, and then fall back to the system monospaced fonts.
+We use sans-serif fonts for most of our type. The only exception is for when you want to display code in which case you should use monospace fonts. Serif fonts are not used in Sigstr products. All sans-serif fonts default to Source Sans Pro, and then fall back to the system fonts. All mono fonts default to system monospaced fonts.
 
 ### Sans-serif
 <table>
@@ -45,20 +45,20 @@ We use sans-serif fonts for most of our type, the exception being when you want 
   </tr>
   <tr>
     <td>Windows</td>
-    <td>Source Code Pro<br>Segoe UI Mono</td>
+    <td>Segoe UI Mono</td>
   </tr>
   <tr>
     <td>MacOS & iOS</td>
-    <td>Source Code Pro<br>SF Mono<br>Menlo</td>
+    <td>SF Mono<br>Menlo</td>
   </tr>
   <tr>
     <td>Chrome OS & Android</td>
-    <td>Source Code Pro<br>Roboto Mono</td>
+    <td>Roboto Mono</td>
   </tr>
   <tr>
     <td>Ubuntu</td>
-    <td>Source Code Pro<br>Ubuntu Mono</td>
+    <td>Ubuntu Mono</td>
   </tr>
 </table>
 
-<pre>font-family: 'Source Code Pro', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, monospace;</pre>
+<pre>font-family: 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, monospace;</pre>
