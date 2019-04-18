@@ -29,8 +29,16 @@ status:
     <figcaption>Modal Breadcrumb examples</figcaption>
 </figure>
 
+<figure>
+    <img src="/static/images/breadcrumb-modal-menu.png" alt="Modal Breadcrumb with a Menu">
+    <figcaption>Modal Breadcrumb with a Menu</figcaption>
+</figure>
+
+<figure>
+    <img src="/static/images/breadcrumb-modal-textinput.png" alt="Modal Breadcrumb with a Text Input">
+    <figcaption>Modal Breadcrumb with a Text Input</figcaption>
+</figure>
+
 ## Modifiers
-* Depth: Defaults to single (double, triple)
 * Form: Defaults to null (Modal)
 * Icon: Defaults to null (Unavailable in Modal form)
-* Icon-Color: Defaults to $onyx (Unavailable in Modal form)
