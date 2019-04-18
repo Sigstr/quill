@@ -5,7 +5,7 @@ type: component
 summary: Use Text Inputs to ask for inputs from users. Text Input is a complex component as it has a lot of modifiers
 published: 2018-12-26
 author: michael
-updated: 2018-12-27
+updated: 2019-04-17
 experimental: true
 status:
     - design-inprogress
