@@ -2,10 +2,10 @@
 title: Menu
 slug: menu
 type: component
-summary: Menus are used for filtering data. Using them should not incur a page refresh but rather update the data on the page below it in real time. Menus can be set to any width.
+summary: Menus can be used for different purposes such as a filter, column editor, item actions, and more. Menus can be set to any width or height.
 published: 2018-12-20
 author: michael
-updated: 2018-12-31
+updated: 2019-04-19
 status:
     - design-available
     - sketchlibrary-available
@@ -15,14 +15,20 @@ status:
 ##  Examples
 
 <figure>
-    <img src="/static/images/menu-closed.png" alt="Closed menu">
-    <figcaption>Closed Menu</figcaption>
+    <img src="/static/images/menu-action.png" alt="A menu with actions">
+    <figcaption>A menu with actions</figcaption>
 </figure>
 
 <figure>
-    <img src="/static/images/menu-opened.png" alt="Opened menu">
-    <figcaption>Opened Menu</figcaption>
+    <img src="/static/images/menu-select.png" alt="A menu functioning as a select control.">
+    <figcaption>A menu functioning as a select control</figcaption>
+</figure>
+
+<figure>
+    <img src="/static/images/menu-checkboxes.png" alt="A menu with checkboxes">
+    <figcaption>A menu with checkboxes</figcaption>
 </figure>
 
 ## Modifiers
-* Width: Defaults to 120px
+* Width: Defaults to 192px
+* Height: Defaults to auto
