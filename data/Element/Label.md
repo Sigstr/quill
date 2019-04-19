@@ -2,10 +2,10 @@
 title: Label
 slug: label
 type: component
-summary: The Label is used to give components additional context. Text Input, and Toggle use Label.
+summary: The Label is used to give components additional context.
 published: 2019-01-14
 author: michael
-updated: 2019-01-14
+updated: 2019-04-19
 experimental: true
 status:
     - design-available
@@ -16,8 +16,13 @@ status:
 ##  Examples
 
 <figure>
-    <img src="/static/images/label-toggle.png" alt="A Label paired with a Toggle and subtitle">
-    <figcaption>A Label paired with a Toggle and subtitle</figcaption>
+    <img src="/static/images/label.png" alt="A Label">
+    <figcaption>A Label</figcaption>
+</figure>
+
+<figure>
+    <img src="/static/images/label-slate.png" alt="A Label with a slate color">
+    <figcaption>A Label with a slate color</figcaption>
 </figure>
 
 <figure>
@@ -26,4 +31,4 @@ status:
 </figure>
 
 ## Modifiers
-Font Size: Defaults to 16px
+Color: Defaults to $onyx
