@@ -15,7 +15,7 @@ status:
 ##  Examples
 
 <figure>
-    <img src="/static/images/checkboxes.png" alt="All checkbox states">
+    <img src="/static/images/checkbox.png" alt="All checkbox states">
     <figcaption>All checkbox states</figcaption>
 </figure>
 
