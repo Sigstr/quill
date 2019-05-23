@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quill</title>
     <link rel="shortcut icon" href="/static/images/favicon.ico" />
-    <link rel="stylesheet" href="/static/css/all.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/static/css/main.css?v={{ version }}" />
 </head>
+
 <body>
     <div class="flex">
         <nav>
-            <h1><a href="/">Quill</a><span>&nbsp;&nbsp;by <a href="https://sigstr.com" target="_blank">Sigstr</a></span></h1>
+            <h1><a href="/">Quill</a><span>&nbsp;&nbsp;by <a href="https://sigstr.com" target="_blank">Sigstr</a></span>
+            </h1>
             <h4>Foundations</h4>
             <ul>
                 {% for foundation in foundations %}
-                    <li><a href="{% url "element", foundation %}">{{ foundation.title }}</a></li>
+                <li><a href="{% url "element", foundation %}">{{ foundation.title }}</a></li>
                 {% endfor %}
             </ul>
             <h4>Components</h4>
             <ul>
                 {% for component in components %}
-                    <li><a href="{% url "element", component %}">{{ component.title }}</a></li>
+                <li><a href="{% url "element", component %}">{{ component.title }}</a></li>
                 {% endfor %}
             </ul>
             <hr>
-            <a href="/component-status">Component Status</a>
-            <br>
             <a href="/updates">Updates</a>
         </nav>
         <main class="grid">
@@ -36,4 +36,5 @@
     </div>
     <script src="/static/js/bundle.js?v={{ version }}"></script>
 </body>
+
 </html>
