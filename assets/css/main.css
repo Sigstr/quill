@@ -52,7 +52,6 @@ figure {
     margin: 0;
     margin: 2rem 0;
     padding-bottom: 1rem;
-    text-align: center;
 }
 
 figure img {
@@ -60,6 +59,7 @@ figure img {
     border-radius: 6px;
     overflow: hidden;
     padding: 1rem;
+    max-width: 100%;
 }
 
 figcaption {
@@ -87,11 +87,6 @@ nav h1 span,
 nav h1 span a {
     font-size: 10px;
     color: #4aa951;
-}
-
-main {
-    width: calc(100% - 312px);
-    padding: 40px 80px;
 }
 
 .colors {
@@ -167,7 +162,7 @@ td:first-child a {
 
 .grid {
     width: 100%;
-    max-width: 960px;
+    padding: 40px 80px;
     margin: 0 auto;
 }
 
