@@ -5,16 +5,11 @@ type: component
 summary: Use Text Inputs to ask for inputs from users. Text Input is a complex component as it has a lot of modifiers
 published: 2018-12-26
 author: michael
-updated: 2019-04-17
-experimental: true
-status:
-    - design-inprogress
-    - sketchlibrary-planned
-    - react-none
+updated: 2019-06-04
 ---
 
 ##  Examples
-<p data-height="960" data-theme-id="light" data-slug-hash="BvdrzN" data-default-tab="result" data-user="auermi" data-pen-title="Inputs" class="codepen">See the Pen <a href="https://codepen.io/auermi/pen/BvdrzN/">Inputs</a> by Michael (<a href="https://codepen.io/auermi">@auermi</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="960" data-theme-id="light" data-slug-hash="BvdrzN" data-default-tab="result" data-user="auermi" data-pen-title="Inputs" class="codepen">
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## Modifiers
