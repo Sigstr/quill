@@ -4,7 +4,7 @@
   "description": "",
   "main": "assets/js/dist/index.js",
   "scripts": {
-    "build": "gulp && rm -rf public && source bin/activate && statik && cp now.json public/now.json",
+    "build": "rm -rf public && source bin/activate && statik && cp now.json public/now.json",
     "serve": "http-server -p 8000",
     "init": "npm i && npm run build && npm run serve",
     "deploy": "npm run build && now public && now alias"
