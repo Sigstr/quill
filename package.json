@@ -1,12 +1,12 @@
 {
   "name": "quill",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "",
   "main": "assets/js/dist/index.js",
   "scripts": {
     "build": "rm -rf public && source bin/activate && statik && cp now.json public/now.json",
     "serve": "http-server -p 8000",
-    "init": "npm i && npm run build && npm run serve",
+    "setup": "npm i && npm run build && npm run serve",
     "deploy": "npm run build && now public && now alias"
   },
   "repository": {
