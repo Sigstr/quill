@@ -1,28 +1,4 @@
 # Quill
 
 ## Overview
-Quill is Sigstr's design system. This is a website documenting the components. This website is powered by [Statik]((https://github.com/thanethomson/statik/wiki/Installation)), a static site generator written in Python.
-
-[https://quill.now.sh](https://quill.now.sh)
-
-## Requirements
-In order to run **Quill** locally, you will need:
-
-* Python 2.7+ or Python 3.5+
-* `pip` or `easy_install`
-
-## Installation
-To install Statik and it's dependencies, follow the instructions seen on the [Statik wiki](https://github.com/thanethomson/statik/wiki/Installation).
-
-## Usage
-To build the project in the current directory, writing output files to the `public` directory within the current directory, install dependencies, and serve the site locally on port 8000:
-
-```bash
-> npm run setup
-```
-
-To rebuild at any time run
-
-```bash
-> statik
-```
+Quill is Sigstr's design system. This is a website documenting the components.
