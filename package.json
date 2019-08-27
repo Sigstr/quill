@@ -1,0 +1,17 @@
+{
+  "name": "quill",
+  "version": "0.1",
+  "main": "index.js",
+  "repository": "git@github.com:Sigstr/quill.git",
+  "author": "Sigstr <product@sigstr.com>",
+  "license": "MIT",
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "devDependencies": {
+    "docz": "^2.0.0-rc.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

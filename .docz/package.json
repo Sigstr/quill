@@ -1,0 +1,24 @@
+{
+  "name": "quill",
+  "version": "0.1",
+  "main": "index.js",
+  "repository": "git@github.com:Sigstr/quill.git",
+  "author": "Sigstr <product@sigstr.com>",
+  "license": "MIT",
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "devDependencies": {
+    "docz": "^2.0.0-rc.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "gatsby": "2.14.0",
+    "gatsby-plugin-typescript": "2.1.5",
+    "gatsby-plugin-eslint": "2.0.5",
+    "gatsby-theme-docz": "^2.0.0-rc.1"
+  }
+}
