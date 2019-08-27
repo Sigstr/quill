@@ -6,7 +6,7 @@
   "author": "Sigstr <product@sigstr.com>",
   "license": "MIT",
   "scripts": {
-    "docz:dev": "docz dev",
+    "dev": "docz dev",
     "docz:build": "docz build"
   },
   "devDependencies": {

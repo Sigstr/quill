@@ -122,3 +122,5 @@ public/
 
 .npmrc
 node_modules/
+
+.docz/
