@@ -7,10 +7,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "docz dev",
-    "docz:build": "docz build"
+    "build": "docz build",
+    "deploy": "cp now.json .docz/public/now.json && now .docz/public && now alias"
   },
   "devDependencies": {
-    "docz": "^2.0.0-rc.1",
+    "docz": "^2.0.0-rc.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }
