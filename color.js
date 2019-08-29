@@ -45,7 +45,7 @@ const colors = ({
   sigstr: '4aa951',
   tag_blue: '005D7D',
   tag_yellow: '856D39',
-  yellow: 'FFC74C',
+  yellow: 'FFC74C'
 });
 
 export const ColorGroup = () => {
