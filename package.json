@@ -8,10 +8,10 @@
   "scripts": {
     "dev": "docz dev",
     "build": "docz build",
-    "deploy": "cp now.json .docz/public/now.json && now .docz/public && now alias"
+    "deploy": "cp now.json .docz/dist/now.json && now .docz/dist && now alias"
   },
   "devDependencies": {
-    "docz": "^2.0.0-rc.8",
+    "docz": "^2.0.0-rc.10",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }
