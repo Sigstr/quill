@@ -1,5 +1,0 @@
-path: /
-template: home
-context:
-  static:
-    page-title: Home
