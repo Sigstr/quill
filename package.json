@@ -10,6 +10,9 @@
     "build": "docz build",
     "deploy": "cp now.json .docz/dist/now.json && now .docz/dist && now alias"
   },
+  "resolutions": {
+    "graphql": "14.5.4"
+  },
   "devDependencies": {
     "docz": "^2.0.0-rc.10",
     "react": "^16.9.0",
