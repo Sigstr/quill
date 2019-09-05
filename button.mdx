@@ -1,0 +1,24 @@
+---
+name: Button
+route: /button
+menu: Foundations
+---
+
+import { Playground, Props } from "docz";
+
+import { Button } from "./button.js";
+
+# Button
+
+<Props of={Button} />
+
+## Default Button
+
+<Playground>
+  <Button
+    className="button"
+    onClick={() => alert("You clicked the default button")}
+  >
+    Click Me
+  </Button>
+</Playground>
