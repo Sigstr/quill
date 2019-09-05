@@ -13,5 +13,6 @@ export default {
       .use("sass")
       .loader("sass-loader")
       .end();
-  }
+  },
+  menu: ["Home", { menu: ["Color"], name: "Foundations" }]
 };
