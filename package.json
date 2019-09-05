@@ -1,18 +1,18 @@
 {
-  "name": "quill",
-  "version": "0.1",
-  "main": "index.js",
-  "repository": "git@github.com:Sigstr/quill.git",
   "author": "Sigstr <product@sigstr.com>",
-  "license": "MIT",
-  "scripts": {
-    "dev": "docz dev",
-    "build": "docz build",
-    "deploy": "cp now.json .docz/dist/now.json && now .docz/dist && now alias"
-  },
   "devDependencies": {
     "docz": "^2.0.0-rc.10",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
-  }
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "quill",
+  "repository": "git@github.com:Sigstr/quill.git",
+  "scripts": {
+    "build": "docz build",
+    "deploy": "cp now.json .docz/dist/now.json && now .docz/dist && now alias",
+    "dev": "docz dev"
+  },
+  "version": "0.1"
 }
