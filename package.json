@@ -13,7 +13,8 @@
     "graphql": "14.5.4"
   },
   "scripts": {
-    "build": "docz build",
+    "nuke": "rm -rf ./docs",
+    "build": "yarn nuke && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
     "dev": "docz dev"
   },
   "version": "0.1"
