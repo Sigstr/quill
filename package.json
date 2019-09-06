@@ -14,7 +14,6 @@
   },
   "scripts": {
     "build": "docz build",
-    "deploy": "cp now.json .docz/dist/now.json && now .docz/dist && now alias",
     "dev": "docz dev"
   },
   "version": "0.1"
