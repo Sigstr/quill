@@ -12,6 +12,7 @@ yarn
 ```sh
 yarn dev
 ```
+The site will be available at `/quill`
 
 # Build for production
 ```sh
