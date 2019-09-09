@@ -1,21 +1,37 @@
 {
   "author": "Sigstr <product@sigstr.com>",
-  "devDependencies": {
-    "docz": "^2.0.0-rc.10",
+  "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.1",
+    "css-loader": "^1.0.0",
+    "docz": "^2.0.0-rc.10",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/quill.js",
   "name": "quill",
   "repository": "git@github.com:Sigstr/quill.git",
   "resolutions": {
     "graphql": "14.5.4"
   },
   "scripts": {
-    "nuke": "rm -rf ./docs",
-    "build": "yarn nuke && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
-    "dev": "docz dev"
+    "build:docz": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
+    "build:lib": "webpack --mode production",
+    "dev:docz": "docz dev",
+    "nuke:docs": "rm -rf ./docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.1"
+  "version": "0.1.0"
 }
