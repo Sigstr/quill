@@ -1,5 +1,9 @@
 {
   "author": "Sigstr <product@sigstr.com>",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-export-default-from": "^7.5.2",
@@ -15,10 +19,6 @@
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0"
   },
-  "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
-  },
   "license": "MIT",
   "main": "dist/quill.js",
   "name": "quill",
@@ -27,11 +27,11 @@
     "graphql": "14.5.4"
   },
   "scripts": {
-    "nuke:docs": "rm -rf ./docs",
     "build:docz": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
+    "build:lib": "webpack --mode production",
     "dev:docz": "docz dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:lib": "webpack --mode production"
+    "nuke:docs": "rm -rf ./docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.1"
+  "version": "0.1.0"
 }
