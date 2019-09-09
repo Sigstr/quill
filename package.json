@@ -27,10 +27,8 @@
     "graphql": "14.5.4"
   },
   "scripts": {
-    "build": "yarn build:docz && yarn build:lib",
-    "build:docz": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
-    "build:lib": "webpack --mode production",
-    "dev:docz": "docz dev",
+    "build": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/ && webpack --mode production",
+    "start": "docz dev",
     "nuke:docs": "rm -rf ./docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
