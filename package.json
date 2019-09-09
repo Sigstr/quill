@@ -27,8 +27,8 @@
   },
   "scripts": {
     "nuke:docs": "rm -rf ./docs",
-    "build:docs": "yarn nuke:docs && docz build:docs && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
-    "dev:docs": "docz dev",
+    "build:docz": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
+    "dev:docz": "docz dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:lib": "webpack --mode production"
   },
