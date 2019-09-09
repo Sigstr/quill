@@ -1,12 +1,13 @@
 {
   "author": "Sigstr <product@sigstr.com>",
   "devDependencies": {
-    "docz": "^2.0.0-rc.10",
     "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.1",
     "css-loader": "^1.0.0",
+    "docz": "^2.0.0-rc.10",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
