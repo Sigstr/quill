@@ -6,13 +6,18 @@ menu: Components
 
 import { Playground, Props } from "docz";
 
-import Button from "./index.js";
+import Button from "./";
 
 # Button
 
-<Props of={Button} />
+## Summary
+Buttons used throughout the UI. There are three types of Buttons, all controllable by css `className`.
+- Default : `.button`
+- Contained : `.button.button-contained`
+- Outlined : `.button.button-outlined`
 
-## Default Button
+## Examples
+### Default Button
 
 <Playground>
   <Button
@@ -23,7 +28,7 @@ import Button from "./index.js";
   </Button>
 </Playground>
 
-## Button Contained
+### Button Contained
 
 <Playground>
   <Button
@@ -34,7 +39,7 @@ import Button from "./index.js";
   </Button>
 </Playground>
 
-## Button Outlined
+### Button Outlined
 
 <Playground>
   <Button
@@ -44,3 +49,6 @@ import Button from "./index.js";
     Click Me
   </Button>
 </Playground>
+
+## Props
+<Props of={Button} />
