@@ -28,8 +28,8 @@
   },
   "scripts": {
     "build": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/ && webpack --mode production",
-    "start": "docz dev",
     "nuke:docs": "rm -rf ./docs",
+    "start": "docz dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "version": "0.1.0"
