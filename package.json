@@ -2,20 +2,35 @@
   "author": "Sigstr <product@sigstr.com>",
   "devDependencies": {
     "docz": "^2.0.0-rc.10",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.1",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
+  "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/quill.js",
   "name": "quill",
   "repository": "git@github.com:Sigstr/quill.git",
   "resolutions": {
     "graphql": "14.5.4"
   },
   "scripts": {
-    "nuke": "rm -rf ./docs",
-    "build": "yarn nuke && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
-    "dev": "docz dev"
+    "nuke:docs": "rm -rf ./docs",
+    "build:docs": "yarn nuke:docs && docz build:docs && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
+    "dev:docs": "docz dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:lib": "webpack --mode production"
   },
   "version": "0.1"
 }
