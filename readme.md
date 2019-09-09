@@ -10,7 +10,7 @@ yarn
 
 ### Run locally
 ```sh
-yarn dev
+yarn start
 ```
 The site will be available at `/quill`
 
