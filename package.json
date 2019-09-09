@@ -27,6 +27,7 @@
     "graphql": "14.5.4"
   },
   "scripts": {
+    "build": "yarn build:docz && yarn build:lib",
     "build:docz": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/",
     "build:lib": "webpack --mode production",
     "dev:docz": "docz dev",
