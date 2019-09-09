@@ -10,11 +10,11 @@ yarn
 
 ### Run locally
 ```sh
-yarn dev:docz
+yarn start
 ```
 The site will be available at `/quill`
 
 # Build for production
 ```sh
-yarn build:lib
+yarn build
 ```
