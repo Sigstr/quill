@@ -4,7 +4,7 @@ import React from "react";
 import "./styles.css";
 
 const Card = ({ children, className }) => (
-  <div className={className}>{children}</div>
+  <div className={`card ${className}`}>{children}</div>
 );
 
 Card.propTypes = {
