@@ -12,7 +12,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  className: "card"
+  className: ""
 };
 
 export default Card;
