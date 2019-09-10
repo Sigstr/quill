@@ -1,23 +1,35 @@
+import PropTypes from "prop-types";
 import React from "react";
 
-const Radio = props => {
-  const { id, name, className, checked, disabled, onChange, onClick } = props;
+const Radio = ({ checked, className, disabled, id, name, onChange, onClick }) => (
+  <input
+    checked={checked}
+    className={className}
+    disabled={disabled}
+    id={id}
+    name={name}
+    onChange={onChange}
+    onClick={onClick}
+    type="radio"
+  />
+);
 
-  return (
-    <input
-      type="radio"
-      id={id}
-      className={className}
-      name={name}
-      checked={checked ? checked : false}
-      disabled={disabled ? disabled : ""}
-      onChange={onChange}
-      onClick={e => {
-        buttonRef.current.blur();
-        return onClick(e);
-      }}
-    />
-  );
+Radio.propTypes = {
+  checked: PropTypes.bool,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
+  onClick: PropTypes.func
+};
+
+Radio.defaultProps = {
+  checked: false,
+  className: null,
+  disabled: false,
+  id: null,
+  name: null
 };
 
 export default Radio;
