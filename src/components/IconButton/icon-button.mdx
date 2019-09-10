@@ -1,0 +1,27 @@
+---
+name: Icon Button
+route: /icon-button
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+
+import IconButton from "./";
+
+# Icon Button
+
+## Summary
+
+Use Icon Buttons as actions. Sometimes, icon buttons expose more actions in cases like the action menu, which must be exposed by clicking somewhere.
+
+## Example
+
+<Playground>
+  <IconButton
+    onClick={() => alert("You clicked the icon button")}
+  />
+</Playground>
+
+## Props
+
+<Props of={IconButton} />
