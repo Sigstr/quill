@@ -11,7 +11,10 @@ const Radio = props => {
       name={name}
       checked={checked ? checked : false}
       disabled={disabled ? disabled : ""}
-      onClick={onClick ? onClick : () => alert("You clicked me")}
+      onClick={e => {
+        buttonRef.current.blur();
+        return onClick(e);
+      }}
     />
   );
 };
