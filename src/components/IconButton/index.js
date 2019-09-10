@@ -22,7 +22,8 @@ IconButton.propTypes = {
 };
 
 IconButton.defaultProps = {
-  className: null
+  className: null,
+  title: "More Actions"
 };
 
 export default IconButton;
