@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import { MoreHorizontal } from "react-feather";
+
 import "./styles.css";
 
 const IconButton = ({ className, onClick }) => (
@@ -8,19 +10,17 @@ const IconButton = ({ className, onClick }) => (
     className={`iconButton $className`}
     onClick={onClick ? onClick : () => { }}
   >
-    {icon}
+    <MoreHorizontal />
   </iconbutton>
 );
 
 IconButton.propTypes = {
   className: PropTypes.string,
-  icon: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired
 };
 
 IconButton.defaultProps = {
-  className: null,
-  icon: "more-horizontal"
+  className: null
 };
 
 export default IconButton;
