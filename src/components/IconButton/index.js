@@ -5,10 +5,11 @@ import { MoreHorizontal } from "react-feather";
 
 import "./styles.css";
 
-const IconButton = ({ className, onClick }) => (
+const IconButton = ({ className, onClick, title }) => (
   <button
     className={`iconButton $className`}
     onClick={onClick ? onClick : () => { }}
+    title={title}
   >
     <MoreHorizontal />
   </button>
@@ -16,7 +17,8 @@ const IconButton = ({ className, onClick }) => (
 
 IconButton.propTypes = {
   className: PropTypes.string,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
+  title: PropTypes.string
 };
 
 IconButton.defaultProps = {
