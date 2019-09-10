@@ -1,10 +1,12 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import "./styles.css";
+
 const Radio = ({ checked, className, disabled, id, name, onChange, onClick }) => (
   <input
     checked={checked}
-    className={className}
+    className={`radio ${className}`}
     disabled={disabled}
     id={id}
     name={name}
