@@ -1,16 +1,21 @@
+import PropTypes from "prop-types";
 import React from "react";
 
-const Button = props => {
-  const { children, className, onClick } = props;
+import "./styles.css";
 
-  return (
-    <button
-      className={className}
-      onClick={onClick ? onClick : () => alert("You clicked me")}
-    >
-      {children}
-    </button>
-  );
+const Button = ({ children, className, onClick }) => (
+  <button className={className} onClick={onClick ? onClick : () => {}}>
+    {children}
+  </button>
+);
+
+Button.propTypes = {
+  className: PropTypes.string,
+  onClick: PropTypes.func.isRequired
+};
+
+Button.defaultProps = {
+  className: null
 };
 
 export default Button;
