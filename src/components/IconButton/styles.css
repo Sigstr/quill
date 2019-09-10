@@ -1,9 +1,10 @@
 .iconButton {
   border-radius: 6px;
-  font-size: 14px;
   height: 36px;
-  text-align: center;
+  padding: 5px;
   background-color: transparent;
   border: 1px solid #dee1e3;
   color: #2E7533;
+  cursor: pointer;
+  -webkit-appearance: none;
 }
