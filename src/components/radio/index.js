@@ -32,7 +32,7 @@ Radio.propTypes = {
 
 Radio.defaultProps = {
   checked: false,
-  className: null,
+  className: "",
   disabled: false,
   id: null,
   name: null
