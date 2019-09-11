@@ -4,7 +4,7 @@ import React from "react";
 import "./styles.css";
 
 const Button = ({ children, className, onClick }) => (
-  <button className={className} onClick={onClick ? onClick : () => {}}>
+  <button className={className} onClick={onClick ? onClick : () => { }}>
     {children}
   </button>
 );
@@ -15,7 +15,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  className: null
+  className: ""
 };
 
 export default Button;

@@ -8,7 +8,7 @@ import "./styles.css";
 const IconButton = ({ className, onClick, title }) => (
   <button
     className={`iconButton $className`}
-    onClick={onClick ? onClick : () => {}}
+    onClick={onClick ? onClick : () => { }}
     title={title}
   >
     <MoreHorizontal />
@@ -22,7 +22,7 @@ IconButton.propTypes = {
 };
 
 IconButton.defaultProps = {
-  className: null,
+  className: "",
   title: "More Actions"
 };
 
