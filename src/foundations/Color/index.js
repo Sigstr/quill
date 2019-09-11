@@ -1,6 +1,6 @@
 import React from "react";
 
-export const colors = {
+export const Colors = {
   basalt: "#3D4D54",
   blue: "#76B8FF",
   chalk: "#F2F4F5",
@@ -49,7 +49,7 @@ export const ColorBlock = ({ hex, label }) => {
 };
 
 export const ColorGroup = () => {
-  const blocks = Object.entries(colors).map(([key, value]) => (
+  const blocks = Object.entries(Colors).map(([key, value]) => (
     <ColorBlock hex={value} label={key} />
   ));
   return (
@@ -63,3 +63,5 @@ export const ColorGroup = () => {
     </div>
   );
 };
+
+export default Colors;
