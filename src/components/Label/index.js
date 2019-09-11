@@ -15,13 +15,13 @@ const Label = ({ color, text }) => (
 );
 
 Label.propTypes = {
-  color: PropTypes.Colors,
+  color: PropTypes.string,
   text: PropTypes.string
 };
 
 Label.defaultProps = {
   color: Colors.onyx,
-  text: ""
+  text: "Label Text"
 };
 
 export default Label;
