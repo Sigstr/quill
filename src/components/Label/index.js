@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { Colors } from "../../foundations/Color/index.js"
+import { Colors } from "../../foundations/Color"
 
 import "./styles.css";
 
