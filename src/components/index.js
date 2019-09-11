@@ -1,4 +1,5 @@
 export { Button } from "./Button";
 export { Card } from "./Card";
-export { IconButton } from "./IconButton"
-export { Radio } from "./Radio"
+export { IconButton } from "./IconButton";
+export { Radio } from "./Radio";
+export { Signal } from "./Signal";
