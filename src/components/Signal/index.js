@@ -6,7 +6,7 @@ import React from "react";
 
 import "./styles.css";
 
-// TODO: remove and import after label merge
+// TODO: remove and import colors after label merge
 let Colors = {
   onyx: "#000000",
   slate: "#6A7173",
@@ -88,26 +88,27 @@ const generateBars = (scoreDetails) => {
 
 };
 
-// Takes in a score and renders bars based on that score
-const Signal = ({ score }) => {
+const Signal = ({ score, showLabel }) => {
   const scoreDetails = getScoreDetails(score);
   return (
     <>
       <div className="signal">{generateBars(scoreDetails)}</div>
-      {/* todo: use a label for the score label */}
-      <div>{scoreDetails.description}</div>
+      {showLabel && (
+        // TODO: use a Label here
+        <div>{scoreDetails.description}</div>
+      )}
     </>
   );
 }
 
 Signal.propTypes = {
-  showLabel: PropTypes.bool,
-  score: PropTypes.number.isRequired
+  score: PropTypes.number.isRequired,
+  showLabel: PropTypes.bool
 };
 
 Signal.defaultProps = {
-  showLabel: true,
   score: 0,
+  showLabel: true
 };
 
 export default Signal;
