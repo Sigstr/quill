@@ -16,20 +16,6 @@ const LEVELS = 6;
 
 const INTERVAL = MAX_SCORE / (LEVELS - 1);
 
-const generateBars = () => {
-
-  return (
-    <>
-      <div>i</div>
-      <div>i</div>
-      <div>i</div>
-      <div>i</div>
-      <div>i</div>
-    </>
-  );
-
-};
-
 const getScoreDetails = score => {
   if (score === 0) {
     return {
@@ -71,12 +57,34 @@ const getScoreDetails = score => {
   }
 }
 
+const generateBars = (scoreDetails) => {
+
+
+  let bars = [];
+
+  for (let i = 0; i < LEVELS - 1; i++) {
+    bars.push(
+      <div
+        className="bar"
+        css={{
+          backgroundColor: scoreDetails.color,
+          height: (i + 1) * 3,
+          opacity: 1
+        }}
+      />
+    );
+  }
+
+  return bars;
+
+};
+
 // Takes in a score and renders bars based on that score
 const Signal = ({ score }) => {
   const scoreDetails = getScoreDetails(score);
   return (
     <>
-      <div className="signal">{generateBars()}{score}</div>
+      <div className="signal">{generateBars(scoreDetails)}</div>
       {/* todo: use a label for the score label */}
       <div>{scoreDetails.description}</div>
     </>

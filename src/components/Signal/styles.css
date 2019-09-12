@@ -1,3 +1,12 @@
 .signal {
   display: flex;
+  align-items: baseline;
+}
+
+.signal .bar {
+  width: 3px;
+}
+
+.signal .bar:not(:last-child) {
+  margin-right: 2px;
 }
