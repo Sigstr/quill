@@ -8,6 +8,8 @@ import { Playground, Props } from "docz";
 
 import Label from "./";
 
+import { Colors } from "../../foundations/Color"
+
 # Label
 
 ## Summary
@@ -16,8 +18,16 @@ The Label is used to give components additional context.
 
 ## Example
 
+### Default Label
+
 <Playground>
-  <Label/>
+  <Label children="Label Text"/>
+</Playground>
+
+### Default Label
+
+<Playground>
+  <Label children="Label Text" color={Colors.slate} />
 </Playground>
 
 ## Props

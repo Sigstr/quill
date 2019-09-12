@@ -5,23 +5,21 @@ import { Colors } from "../../foundations/Color"
 
 import "./styles.css";
 
-const Label = ({ color, text }) => (
-  <div
+const Label = ({ color, children }) => (
+  <label
     className="label"
     style={{ color: color }}
   >
-    {text}
-  </div>
+    {children}
+  </label>
 );
 
 Label.propTypes = {
-  color: PropTypes.string,
-  text: PropTypes.string
+  color: PropTypes.string
 };
 
 Label.defaultProps = {
-  color: Colors.onyx,
-  text: "Label Text"
+  color: Colors.onyx
 };
 
 export default Label;
