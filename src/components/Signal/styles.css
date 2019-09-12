@@ -1,10 +1,6 @@
-.signal {
-  display: flex;
-  align-items: baseline;
-}
-
 .signal .bar {
   width: 3px;
+  display: inline-block;
 }
 
 .signal .bar:not(:last-child) {
