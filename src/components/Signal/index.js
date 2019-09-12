@@ -6,9 +6,15 @@ import React from "react";
 
 import "./styles.css";
 
-// remove and import after label merge
+// TODO: remove and import after label merge
 let Colors = {
-  onyx: "#000000"
+  onyx: "#000000",
+  slate: "#6A7173",
+  basalt: "#3D4D54",
+  red: "#FF8276",
+  orange: "#FFAE76",
+  yellow: "#FFC74C",
+  leaf: "#75C97B"
 };
 
 const MAX_SCORE = 100;
@@ -19,38 +25,38 @@ const INTERVAL = MAX_SCORE / (LEVELS - 1);
 const getScoreDetails = score => {
   if (score === 0) {
     return {
-      color: Colors.onyx,
+      color: Colors.basalt,
       description: "None",
       strength: 0
     };
   } else if (score <= INTERVAL) {
     return {
-      color: Colors.onyx,
+      color: Colors.basalt,
       description: "Weak",
       strength: 1
     };
   } else if (score <= INTERVAL * 2) {
     return {
-      color: Colors.onyx,
+      color: Colors.red,
       description: "Below Average",
       strength: 2
     };
   } else if (score <= INTERVAL * 3) {
     return {
-      color: Colors.onyx,
+      color: Colors.orange,
       description: "Moderate",
       strength: 3
     };
   } else if (score <= INTERVAL * 4) {
     return {
-      color: Colors.onyx,
+      color: Colors.yellow,
       description: "Good",
       strength: 4
     };
   } else {
     // If score is greater than our INTERVAL * 4 always return strong
     return {
-      color: Colors.onyx,
+      color: Colors.leaf,
       description: "Strong",
       strength: 5
     };
@@ -59,17 +65,20 @@ const getScoreDetails = score => {
 
 const generateBars = (scoreDetails) => {
 
-
   let bars = [];
 
   for (let i = 0; i < LEVELS - 1; i++) {
+
+    // Calculate opacity for an individual bar
+    const opacity = i >= scoreDetails.strength ? 0.32 : 1;
+
     bars.push(
       <div
         className="bar"
         css={{
           backgroundColor: scoreDetails.color,
           height: (i + 1) * 3,
-          opacity: 1
+          opacity: opacity
         }}
       />
     );
