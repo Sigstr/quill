@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { Colors } from "../../foundations/Color"
+import { ONYX } from "../../foundations/Color"
 
 import "./styles.css";
 
@@ -19,7 +19,7 @@ Label.propTypes = {
 };
 
 Label.defaultProps = {
-  color: Colors.onyx
+  color: ONYX
 };
 
 export default Label;
