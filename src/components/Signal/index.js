@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-// import Label from '../Label';
+import Label from '../Label';
 import { BASALT, RED, ORANGE, YELLOW, LEAF } from '../../foundations/Color'
 
 import "./styles.css";
@@ -78,14 +78,13 @@ const generateBars = (scoreDetails) => {
 
 };
 
-const Signal = ({ score, showLabel }) => {
+const Signal = ({ score, showLabel, labelColor }) => {
   const scoreDetails = getScoreDetails(score);
   return (
     <>
       <div className="signal">{generateBars(scoreDetails)}</div>
       {showLabel && (
-        // TODO: use a Label here
-        <div>{scoreDetails.description}</div>
+        <Label labelColor={labelColor}>{scoreDetails.description}</Label>
       )}
     </>
   );
