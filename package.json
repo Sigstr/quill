@@ -12,6 +12,7 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.1",
+    "clean-webpack-plugin": "3.0.0",
     "css-loader": "^1.0.0",
     "docz": "^2.0.0-rc.10",
     "node-sass": "^4.9.3",
@@ -29,10 +30,9 @@
     "graphql": "14.5.4"
   },
   "scripts": {
-    "build": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/ && webpack --mode production",
+    "build": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && webpack --mode production",
     "nuke:docs": "rm -rf ./docs",
-    "start": "docz dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "docz dev"
   },
   "version": "0.1.0"
 }
