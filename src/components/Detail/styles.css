@@ -1,0 +1,4 @@
+.detail .label:first-child {
+  display: block;
+  margin-bottom: 4px;
+}
