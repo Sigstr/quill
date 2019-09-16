@@ -1,0 +1,8 @@
+.signal .bar {
+  width: 3px;
+  display: inline-block;
+}
+
+.signal .bar:not(:last-child) {
+  margin-right: 2px;
+}
