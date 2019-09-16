@@ -16,6 +16,7 @@
     "docz": "^2.0.0-rc.10",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",
+    "scheduler": "^0.15.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.3",
@@ -26,7 +27,7 @@
   "name": "quill",
   "repository": "git@github.com:Sigstr/quill.git",
   "resolutions": {
-    "graphql": "14.5.4"
+    "graphql": "^14.5.6"
   },
   "scripts": {
     "build": "yarn nuke:docs && docz build && mv ./docs/quill/* ./docs && rm -rf ./docs/quill/ && webpack --mode production",
