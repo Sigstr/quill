@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { ONYX, SLATE } from "../../foundations/Color"
+import { ONYX, SLATE } from "../../foundations/Color";
 
 import "./styles.css";
 
