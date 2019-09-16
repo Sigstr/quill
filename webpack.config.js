@@ -1,6 +1,5 @@
-// Path is in Node for free and will make simple resolving of directories no
-// matter which part of your file system your library lives in
 const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 // Webpack is just a bunch of keys on module.exports!
 module.exports = {
@@ -74,6 +73,14 @@ module.exports = {
     path: path.resolve(__dirname, "dist/"),
     publicPath: ""
   },
+  plugins: [
+    // We are cleaning up our `dist` folder and removing the `docs/quill` folder before we build.
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ["**/*", "../docs/quill"],
+      dangerouslyAllowCleanPatternsOutsideProject: true,
+      dry: false
+    })
+  ],
   // Here we define explicitly the file types we intend to deal with
   resolve: {
     extensions: [
