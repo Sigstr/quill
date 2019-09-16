@@ -68,7 +68,7 @@ const generateBars = (scoreDetails) => {
         style={{
           backgroundColor: scoreDetails.color,
           height: (i + 1) * 3,
-          opacity: opacity
+          opacity
         }}
       />
     );
