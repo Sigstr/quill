@@ -7,9 +7,9 @@ import { BASALT, RED, ORANGE, YELLOW, LEAF } from '../../foundations/Color'
 import "./styles.css";
 
 const MAX_SCORE = 100;
-const LEVELS = 6;
+const LEVELS = 5;
 
-const INTERVAL = MAX_SCORE / (LEVELS - 1);
+const INTERVAL = MAX_SCORE / (LEVELS);
 
 const getScoreDetails = score => {
   if (score === 0) {
@@ -56,7 +56,7 @@ const generateBars = (scoreDetails) => {
 
   let bars = [];
 
-  for (let i = 0; i < LEVELS - 1; i++) {
+  for (let i = 0; i < LEVELS; i++) {
 
     // Calculate opacity for an individual bar
     const opacity = i >= scoreDetails.strength ? 0.32 : 1;
