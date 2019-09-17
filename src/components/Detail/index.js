@@ -7,19 +7,23 @@ import "./styles.css";
 
 import Label from '../Label';
 
-const Detail = ({ className, keyChildren, valueChildren }) => (
+const Detail = ({ className, name, value }) => (
   <div className={`detail ${className}`}>
-    <Label children={keyChildren} color={SLATE} />
-    <Label children={valueChildren} color={ONYX} />
+    <Label color={SLATE}>{name}</Label>
+    <Label color={ONYX}>{value}</Label>
   </div>
 );
 
 Detail.propTypes = {
   className: PropTypes.string,
+  name: PropTypes.string,
+  value: PropTypes.string
 };
 
 Detail.defaultProps = {
-  className: ""
+  className: "",
+  name: "",
+  value: ""
 };
 
 export default Detail;
