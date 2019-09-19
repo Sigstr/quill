@@ -6,12 +6,12 @@ import { ONYX } from "../../foundations/Color"
 import "./styles.css";
 
 const Label = ({ color, children }) => (
-  <label
+  <div
     className="label"
     style={{ color: color }}
   >
     {children}
-  </label>
+  </div>
 );
 
 Label.propTypes = {
