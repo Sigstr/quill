@@ -3,7 +3,17 @@ import React from "react";
 
 import "./styles.css";
 
-const Radio = ({ checked, className, disabled, id, name, onBlur, onChange, onClick, onFocus }) => (
+export const Radio = ({
+  checked,
+  className,
+  disabled,
+  id,
+  name,
+  onBlur,
+  onChange,
+  onClick,
+  onFocus
+}) => (
   <input
     checked={checked}
     className={`radio ${className}`}
@@ -37,5 +47,3 @@ Radio.defaultProps = {
   id: null,
   name: null
 };
-
-export default Radio;

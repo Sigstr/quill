@@ -1,15 +1,12 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { ONYX } from "../../foundations/Color"
+import { ONYX } from "../../foundations/Color";
 
 import "./styles.css";
 
-const Label = ({ color, children }) => (
-  <div
-    className="label"
-    style={{ color: color }}
-  >
+export const Label = ({ color, children }) => (
+  <div className="label" style={{ color: color }}>
     {children}
   </div>
 );
@@ -21,5 +18,3 @@ Label.propTypes = {
 Label.defaultProps = {
   color: ONYX
 };
-
-export default Label;
