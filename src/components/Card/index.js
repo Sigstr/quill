@@ -3,7 +3,7 @@ import React from "react";
 
 import "./styles.css";
 
-const Card = ({ children, className }) => (
+export const Card = ({ children, className }) => (
   <div className={`card ${className}`}>{children}</div>
 );
 
@@ -14,5 +14,3 @@ Card.propTypes = {
 Card.defaultProps = {
   className: ""
 };
-
-export default Card;

@@ -6,28 +6,22 @@ menu: Components
 
 import { Playground, Props } from "docz";
 
-import Card from "./";
+import { Card } from "./";
 
 # Card
-
 ## Summary
-
 Cards elevate primary content off of the background. Cards have a degree of elevation that defaults to 1x. If overlaying another card on top of cards with an elevation of 1x, use a card with a 2x elevation.
 
+## Props
+<Props of={Card} />
+
 ## Examples
-
 ### Elevation 1
-
 <Playground>
   <Card className="elevation-1">Your content goes here</Card>
 </Playground>
 
 ### Elevation 2
-
 <Playground>
   <Card className="elevation-2">Your content goes here</Card>
 </Playground>
-
-## Props
-
-<Props of={Card} />

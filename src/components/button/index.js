@@ -3,8 +3,8 @@ import React from "react";
 
 import "./styles.css";
 
-const Button = ({ children, className, onClick }) => (
-  <button className={className} onClick={onClick ? onClick : () => { }}>
+export const Button = ({ children, className, onClick }) => (
+  <button className={className} onClick={onClick ? onClick : () => {}}>
     {children}
   </button>
 );
@@ -17,5 +17,3 @@ Button.propTypes = {
 Button.defaultProps = {
   className: ""
 };
-
-export default Button;

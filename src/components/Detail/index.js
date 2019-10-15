@@ -5,9 +5,9 @@ import { ONYX, SLATE } from "../../foundations/Color";
 
 import "./styles.css";
 
-import Label from '../Label';
+import { Label } from "../Label";
 
-const Detail = ({ className, name, value }) => (
+export const Detail = ({ className, name, value }) => (
   <div className={`detail ${className}`}>
     <Label color={SLATE}>{name}</Label>
     <Label color={ONYX}>{value}</Label>
@@ -25,5 +25,3 @@ Detail.defaultProps = {
   name: "",
   value: ""
 };
-
-export default Detail;

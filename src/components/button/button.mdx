@@ -6,12 +6,10 @@ menu: Components
 
 import { Playground, Props } from "docz";
 
-import Button from "./";
+import { Button } from "./index.js";
 
 # Button
-
 ## Summary
-
 Use buttons as actions. Sometimes, buttons expose more actions in cases like the action menu, which must be exposed by clicking somewhere.
 
  There are three types of Buttons, all controllable by css `className`.
@@ -20,10 +18,11 @@ Use buttons as actions. Sometimes, buttons expose more actions in cases like the
 - Contained : `.button.button-contained`
 - Outlined : `.button.button-outlined`
 
+## Props
+<Props of={Button} />
+
 ## Examples
-
 ### Default Button
-
 <Playground>
   <Button
     className="button"
@@ -34,7 +33,6 @@ Use buttons as actions. Sometimes, buttons expose more actions in cases like the
 </Playground>
 
 ### Button Contained
-
 <Playground>
   <Button
     className="button button-contained"
@@ -45,7 +43,6 @@ Use buttons as actions. Sometimes, buttons expose more actions in cases like the
 </Playground>
 
 ### Button Outlined
-
 <Playground>
   <Button
     className="button button-outlined"
@@ -54,7 +51,3 @@ Use buttons as actions. Sometimes, buttons expose more actions in cases like the
     Click Me
   </Button>
 </Playground>
-
-## Props
-
-<Props of={Button} />

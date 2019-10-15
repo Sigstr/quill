@@ -1,15 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import Label from '../Label';
-import { BASALT, RED, ORANGE, YELLOW, LEAF } from '../../foundations/Color'
+import { Label } from "../Label";
+import { BASALT, RED, ORANGE, YELLOW, LEAF } from "../../foundations/Color";
 
 import "./styles.css";
 
 const MAX_SCORE = 100;
 const LEVELS = 5;
 
-const INTERVAL = MAX_SCORE / (LEVELS);
+const INTERVAL = MAX_SCORE / LEVELS;
 
 const getScoreDetails = score => {
   if (score === 0) {
@@ -50,14 +50,12 @@ const getScoreDetails = score => {
       strength: 5
     };
   }
-}
+};
 
-const generateBars = (scoreDetails) => {
-
+const generateBars = scoreDetails => {
   let bars = [];
 
   for (let i = 0; i < LEVELS; i++) {
-
     // Calculate opacity for an individual bar
     const opacity = i >= scoreDetails.strength ? 0.32 : 1;
 
@@ -75,10 +73,9 @@ const generateBars = (scoreDetails) => {
   }
 
   return bars;
-
 };
 
-const Signal = ({ score, showLabel, labelColor }) => {
+export const Signal = ({ score, showLabel, labelColor }) => {
   const scoreDetails = getScoreDetails(score);
   return (
     <>
@@ -88,7 +85,7 @@ const Signal = ({ score, showLabel, labelColor }) => {
       )}
     </>
   );
-}
+};
 
 Signal.propTypes = {
   score: PropTypes.number.isRequired,
@@ -99,5 +96,3 @@ Signal.defaultProps = {
   score: 0,
   showLabel: true
 };
-
-export default Signal;
