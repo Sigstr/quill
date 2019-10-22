@@ -1,5 +1,5 @@
 export default {
-  base: "/quill/",
+  base: "/quill",
   dest: "./docs",
   menu: [
     "Home",
