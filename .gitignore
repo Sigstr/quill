@@ -8,3 +8,9 @@ public/
 node_modules/
 
 .docz/
+
+docs/
+
+*.js.map
+
+/docs/webpack.stats.json
