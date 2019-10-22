@@ -31,7 +31,7 @@
     "graphql": "^14.5.6"
   },
   "scripts": {
-    "build": "yarn nuke:docs && docz build && webpack --mode production",
+    "build": "docz build && webpack --mode production",
     "nuke:docs": "rm -rf ./docs",
     "start": "docz dev"
   },
