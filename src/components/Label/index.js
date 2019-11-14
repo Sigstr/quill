@@ -1,20 +1,25 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { ONYX } from "../../foundations/Color";
+import { ONYX, ERROR } from "../../foundations/Color";
 
 import "./styles.css";
 
-export const Label = ({ color, children }) => (
+export const Label = ({ color, children, required }) => (
   <div className="label" style={{ color: color }}>
     {children}
+    {required && (
+      <span style={{ color: ERROR }}>*</span>
+    )}
   </div>
 );
 
 Label.propTypes = {
-  color: PropTypes.string
+  color: PropTypes.string,
+  required: PropTypes.bool
 };
 
 Label.defaultProps = {
-  color: ONYX
+  color: ONYX,
+  isRequired: false
 };

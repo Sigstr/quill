@@ -17,13 +17,18 @@ The Label is used to give components additional context.
 ## Props
 <Props of={Label} />
 
-## Example
+## Examples
 ### Default Label
 <Playground>
-  <Label children="Label Text"/>
+  <Label>Label Text</Label>
 </Playground>
 
-### Default Label
+### Slate Label
 <Playground>
-  <Label children="Label Text" color={SLATE} />
+  <Label color={SLATE}>Label Text</Label>
+</Playground>
+
+### Required Label
+<Playground>
+  <Label required>Label Text</Label>
 </Playground>
