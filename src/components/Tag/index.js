@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { BASALT, LIMESTONE } from "../../foundations/Color";
+import { BASALT, LIMESTONE, GRAPH_BLUE, TAG_BLUE, SIGSTR, MOSS } from "../../foundations/Color";
 
 import "./styles.css";
 
@@ -11,6 +11,16 @@ const getStyles = theme => {
       color: BASALT,
       backgroundColor: LIMESTONE,
     };
+  } else if (theme === "blue") {
+    return {
+      color: TAG_BLUE,
+      backgroundColor: GRAPH_BLUE
+    }
+  } else if (theme === "green") {
+    return {
+      color: MOSS,
+      backgroundColor: SIGSTR
+    }
   }
 };
 
