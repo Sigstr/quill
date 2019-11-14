@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { BASALT, LIMESTONE, GRAPH_BLUE, TAG_BLUE, SIGSTR, MOSS } from "../../foundations/Color";
+import { BASALT, MIST, GRAPH_BLUE, TAG_BLUE, SIGSTR, MOSS } from "../../foundations/Color";
 
 import "./styles.css";
 
@@ -9,7 +9,7 @@ const getStyles = theme => {
   if (theme === "grey") {
     return {
       color: BASALT,
-      backgroundColor: LIMESTONE,
+      backgroundColor: MIST,
     };
   } else if (theme === "blue") {
     return {
