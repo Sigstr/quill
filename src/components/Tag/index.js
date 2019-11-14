@@ -24,10 +24,10 @@ const getStyles = theme => {
   }
 };
 
-export const Tag = ({ theme }) => {
+export const Tag = ({ theme, children }) => {
   const styles = getStyles(theme);
   return (
-    <div className="tag" style={{ color: styles.color, backgroundColor: styles.backgroundColor }}>tag text</div>
+    <div className="tag" style={{ color: styles.color, backgroundColor: styles.backgroundColor }}>{children}</div>
   );
 };
 
