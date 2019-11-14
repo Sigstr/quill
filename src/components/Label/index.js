@@ -5,10 +5,10 @@ import { ONYX, ERROR } from "../../foundations/Color";
 
 import "./styles.css";
 
-export const Label = ({ color, children, isRequired }) => (
+export const Label = ({ color, children, required }) => (
   <div className="label" style={{ color: color }}>
     {children}
-    {isRequired && (
+    {required && (
       <span style={{ color: ERROR }}>*</span>
     )}
   </div>
@@ -16,7 +16,7 @@ export const Label = ({ color, children, isRequired }) => (
 
 Label.propTypes = {
   color: PropTypes.string,
-  isRequired: PropTypes.bool
+  required: PropTypes.bool
 };
 
 Label.defaultProps = {
