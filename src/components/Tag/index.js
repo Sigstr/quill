@@ -1,27 +1,42 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { BASALT, MIST, GRAPH_BLUE, TAG_BLUE, SIGSTR, MOSS } from "../../foundations/Color";
+import { BASALT, TUFA, GRAPH_BLUE, TAG_BLUE, SIGSTR, MOSS } from "../../foundations/Color";
 
 import "./styles.css";
 
 const getStyles = theme => {
-  if (theme === "grey") {
-    return {
-      color: BASALT,
-      backgroundColor: MIST,
-    };
-  } else if (theme === "blue") {
-    return {
-      color: TAG_BLUE,
-      backgroundColor: GRAPH_BLUE
-    }
-  } else if (theme === "green") {
-    return {
-      color: MOSS,
-      backgroundColor: SIGSTR
-    }
+
+  let themeStyles = {};
+
+  // Defaults to a grey tag
+  switch (theme) {
+    case "blue":
+      themeStyles = {
+        color: TAG_BLUE,
+        backgroundColor: GRAPH_BLUE
+      };
+      break;
+
+    case "green":
+      themeStyles = {
+        color: MOSS,
+        backgroundColor: SIGSTR
+      };
+      break;
+
+    default:
+      themeStyles = {
+        color: BASALT,
+        backgroundColor: TUFA
+      };
+      break;
   }
+
+  // Set background opacity to .24
+  themeStyles.backgroundColor += "24";
+
+  return themeStyles;
 };
 
 export const Tag = ({ theme, children }) => {
@@ -32,9 +47,5 @@ export const Tag = ({ theme, children }) => {
 };
 
 Tag.propTypes = {
-  theme: PropTypes.string.isRequired
-};
-
-Tag.defaultProps = {
-  theme: "grey",
+  theme: PropTypes.string
 };
