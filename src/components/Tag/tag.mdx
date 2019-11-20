@@ -1,0 +1,33 @@
+---
+name: Tag
+route: /tag
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+
+import { Tag } from "./";
+
+# Tag
+## Summary
+Tags are used to label the status of an entity. By default, tags are grey. Pass in a classname to override this.
+
+## Props
+<Props of={Tag} />
+
+## Examples
+
+### Grey tag
+<Playground>
+  <Tag className="tag">Inactive</Tag>
+</Playground>
+
+### Green tag
+<Playground>
+  <Tag className="tag tag-green">Active</Tag>
+</Playground>
+
+### Blue tag
+<Playground>
+  <Tag className="tag tag-blue">Upcoming</Tag>
+</Playground>
