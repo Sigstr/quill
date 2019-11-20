@@ -5,4 +5,16 @@
   font-size: 12px;
   line-height: 18px;
   border-radius: 6px;
+  color: #3d4d54;
+  background-color: rgba(172, 179, 182, .24);
+}
+
+.tag-blue {
+  color: #005d7d;
+  background-color: rgba(0, 204, 255, .24);
+}
+
+.tag-green {
+  color: #2e7533;
+  background-color: rgba(74, 169, 81, .24);
 }

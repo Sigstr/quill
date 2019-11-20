@@ -10,24 +10,24 @@ import { Tag } from "./";
 
 # Tag
 ## Summary
-Tags are used to label the status of an entity. If anything other than green or blue is passed as the theme, the tag will be styled grey.
+Tags are used to label the status of an entity. By default, tags are grey. Pass in a classname to override this.
 
 ## Props
 <Props of={Tag} />
 
 ## Examples
 
-### Grey theme
+### Grey tag
 <Playground>
-  <Tag>Inactive</Tag>
+  <Tag className="tag">Inactive</Tag>
 </Playground>
 
-### Green theme
+### Green tag
 <Playground>
-  <Tag theme="green">Active</Tag>
+  <Tag className="tag tag-green">Active</Tag>
 </Playground>
 
-### Blue theme
+### Blue tag
 <Playground>
-  <Tag theme="blue">Upcoming</Tag>
+  <Tag className="tag tag-blue">Upcoming</Tag>
 </Playground>
