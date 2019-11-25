@@ -1,20 +1,32 @@
 .button {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 6px;
-  color: #333;
   font-size: 14px;
   height: 36px;
   text-align: center;
+  padding: 0 10px;
+}
+
+.button-sm {
+  height: 24px;
+}
+
+.button:disabled {
+  color: #6A7171;
+  background-color: #F2F4F5;
 }
 
 .button-contained {
   background-color: #2E7533;
-  border: 1px solid #2E7533;
   color: #fff;
 }
 
 .button-outlined {
-  background-color: transparent;
-  border: 1px solid #dee1e3;
+  background-color: #fff;
+  border-color: #dee1e3;
   color: #2E7533;
+}
+
+.button-outlined:disabled {
+  border-color: #ececec;
 }
