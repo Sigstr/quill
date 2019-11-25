@@ -7,13 +7,27 @@
   padding: 0 10px;
 }
 
+.button:disabled {
+  color: #6A7171;
+  background-color: #F2F4F5;
+}
+
+.button svg {
+  padding-top: 3px;
+}
+
+.button-square {
+  width: 36px;
+  padding: 0;
+}
+
 .button-sm {
   height: 24px;
 }
 
-.button:disabled {
-  color: #6A7171;
-  background-color: #F2F4F5;
+.button-sm.button-square {
+  width: 24px;
+  padding: 0;
 }
 
 .button-contained {

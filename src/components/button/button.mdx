@@ -8,6 +8,8 @@ import { Playground, Props } from "docz";
 
 import { Button } from "./index.js";
 
+import { MoreHorizontal } from "react-feather";
+
 # Button
 ## Summary
 Use buttons as actions. Sometimes, buttons expose more actions in cases like the action menu, which must be exposed by clicking somewhere.
@@ -49,5 +51,47 @@ Use buttons as actions. Sometimes, buttons expose more actions in cases like the
     onClick={() => alert("You clicked .button-outlined")}
   >
     Click Me
+  </Button>
+</Playground>
+
+### Button Contained Disabled
+<Playground>
+  <Button
+    Disabled
+    className="button button-contained"
+    onClick={() => alert("You clicked .button-contained")}
+  >
+    Click Me
+  </Button>
+</Playground>
+
+### Button Outlined Small
+<Playground>
+  <Button
+    className="button button-outlined button-sm"
+    onClick={() => alert("You clicked .button-outlined")}
+  >
+    Click Me
+  </Button>
+</Playground>
+
+
+### Button Outlined Square w/ Icon
+<Playground>
+  <Button
+    className="button button-outlined button-square"
+    onClick={() => alert("You clicked .button-outlined")}
+  >
+    <MoreHorizontal />
+  </Button>
+</Playground>
+
+### Button Outlined Small Square w/ Icon
+<Playground>
+  <Button
+    className="button button-outlined button-sm button-square"
+    onClick={() => alert("You clicked .button-outlined")}
+  >
+    <MoreHorizontal />
   </Button>
 </Playground>
