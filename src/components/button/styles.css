@@ -2,9 +2,14 @@
   border: 2px solid transparent;
   border-radius: 6px;
   font-size: 14px;
-  height: 36px;
+  font-weight: 600;
+  line-height: 28px;
   text-align: center;
   padding: 0 10px;
+  transition: all 0.175s cubic-bezier(0.4, 0.0, 0.2, 1);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
 }
 
 .button:disabled {
@@ -17,12 +22,14 @@
 }
 
 .button-square {
-  width: 36px;
+  width: 32px;
   padding: 0;
 }
 
 .button-sm {
-  height: 24px;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0 8px;
 }
 
 .button-sm.button-square {
@@ -35,6 +42,14 @@
   color: #fff;
 }
 
+.button-contained:hover {
+  background-color: #225826;
+}
+
+.button-contained:active {
+  background-color: #1D4920;
+}
+
 .button-outlined {
   background-color: #fff;
   border-color: #dee1e3;
@@ -43,4 +58,12 @@
 
 .button-outlined:disabled {
   border-color: #ececec;
+}
+
+.button-outlined:hover {
+  background-color: rgba(46, 117, 51, 0.1);
+}
+
+.button-outlined:active {
+  background-color: rgba(46, 117, 51, 0.22);
 }
