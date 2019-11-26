@@ -10,27 +10,13 @@ import { Button } from "./index.js";
 
 # Button
 ## Summary
-Use buttons as actions. Sometimes, buttons expose more actions in cases like the action menu, which must be exposed by clicking somewhere.
-
- There are three types of Buttons, all controllable by css `className`.
-
-- Default : `.button`
-- Contained : `.button.button-contained`
-- Outlined : `.button.button-outlined`
+Use buttons as actions.
 
 ## Props
 <Props of={Button} />
 
 ## Examples
-### Default Button
-<Playground>
-  <Button
-    className="button"
-    onClick={() => alert("You clicked the default button")}
-  >
-    Click Me
-  </Button>
-</Playground>
+
 
 ### Button Contained
 <Playground>
@@ -55,7 +41,7 @@ Use buttons as actions. Sometimes, buttons expose more actions in cases like the
 ### Button Contained Disabled
 <Playground>
   <Button
-    Disabled
+    disabled
     className="button button-contained"
     onClick={() => alert("You clicked .button-contained")}
   >
