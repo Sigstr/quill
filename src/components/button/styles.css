@@ -9,6 +9,7 @@
   transition: all 0.175s cubic-bezier(0.4, 0.0, 0.2, 1);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   cursor: pointer;
   -webkit-appearance: none;
 }
