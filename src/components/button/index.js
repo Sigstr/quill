@@ -4,7 +4,7 @@ import React from "react";
 import "./styles.css";
 
 export const Button = ({ children, className, disabled, onClick }) => (
-  <button disabled={disabled} className={className} onClick={onClick ? onClick : () => { }}>
+  <button disabled={disabled} className={className} onClick={onClick}>
     {children}
   </button>
 );
