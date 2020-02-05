@@ -6,6 +6,9 @@
   line-height: 18px;
   border-radius: 6px;
   color: #3d4d54;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   background-color: rgba(172, 179, 182, .24);
 }
 

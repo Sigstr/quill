@@ -10,27 +10,13 @@ import { Button } from "./index.js";
 
 # Button
 ## Summary
-Use buttons as actions. Sometimes, buttons expose more actions in cases like the action menu, which must be exposed by clicking somewhere.
-
- There are three types of Buttons, all controllable by css `className`.
-
-- Default : `.button`
-- Contained : `.button.button-contained`
-- Outlined : `.button.button-outlined`
+Use buttons as actions.
 
 ## Props
 <Props of={Button} />
 
 ## Examples
-### Default Button
-<Playground>
-  <Button
-    className="button"
-    onClick={() => alert("You clicked the default button")}
-  >
-    Click Me
-  </Button>
-</Playground>
+
 
 ### Button Contained
 <Playground>
@@ -49,5 +35,47 @@ Use buttons as actions. Sometimes, buttons expose more actions in cases like the
     onClick={() => alert("You clicked .button-outlined")}
   >
     Click Me
+  </Button>
+</Playground>
+
+### Button Contained Disabled
+<Playground>
+  <Button
+    disabled
+    className="button button-contained"
+    onClick={() => alert("You clicked .button-contained")}
+  >
+    Click Me
+  </Button>
+</Playground>
+
+### Button Outlined Small
+<Playground>
+  <Button
+    className="button button-outlined button-sm"
+    onClick={() => alert("You clicked .button-outlined")}
+  >
+    Click Me
+  </Button>
+</Playground>
+
+
+### Button Outlined Square
+<Playground>
+  <Button
+    className="button button-outlined button-square"
+    onClick={() => alert("You clicked .button-outlined")}
+  >
+    🅧
+  </Button>
+</Playground>
+
+### Button Outlined Small Square
+<Playground>
+  <Button
+    className="button button-outlined button-sm button-square"
+    onClick={() => alert("You clicked .button-outlined")}
+  >
+    🅧
   </Button>
 </Playground>

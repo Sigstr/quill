@@ -3,24 +3,23 @@
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-feather": "^2.0.3"
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-export-default-from": "^7.5.2",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.1",
     "clean-webpack-plugin": "3.0.0",
     "css-loader": "^1.0.0",
-    "docz": "^2.0.0-rc.73",
-    "node-sass": "^4.9.3",
+    "docz": "^2.2.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^7.1.0",
     "scheduler": "^0.15.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
-    "webpack": "^4.28.3",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.2.0"
   },
   "license": "MIT",

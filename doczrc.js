@@ -8,5 +8,6 @@ export default {
       name: "Foundations"
     }
   ],
-  src: "./src/"
+  src: "./src/",
+  useScopingInPlayground: true
 };

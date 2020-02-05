@@ -1,20 +1,68 @@
 .button {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 6px;
-  color: #333;
   font-size: 14px;
-  height: 36px;
+  font-weight: 600;
+  line-height: 32px;
   text-align: center;
+  padding: 0 8px;
+  transition: all 0.175s cubic-bezier(0.4, 0.0, 0.2, 1);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.button:disabled {
+  color: #6A7171;
+  background-color: #F2F4F5;
+  cursor: not-allowed;
+}
+
+.button-square {
+  width: 36px;
+  padding: 0;
+}
+
+.button-sm {
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0 6px;
+}
+
+.button-sm.button-square {
+  width: 24px;
+  padding: 0;
 }
 
 .button-contained {
   background-color: #2E7533;
-  border: 1px solid #2E7533;
   color: #fff;
 }
 
+.button-contained:hover:not(:disabled) {
+  background-color: #225826;
+}
+
+.button-contained:active:not(:disabled) {
+  background-color: #1D4920;
+}
+
 .button-outlined {
-  background-color: transparent;
-  border: 1px solid #dee1e3;
+  background-color: #fff;
+  border-color: #dee1e3;
   color: #2E7533;
+}
+
+.button-outlined:disabled {
+  border-color: #ececec;
+}
+
+.button-outlined:hover:not(:disabled) {
+  background-color: rgba(46, 117, 51, 0.1);
+}
+
+.button-outlined:active:not(:disabled) {
+  background-color: rgba(46, 117, 51, 0.22);
 }
