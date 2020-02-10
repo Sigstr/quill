@@ -4,7 +4,7 @@
   top: 0;
   bottom: 0;
   position: absolute;
-  background-color: grey;
+  background-color: #0C3745;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,6 +37,7 @@
   background-color: transparent;
   cursor: pointer;
   margin-bottom: 16px;
+  border: none;
 }
 
 .appswitcher:hover {
@@ -46,5 +47,21 @@
 .appswitcher-label {
   margin-top: 8px;
   font-size: 12px;
+  line-height: 14px;
+  height: 28px;
   font-weight: 500;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.appswitcher-terminuslogo {
+  position: relative;
+  left: 2px;
+}
+
+.appswitcher-caret {
+  position: absolute;
+  position: absolute;
+  top: 22px;
+  right: 5px;
+  color: rgba(255, 255, 255, 0.4);
 }
