@@ -24,6 +24,9 @@ const NavigationItem = ({ icon, isExternal, link, title }) => {
 
 
 // TODO: Add Internal Tools
+// TODO: Populate User Menu
+// TODO: Prop for user letter
+// TODO: appswitcher
 export const Navigation = ({ items, supportWebsiteURL }) => {
   const navigationItems = items.map(item => NavigationItem({ icon: item.icon, isExternal: item.isExternal, link: item.link, title: item.title }));
   console.log(navigationItems);
