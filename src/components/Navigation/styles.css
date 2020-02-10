@@ -15,10 +15,18 @@
   width: 40px;
   height: 40px;
   margin: 0 12px 16px;
-  background-color: lightblue;
+  color: rgba(255, 255, 255, 0.64);
   border-radius: 3px;
   text-align: center;
   text-decoration: none;
+}
+
+.navigation-item:hover:not(.navigation-item-active) {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navigation-item.navigation-item-active {
+  background-color: rgba(255, 255, 255, 0.16)
 }
 
 .navigation-usermenu {
