@@ -5,15 +5,21 @@ import "./styles.css";
 
 export const Navigation = ({ children, className, disabled, onClick }) => (
   <nav className="navigation">
-    <div className="app-switcher">T</div>
-    <div className="navigation-primary">
-      <div class="navigation-item">A</div>
-      <div class="navigation-item">B</div>
-      <div class="navigation-item">C</div>
+    <div>
+      <button className="appswitcher">
+        <div>
+          <img alt="T" src="" />
+          <span>v</span>
+        </div>
+        <div class="appswitcher-label">Email</div>
+      </button>
+      <a href="#" class="navigation-item">A</a>
+      <a href="#" class="navigation-item">B</a>
+      <a href="#" class="navigation-item">C</a>
     </div>
-    <div className="navigation-secondary">
-      <div class="navigation-item">H</div>
-      <div class="navigation-usermenu">U</div>
+    <div>
+      <a href="#" class="navigation-item">H</a>
+      <button class="navigation-usermenu">U</button>
     </div>
   </nav>
 );
