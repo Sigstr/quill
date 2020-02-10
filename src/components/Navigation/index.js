@@ -3,18 +3,18 @@ import React from "react";
 
 import "./styles.css";
 
-// const NavigationItem = ({ icon, title, link, isExternal }) => {
+const NavigationItem = ({ icon, title, link, isExternal }) => {
 
-//   // Determine if this is the current page and flip state
-//   const isActive = true;
-//   return (
-//     <a className={`navigation-item ${isActive ? 'navigation-item-active' : null}`} href={link}>{icon}</a>
-//   );
-// };
+  // Determine if this is the current page and flip state
+  const isActive = false;
+  return (
+    <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link}>{icon}</a>
+  );
+};
 
 
 export const Navigation = ({ items }) => {
-  const navigationItems = items.map(item => <a href="#" class="navigation-item">{item.icon}</a>);
+  const navigationItems = items.map(item => NavigationItem({ icon: item.icon, link: item.link }));
   console.log(navigationItems);
   return (
     <nav className="navigation">
