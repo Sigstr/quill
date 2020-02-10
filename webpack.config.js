@@ -1,5 +1,7 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const {
+  CleanWebpackPlugin
+} = require("clean-webpack-plugin");
 
 // Webpack is just a bunch of keys on module.exports!
 module.exports = {
@@ -10,8 +12,7 @@ module.exports = {
   // define all the rules for how webpack will deal with thing.
   module: {
     // rules takes an array, each item containing the respective rules
-    rules: [
-      {
+    rules: [{
         // Don't bother spending time transpiling your installed packages
         exclude: /node_modules/,
         // First up, our JavaScript rules.
@@ -38,7 +39,7 @@ module.exports = {
             loader: "style-loader"
           },
           {
-            loader: "css-loader"
+            loader: "css-loader?modules=true&camelCase=true"
           },
           {
             loader: "sass-loader"
