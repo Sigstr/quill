@@ -13,7 +13,7 @@
 .navigation-item {
   display: block;
   width: 40px;
-  height: 40px;
+  line-height: 40px;
   margin: 0 12px 16px;
   color: rgba(255, 255, 255, 0.64);
   border-radius: 3px;
@@ -23,6 +23,16 @@
 
 .navigation-item:hover:not(.navigation-item-active) {
   background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navigation-item:hover+.tooltip {
+  display: block;
+}
+
+.navigation-item:focus {
+  -webkit-box-shadow: 0 0 0 2.5px rgba(46, 117, 51, .24);
+  box-shadow: 0 0 0 2.5px rgba(255, 255, 255, .04);
+  outline: 0;
 }
 
 .navigation-item.navigation-item-active {
@@ -52,6 +62,10 @@
   background-color: rgba(255, 255, 255, 0.08);
 }
 
+.appswitcher:focus {
+  outline: 0;
+}
+
 .appswitcher-label {
   margin-top: 8px;
   font-size: 12px;
@@ -72,4 +86,21 @@
   top: 22px;
   right: 5px;
   color: rgba(255, 255, 255, 0.4);
+}
+
+/* TODO: Make this it's own component. There will be some unique styles for navigation tooltips. */
+.tooltip {
+  position: absolute;
+  background-color: #1B262B;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 3px;
+  line-height: 1;
+  padding: 8px;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 80px;
+  white-space: nowrap;
+  display: none;
 }

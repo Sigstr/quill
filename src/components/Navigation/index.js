@@ -5,7 +5,8 @@ import "./styles.css";
 
 // TODO: Add separator bar
 // TODO: Account for license-related things
-const NavigationItem = ({ icon, title, link, isExternal }) => {
+// TODO: Put this in its own file with required props
+const NavigationItem = ({ icon, isExternal, link, title }) => {
 
   // Determines if this is the current page and to give navigation item an active state
   const isActive = link === '/' + window.location.pathname.split('/')[1];
@@ -14,14 +15,17 @@ const NavigationItem = ({ icon, title, link, isExternal }) => {
 
   // TODO: Implement tooltip
   return (
-    <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
+    <div style={{ position: "relative" }}>
+      <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
+      <div className="tooltip">{title}</div>
+    </div>
   );
 };
 
 
 // TODO: Add Internal Tools
 export const Navigation = ({ items, supportWebsiteURL }) => {
-  const navigationItems = items.map(item => NavigationItem({ icon: item.icon, link: item.link }));
+  const navigationItems = items.map(item => NavigationItem({ icon: item.icon, isExternal: item.isExternal, link: item.link, title: item.title }));
   console.log(navigationItems);
   return (
     <nav className="navigation">
@@ -38,7 +42,7 @@ export const Navigation = ({ items, supportWebsiteURL }) => {
         {navigationItems}
       </div>
       <div>
-        {NavigationItem({ icon: "H", title: "Support Website", link: supportWebsiteURL, isExternal: true })}
+        {NavigationItem({ icon: "H", isExternal: true, link: supportWebsiteURL, title: "Support Website" })}
         <button className="navigation-usermenu">U</button>
       </div>
     </nav>
