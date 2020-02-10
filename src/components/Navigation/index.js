@@ -3,17 +3,23 @@ import React from "react";
 
 import "./styles.css";
 
+// TODO: Add seperator bar
 const NavigationItem = ({ icon, title, link, isExternal }) => {
 
-  // Determine if this is the current page and flip state
+  // TODO:  Determine if this is the current page and flip state
   const isActive = false;
+
+  // TODO: Add FontAwesome Support
+
+  // TODO: Implement tooltip
   return (
-    <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link}>{icon}</a>
+    <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
   );
 };
 
 
-export const Navigation = ({ items }) => {
+// TODO: Add Internal Tools
+export const Navigation = ({ items, supportWebsiteURL }) => {
   const navigationItems = items.map(item => NavigationItem({ icon: item.icon, link: item.link }));
   console.log(navigationItems);
   return (
@@ -29,7 +35,7 @@ export const Navigation = ({ items }) => {
         {navigationItems}
       </div>
       <div>
-        <a href="#" class="navigation-item">H</a>
+        {NavigationItem({ icon: "H", title: "Support Website", link: supportWebsiteURL, isExternal: true })}
         <button class="navigation-usermenu">U</button>
       </div>
     </nav>
