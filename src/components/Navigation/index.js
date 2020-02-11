@@ -4,33 +4,32 @@ import React from "react";
 import "./styles.css";
 
 // TODO: Add separator bar
-// TODO: Account for license-related things
 // TODO: Put this in its own file with required props
-const NavigationItem = ({ icon, isExternal, link, title }) => {
+const NavigationItem = ({ icon, isExternal, isLicensed, link, title }) => {
 
   // Determines if this is the current page and to give navigation item an active state
   // TODO: Works with router
   const isActive = link === '/' + window.location.pathname.split('/')[1];
 
   // TODO: Add FontAwesome Support
+  if (isLicensed) {
+    return (
+      <div style={{ position: "relative" }}>
+        <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
+        <div className="tooltip">{title}</div>
+      </div>
+    );
+  }
 
-  // TODO: Implement tooltip
-  return (
-    <div style={{ position: "relative" }}>
-      <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
-      <div className="tooltip">{title}</div>
-    </div>
-  );
 };
-
 
 // TODO: Add Internal Tools
 // TODO: Populate User Menu
 // TODO: Prop for user letter
 // TODO: appswitcher
 export const Navigation = ({ items, supportWebsiteURL }) => {
-  const navigationItems = items.map(item => NavigationItem({ icon: item.icon, isExternal: item.isExternal, link: item.link, title: item.title }));
-  console.log(navigationItems);
+  // Build navigation items
+  const navigationItems = items.map(item => NavigationItem({ icon: item.icon, isExternal: item.isExternal, isLicensed: item.isLicensed, link: item.link, title: item.title }));
   return (
     <nav className="navigation">
       <div>
