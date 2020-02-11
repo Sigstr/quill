@@ -118,15 +118,3 @@
 .tooltip-anchor:hover+.tooltip {
   display: block;
 }
-
-.menu {
-  position: absolute;
-  font-weight: 500;
-  font-size: 12px;
-  border-radius: 3px;
-  line-height: 1;
-  bottom: 0;
-  left: 80px;
-  white-space: nowrap;
-  /* display: none; */
-}

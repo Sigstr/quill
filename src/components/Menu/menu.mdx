@@ -1,0 +1,48 @@
+---
+name: Menu
+route: /menu
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+
+import { Menu } from "./index.js";
+
+# Menu
+## Summary
+Menu
+
+## Props
+<Props of={Menu} />
+
+## Examples
+
+### Menu
+<Playground>
+  <Menu
+    MenuItems={[
+      { 
+        icon: "A",
+        link: "/something",
+        isLicensed: true,
+        title: "A Link"
+      },
+      {
+        icon: "B",
+        link: "/Menu",
+        isLicensed: true,
+        title: "B link"
+      },
+      {
+        icon: "C",
+        link: "/groovy",
+        isLicensed: false,
+        title: "C link"
+      }
+    ]}
+    supportWebsiteURL="https://help.sigstr.com/en/"
+    usermenuAvatar={
+      <span>S</span>
+    }
+  />
+</Playground>

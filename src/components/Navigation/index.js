@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 
 import { Card } from "../Card";
+import { Menu } from "../Menu";
 import { NavigationItem } from "./navigationItem";
 
 import "./styles.css";
@@ -11,7 +12,7 @@ import "./styles.css";
 // TODO: Prop for user letter
 // TODO: appswitcher
 // TODO: Abstract out menu component
-export const Navigation = ({ navigationItems, supportWebsiteURL, usermenuAvatar }) => {
+export const Navigation = ({ navigationItems, supportWebsiteURL, usermenuAvatar, usermenuItems }) => {
   const [isOpen, setOpen] = useState(false)
 
   const closePopover = () => {
@@ -63,13 +64,7 @@ export const Navigation = ({ navigationItems, supportWebsiteURL, usermenuAvatar 
           <span className="navigation-usermenu-caret">></span>
           <div className="tooltip">User Settings</div>
           {isOpen && (
-            <div className="menu">
-              <Card>
-                <div><a href="#">Edit Profile</a></div>
-                <div><a href="#">Admin Settings</a></div>
-                <div><a href="#">Sign out</a></div>
-              </Card>
-            </div>
+            <Menu menuItems={usermenuItems} />
           )}
         </div>
       </div>
@@ -80,5 +75,6 @@ export const Navigation = ({ navigationItems, supportWebsiteURL, usermenuAvatar 
 Navigation.propTypes = {
   navigationItems: PropTypes.arrayOf(Object).isRequired,
   supportWebsiteURL: PropTypes.string.isRequired,
-  usermenuAvatar: PropTypes.object.isRequired
+  usermenuAvatar: PropTypes.object.isRequired,
+  usermenuItems: PropTypes.arrayOf(Object).isRequired,
 };
