@@ -20,6 +20,11 @@ export const Navigation = ({ navigationItems, supportWebsiteURL }) => {
     setOpen(false);
   };
 
+  const openPopover = () => {
+    document.addEventListener("click", closePopover, false);
+    setOpen(true);
+  };
+
   return (
     <nav className="navigation">
       <div>
@@ -53,10 +58,7 @@ export const Navigation = ({ navigationItems, supportWebsiteURL }) => {
         <div style={{ position: "relative" }}>
           <button
             className="navigation-usermenu"
-            onClick={() => {
-              document.addEventListener("click", closePopover, false);
-              setOpen(!isOpen);
-            }}>
+            onClick={() => { isOpen ? closePopover() : openPopover(); }}>
           </button>
           {isOpen && (
             <div className="menu">
