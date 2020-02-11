@@ -2,27 +2,9 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 
 import { Card } from "../Card";
+import { NavigationItem } from "./navigationItem";
 
 import "./styles.css";
-
-// TODO: Add separator bar
-// TODO: Put this in its own file with required props
-const NavigationItem = ({ icon, isExternal, isLicensed = true, link, title }) => {
-
-  // Determines if this is the current page and to give navigation item an active state
-  // TODO: Works with router
-  const isActive = link === '/' + window.location.pathname.split('/')[1];
-
-  // TODO: Add FontAwesome Support
-  if (!isLicensed) return null;
-
-  return (
-    <div style={{ position: "relative" }}>
-      <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
-      <div className="tooltip">{title}</div>
-    </div>
-  );
-};
 
 // TODO: Add Internal Tools
 // TODO: Populate User Menu
@@ -30,7 +12,7 @@ const NavigationItem = ({ icon, isExternal, isLicensed = true, link, title }) =>
 // TODO: appswitcher
 // TODO: Abstract out menu component
 // TODO: Add tooltip to user menu
-export const Navigation = ({ items, supportWebsiteURL }) => {
+export const Navigation = ({ navigationItems, supportWebsiteURL }) => {
   const [isOpen, setOpen] = useState(false)
 
   const closePopover = () => {
@@ -38,18 +20,6 @@ export const Navigation = ({ items, supportWebsiteURL }) => {
     setOpen(false);
   };
 
-  // Build navigation items
-  const navigationItems = items.map(
-    ({ icon, isExternal, isLicensed, link, title }, i) => (
-      <NavigationItem
-        icon={icon}
-        isExternal={isExternal}
-        isLicensed={isLicensed}
-        link={link}
-        key={`${i} -${title}`}
-        title={title}
-      />
-    ));
   return (
     <nav className="navigation">
       <div>
@@ -62,7 +32,21 @@ export const Navigation = ({ items, supportWebsiteURL }) => {
           </div>
           <div className="appswitcher-label">Email</div>
         </button>
-        {navigationItems}
+        {
+          // Build primary navigation items
+          navigationItems.map(
+            ({ icon, isExternal, isLicensed, link, title }, i) => (
+              <NavigationItem
+                icon={icon}
+                isExternal={isExternal}
+                isLicensed={isLicensed}
+                link={link}
+                key={`${i} -${title}`}
+                title={title}
+              />
+            )
+          )
+        }
       </div>
       <div>
         <NavigationItem icon="H" isExternal link={supportWebsiteURL} title="Support Website" />
@@ -90,5 +74,6 @@ export const Navigation = ({ items, supportWebsiteURL }) => {
 };
 
 Navigation.propTypes = {
-  pages: PropTypes.array
+  navigationItems: PropTypes.arrayOf(Object).isRequired,
+  supportWebsiteURL: PropTypes.string.isRequired
 };
