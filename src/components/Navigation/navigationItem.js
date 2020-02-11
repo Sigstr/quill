@@ -15,7 +15,7 @@ export const NavigationItem = ({ icon, isExternal, isLicensed, link, title }) =>
   // TODO: Make a tooltip component
   return (
     <div style={{ position: "relative" }}>
-      <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
+      <a className={`navigation-item tooltip-anchor${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
       <div className="tooltip">{title}</div>
     </div>
   );

@@ -57,9 +57,10 @@ export const Navigation = ({ navigationItems, supportWebsiteURL }) => {
         <NavigationItem icon="H" isExternal link={supportWebsiteURL} title="Support Website" />
         <div style={{ position: "relative" }}>
           <button
-            className="navigation-usermenu"
+            className="navigation-usermenu tooltip-anchor"
             onClick={() => { isOpen ? closePopover() : openPopover(); }}>
           </button>
+          <div className="tooltip">User Settings</div>
           {isOpen && (
             <div className="menu">
               <Card>
