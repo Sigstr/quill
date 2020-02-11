@@ -9,6 +9,7 @@ import "./styles.css";
 const NavigationItem = ({ icon, isExternal, link, title }) => {
 
   // Determines if this is the current page and to give navigation item an active state
+  // TODO: Works with router
   const isActive = link === '/' + window.location.pathname.split('/')[1];
 
   // TODO: Add FontAwesome Support
