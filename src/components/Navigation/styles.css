@@ -80,12 +80,21 @@
   left: 2px;
 }
 
-.appswitcher-caret {
+.appswitcher-caret,
+.navigation-usermenu-caret {
   position: absolute;
-  position: absolute;
-  top: 22px;
-  right: 5px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.4);
+  right: 5px;
+}
+
+.appswitcher-caret {
+  top: 22px;
+}
+
+.navigation-usermenu-caret {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* TODO: Make this it's own component. There will be some unique styles for navigation tooltips. */

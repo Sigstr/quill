@@ -60,6 +60,7 @@ export const Navigation = ({ navigationItems, supportWebsiteURL }) => {
             className="navigation-usermenu tooltip-anchor"
             onClick={() => { isOpen ? closePopover() : openPopover(); }}>
           </button>
+          <span className="navigation-usermenu-caret">></span>
           <div className="tooltip">User Settings</div>
           {isOpen && (
             <div className="menu">
