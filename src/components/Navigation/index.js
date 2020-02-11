@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useState } from "react";
+
+import { Card } from "../Card";
 
 import "./styles.css";
 
@@ -27,8 +29,19 @@ const NavigationItem = ({ icon, isExternal, isLicensed, link, title }) => {
 // TODO: Populate User Menu
 // TODO: Prop for user letter
 // TODO: appswitcher
+// TODO: Abstract out menu component
+// TODO: Add tooltip to user menu
 export const Navigation = ({ items, supportWebsiteURL }) => {
+  const [isOpen, setOpen] = useState(false)
+
+  const closePopover = () => {
+    console.log('asfadf');
+    document.removeEventListener("click", closePopover, false);
+    setOpen(false);
+  };
+
   // Build navigation items
+
   const navigationItems = items.map(item => NavigationItem({ icon: item.icon, isExternal: item.isExternal, isLicensed: item.isLicensed, link: item.link, title: item.title }));
   return (
     <nav className="navigation">
@@ -46,7 +59,24 @@ export const Navigation = ({ items, supportWebsiteURL }) => {
       </div>
       <div>
         {NavigationItem({ icon: "H", isExternal: true, link: supportWebsiteURL, title: "Support Website" })}
-        <button className="navigation-usermenu">U</button>
+        <div style={{ position: "relative" }}>
+          <button
+            className="navigation-usermenu"
+            onClick={() => {
+              document.addEventListener("click", closePopover, false);
+              setOpen(!isOpen);
+            }}>
+          </button>
+          {isOpen && (
+            <div class="menu">
+              <Card>
+                <div><a href="#">Edit Profile</a></div>
+                <div><a href="#">Admin Settings</a></div>
+                <div><a href="#">Sign out</a></div>
+              </Card>
+            </div>
+          )}
+        </div>
       </div>
     </nav>
   );
