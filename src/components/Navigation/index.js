@@ -11,8 +11,7 @@ import "./styles.css";
 // TODO: Prop for user letter
 // TODO: appswitcher
 // TODO: Abstract out menu component
-// TODO: Add tooltip to user menu
-export const Navigation = ({ navigationItems, supportWebsiteURL }) => {
+export const Navigation = ({ navigationItems, supportWebsiteURL, usermenuAvatar }) => {
   const [isOpen, setOpen] = useState(false)
 
   const closePopover = () => {
@@ -59,6 +58,7 @@ export const Navigation = ({ navigationItems, supportWebsiteURL }) => {
           <button
             className="navigation-usermenu tooltip-anchor"
             onClick={() => { isOpen ? closePopover() : openPopover(); }}>
+            {usermenuAvatar}
           </button>
           <span className="navigation-usermenu-caret">></span>
           <div className="tooltip">User Settings</div>
@@ -79,5 +79,6 @@ export const Navigation = ({ navigationItems, supportWebsiteURL }) => {
 
 Navigation.propTypes = {
   navigationItems: PropTypes.arrayOf(Object).isRequired,
-  supportWebsiteURL: PropTypes.string.isRequired
+  supportWebsiteURL: PropTypes.string.isRequired,
+  usermenuAvatar: PropTypes.object.isRequired
 };
