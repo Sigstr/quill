@@ -7,22 +7,21 @@ import "./styles.css";
 
 // TODO: Add separator bar
 // TODO: Put this in its own file with required props
-const NavigationItem = ({ icon, isExternal, isLicensed, link, title }) => {
+const NavigationItem = ({ icon, isExternal, isLicensed = true, link, title }) => {
 
   // Determines if this is the current page and to give navigation item an active state
   // TODO: Works with router
   const isActive = link === '/' + window.location.pathname.split('/')[1];
 
   // TODO: Add FontAwesome Support
-  if (isLicensed) {
-    return (
-      <div style={{ position: "relative" }}>
-        <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
-        <div className="tooltip">{title}</div>
-      </div>
-    );
-  }
+  if (!isLicensed) return null;
 
+  return (
+    <div style={{ position: "relative" }}>
+      <a className={`navigation-item${isActive ? " navigation-item-active" : ""}`} href={link} target={isExternal ? "_blank" : ""}>{icon}</a>
+      <div className="tooltip">{title}</div>
+    </div>
+  );
 };
 
 // TODO: Add Internal Tools
@@ -35,14 +34,22 @@ export const Navigation = ({ items, supportWebsiteURL }) => {
   const [isOpen, setOpen] = useState(false)
 
   const closePopover = () => {
-    console.log('asfadf');
     document.removeEventListener("click", closePopover, false);
     setOpen(false);
   };
 
   // Build navigation items
-
-  const navigationItems = items.map(item => NavigationItem({ icon: item.icon, isExternal: item.isExternal, isLicensed: item.isLicensed, link: item.link, title: item.title }));
+  const navigationItems = items.map(
+    ({ icon, isExternal, isLicensed, link, title }, i) => (
+      <NavigationItem
+        icon={icon}
+        isExternal={isExternal}
+        isLicensed={isLicensed}
+        link={link}
+        key={`${i} -${title}`}
+        title={title}
+      />
+    ));
   return (
     <nav className="navigation">
       <div>
@@ -58,7 +65,7 @@ export const Navigation = ({ items, supportWebsiteURL }) => {
         {navigationItems}
       </div>
       <div>
-        {NavigationItem({ icon: "H", isExternal: true, link: supportWebsiteURL, title: "Support Website" })}
+        <NavigationItem icon="H" isExternal link={supportWebsiteURL} title="Support Website" />
         <div style={{ position: "relative" }}>
           <button
             className="navigation-usermenu"
@@ -68,7 +75,7 @@ export const Navigation = ({ items, supportWebsiteURL }) => {
             }}>
           </button>
           {isOpen && (
-            <div class="menu">
+            <div className="menu">
               <Card>
                 <div><a href="#">Edit Profile</a></div>
                 <div><a href="#">Admin Settings</a></div>
