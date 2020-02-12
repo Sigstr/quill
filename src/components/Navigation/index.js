@@ -48,7 +48,15 @@ export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteUR
               </svg>
               <span className="appswitcher-caret">v</span>
             </div>
-            <div className="appswitcher-label">Email</div>
+            <div className="appswitcher-label">
+              {
+                // Determine which text label to show on appswitcher
+                appswitcherItems.find(item => {
+                  let itemLocation = new URL(item.link);
+                  return itemLocation.hostname === window.location.hostname;
+                }).title
+              }
+            </div>
           </button>
           {isOpenAppswitcher && (
             <Menu menuItems={appswitcherItems} />
