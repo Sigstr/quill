@@ -11,13 +11,17 @@ export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title
   // TODO: Add FontAwesome Support
   return (
     <a className="menu-item" href={link} target={isExternal ? "_blank" : ""}>
-      {icon && (
-        <span className="menu-item-icon">{icon}</span>
-      )}
-      <span className="menu-item-title">{title}</span>
-      {isSelected && (
-        <span className="menu-item-icon">check</span>
-      )}
+      <div>
+        {icon && (
+          <span className="menu-item-icon">{icon}</span>
+        )}
+        <span className="menu-item-title">{title}</span>
+      </div>
+      <div>
+        {isSelected && (
+          <span className="menu-item-icon menu-item-checked">✓</span>
+        )}
+      </div>
     </a>
   );
 };

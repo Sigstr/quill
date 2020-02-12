@@ -12,13 +12,14 @@
 
 /* Make variable for blue color */
 .menu-item {
-  display: block;
   padding: 6px 12px;
   text-decoration: none;
   border-radius: 3px;
   line-height: 16px;
   color: #00487C;
   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-item:hover {
@@ -37,4 +38,9 @@
 .menu-item-title {
   text-decoration: none;
   font-size: 13px;
+}
+
+.menu-item-checked {
+  margin-right: 0;
+  margin-left: 32px;
 }
