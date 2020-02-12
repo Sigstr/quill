@@ -12,15 +12,16 @@ export const Menu = ({ menuItems, selectedItem }) => (
       {
         // Build menu items
         menuItems.map(
-          ({ icon, isExternal, isLicensed, link, title }, i) => (
+          ({ icon, isExternal, isLicensed, link, title, type }, i) => (
             <MenuItem
               icon={icon}
               isExternal={isExternal}
               isLicensed={isLicensed}
+              isSelected={selectedItem === menuItems[i]}
               key={`${i}-${title}`}
               link={link}
               title={title}
-              isSelected={selectedItem === menuItems[i]}
+              type={type}
             />
           )
         )

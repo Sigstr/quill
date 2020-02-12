@@ -1,12 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-// TODO: Add separator bar
 // TODO: handle appswitcher licensing different than basic menus 
 // TODO: Add category headers for menus
-export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title }) => {
+export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title, type }) => {
+
+  if (type == "hr") return (<hr className="menu-hr"></hr>);
 
   if (!isLicensed) return null;
+
+  if (type == "header") return (<div>{title}</div>);
 
   // TODO: Add FontAwesome Support
   return (
@@ -30,13 +33,15 @@ MenuItem.propTypes = {
   icon: PropTypes.string,
   isExternal: PropTypes.bool,
   isLicensed: PropTypes.bool,
-  link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  isSelected: PropTypes.bool
+  isSelected: PropTypes.bool,
+  link: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.oneOf("default", "header", "hr")
 };
 
 MenuItem.defaultProps = {
   isExternal: false,
   isLicensed: true,
-  isSelected: false
+  isSelected: false,
+  type: "default"
 };

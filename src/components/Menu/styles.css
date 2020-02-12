@@ -10,6 +10,10 @@
   min-width: 160px;
 }
 
+.menu .card {
+  padding: 16px 0;
+}
+
 /* Make variable for blue color */
 .menu-item {
   padding: 6px 12px;
@@ -20,6 +24,7 @@
   font-weight: 500;
   display: flex;
   justify-content: space-between;
+  margin: 0 16px;
 }
 
 .menu-item:hover {
@@ -43,4 +48,10 @@
 .menu-item-checked {
   margin-right: 0;
   margin-left: 32px;
+}
+
+.menu-hr {
+  border-color: rgba(0, 72, 124, 0.16);
+  border-width: 0.5px;
+  margin: 16px;
 }
