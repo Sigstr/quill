@@ -4402,10 +4402,9 @@ dotenv@^8.2.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
-draper-css@^0.0.2:
+"draper-css@https://github.com/Sigstr/draper-css":
   version "0.0.2"
-  resolved "https://registry.yarnpkg.com/draper-css/-/draper-css-0.0.2.tgz#287135d559c338bacf31f4e418843e62233af136"
-  integrity sha512-D7doWZzGraHCWt+5S5VSZL/a7DxgyWzPB294M6nZFg7iI7JXMj09At86Oci676dV4HpKhFV8ximW2nl1i7vNjg==
+  resolved "https://github.com/Sigstr/draper-css#6f3f4057d74d99fd49d13469701e522500d0d6bf"
 
 duplexer3@^0.1.4:
   version "0.1.4"
