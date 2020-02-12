@@ -6,7 +6,7 @@ import { MenuItem } from "./menuItem";
 
 import "./styles.css";
 
-export const Menu = ({ menuItems }) => (
+export const Menu = ({ menuItems, selectedItem }) => (
   <div className="menu">
     <Card className="elevation-2">
       {
@@ -17,9 +17,10 @@ export const Menu = ({ menuItems }) => (
               icon={icon}
               isExternal={isExternal}
               isLicensed={isLicensed}
+              key={`${i}-${title}`}
               link={link}
-              key={`${i} -${title}`}
               title={title}
+              isSelected={selectedItem === menuItems[i]}
             />
           )
         )
@@ -29,5 +30,6 @@ export const Menu = ({ menuItems }) => (
 );
 
 Menu.propTypes = {
-  menuItems: PropTypes.arrayOf(Object).isRequired
+  menuItems: PropTypes.arrayOf(Object).isRequired,
+  selectedItem: PropTypes.object
 };

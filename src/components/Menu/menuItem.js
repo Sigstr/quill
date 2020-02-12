@@ -4,8 +4,7 @@ import React from "react";
 // TODO: Add separator bar
 // TODO: handle appswitcher licensing different than basic menus 
 // TODO: Add category headers for menus
-// TODO: Add "Selected state" to menus
-export const MenuItem = ({ icon, isExternal, isLicensed, link, title }) => {
+export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title }) => {
 
   if (!isLicensed) return null;
 
@@ -16,6 +15,9 @@ export const MenuItem = ({ icon, isExternal, isLicensed, link, title }) => {
         <span className="menu-item-icon">{icon}</span>
       )}
       <span className="menu-item-title">{title}</span>
+      {isSelected && (
+        <span className="menu-item-icon">check</span>
+      )}
     </a>
   );
 };
@@ -25,10 +27,12 @@ MenuItem.propTypes = {
   isExternal: PropTypes.bool,
   isLicensed: PropTypes.bool,
   link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  isSelected: PropTypes.bool
 };
 
 MenuItem.defaultProps = {
   isExternal: false,
-  isLicensed: true
+  isLicensed: true,
+  isSelected: false
 };

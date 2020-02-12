@@ -34,6 +34,12 @@ export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteUR
     setOpenUsermenu(true);
   };
 
+  const selectedApp = appswitcherItems.find(item => {
+    let itemLocation = new URL(item.link);
+    return itemLocation.hostname === window.location.hostname;
+  });
+
+
   return (
     <nav className="navigation">
       <div>
@@ -51,15 +57,15 @@ export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteUR
             <div className="appswitcher-label">
               {
                 // Determine which text label to show on appswitcher
-                appswitcherItems.find(item => {
-                  let itemLocation = new URL(item.link);
-                  return itemLocation.hostname === window.location.hostname;
-                }).title
+                selectedApp.title
               }
             </div>
           </button>
           {isOpenAppswitcher && (
-            <Menu menuItems={appswitcherItems} />
+            <Menu
+              menuItems={appswitcherItems}
+              selectedItem={selectedApp}
+            />
           )}
         </div>
         {
