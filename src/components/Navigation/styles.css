@@ -68,6 +68,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  outline: 0;
 }
 
 .appswitcher-label {

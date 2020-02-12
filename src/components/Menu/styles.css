@@ -27,8 +27,17 @@
   margin: 0 16px;
 }
 
-.menu-item:hover {
+/* Menu items in a disabled state */
+
+/* Don't show hover state if no link is passed */
+.menu-item[href]:hover {
   background-color: rgba(0, 72, 124, 0.08);
+}
+
+/* Add opacity if no link is passed */
+.menu-item:not([href]) {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .menu-item-icon {
