@@ -34,6 +34,7 @@ export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteUR
     setOpenUsermenu(true);
   };
 
+  // Determine which app is "active" so we can show the correct title and state on app switcher
   const selectedApp = appswitcherItems.find(item => {
     let itemLocation = new URL(item.link);
     return itemLocation.hostname === window.location.hostname;
@@ -55,10 +56,7 @@ export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteUR
               <span className="appswitcher-caret">v</span>
             </div>
             <div className="appswitcher-label">
-              {
-                // Determine which text label to show on appswitcher
-                selectedApp.title
-              }
+              {selectedApp.title}
             </div>
           </button>
           {isOpenAppswitcher && (
