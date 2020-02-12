@@ -3,7 +3,7 @@ import React from "react";
 
 import { ONYX, ERROR } from "../../foundations/Color";
 
-import "./styles.css";
+import "./styles.scss";
 
 export const Label = ({ color, children, required }) => (
   <div className="label" style={{ color: color }}>

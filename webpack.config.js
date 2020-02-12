@@ -19,7 +19,7 @@ module.exports = {
         // If you want to use the .jsx extension, you can change this line to
         // test: /\.jsx?$/,
         // The ? in the regex just means "optional"
-        test: /\.js$/,
+        test: /\.jsx?$/,
         // This is where we tell webpack to use babel to transpile our JS.
         // The configuration can go here, but in this case it's in ./babelrc.js
         use: {
@@ -32,18 +32,9 @@ module.exports = {
         // /\.(css|scss)$/ or even just /\.css$/
         test: /\.(css|scss)$/,
         use: [
-          // These three libraries are commonly used together to turn Sass into
-          // CSS, then be able to load the CSS directly with imports. From there
-          // It gets put in the DOM for you.
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader?modules=true&camelCase=true"
-          },
-          {
-            loader: "sass-loader"
-          }
+          'style-loader',
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
