@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-// TODO: Add separator bar
-export const NavigationItem = ({ icon, isExternal, isLicensed, link, title }) => {
+export const NavigationItem = ({ icon, isExternal, isLicensed, link, title, type }) => {
 
   // Determines if this is the current page and to give navigation item an active state
   // TODO: Works with router
   const isActive = link === '/' + window.location.pathname.split('/')[1];
+
+  if (type == "hr") return (<hr className="navigation-hr"></hr>);
 
   if (!isLicensed) return null;
 
@@ -25,10 +26,12 @@ NavigationItem.propTypes = {
   isExternal: PropTypes.bool,
   isLicensed: PropTypes.bool,
   link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(["default", "hr"]).isRequired
 };
 
 NavigationItem.defaultProps = {
   isExternal: false,
-  isLicensed: true
+  isLicensed: true,
+  type: "default"
 };

@@ -69,7 +69,7 @@ export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteUR
         {
           // Build primary navigation items
           navigationItems.map(
-            ({ icon, isExternal, isLicensed, link, title }, i) => (
+            ({ icon, isExternal, isLicensed, link, title, type }, i) => (
               <NavigationItem
                 icon={icon}
                 isExternal={isExternal}
@@ -77,6 +77,7 @@ export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteUR
                 link={link}
                 key={`${i} -${title}`}
                 title={title}
+                type={type}
               />
             )
           )

@@ -11,6 +11,11 @@
   padding-bottom: 16px;
 }
 
+.navigation-hr {
+  border-color: rgba(255, 255, 255, 0.08);
+  margin: 16px 0;
+}
+
 .navigation-item {
   display: block;
   width: 40px;
@@ -27,8 +32,8 @@
 }
 
 .navigation-item:focus {
-  -webkit-box-shadow: 0 0 0 2.5px rgba(46, 117, 51, .24);
-  box-shadow: 0 0 0 2.5px rgba(255, 255, 255, .04);
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, .04);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .04);
   outline: 0;
 }
 
