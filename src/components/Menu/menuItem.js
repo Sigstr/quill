@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-// TODO: handle appswitcher licensing different than basic menus 
-// TODO: Add category headers for menus
 export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title, type }) => {
 
   if (type == "hr") return (<hr className="menu-hr"></hr>);
