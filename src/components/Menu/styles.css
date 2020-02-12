@@ -55,3 +55,9 @@
   border-width: 0.5px;
   margin: 16px;
 }
+
+.menu-header {
+  margin: 16px 16px 4px;
+  color: #6A7171;
+  font-weight: 500;
+}

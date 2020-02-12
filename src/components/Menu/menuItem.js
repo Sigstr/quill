@@ -9,7 +9,7 @@ export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title
 
   if (!isLicensed) return null;
 
-  if (type == "header") return (<div>{title}</div>);
+  if (type == "header") return (<div className="menu-header">{title}</div>);
 
   // TODO: Add FontAwesome Support
   return (
