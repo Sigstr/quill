@@ -6,13 +6,6 @@ import { NavigationItem } from "./navigationItem";
 
 import "./styles.css";
 
-// TODO: Add Internal Tools
-// TODO: Populate User Menu
-// TODO: Prop for user letter
-// TODO: handle appswitcher licensing different than basic menus 
-// TODO: Add category headers for menus
-// TODO: Add "Selected state" to menus
-// TODO: Abstract out menu component
 export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteURL, usermenuAvatar, usermenuItems }) => {
 
   // Appswitcher state

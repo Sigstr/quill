@@ -6,7 +6,6 @@ import { MenuItem } from "./menuItem";
 
 import "./styles.css";
 
-// TODO: Populate User Menu
 export const Menu = ({ menuItems }) => (
   <div className="menu">
     <Card className="elevation-2">

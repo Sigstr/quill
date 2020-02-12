@@ -2,13 +2,14 @@ import PropTypes from "prop-types";
 import React from "react";
 
 // TODO: Add separator bar
-// TODO: Add header
+// TODO: handle appswitcher licensing different than basic menus 
+// TODO: Add category headers for menus
+// TODO: Add "Selected state" to menus
 export const MenuItem = ({ icon, isExternal, isLicensed, link, title }) => {
 
   if (!isLicensed) return null;
 
   // TODO: Add FontAwesome Support
-  // TODO: Conditionally show/hide icon
   return (
     <a className="menu-item" href={link} target={isExternal ? "_blank" : ""}>
       {icon && (

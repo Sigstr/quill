@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import React from "react";
 
 // TODO: Add separator bar
-// TODO: Put this in its own file with required props
 export const NavigationItem = ({ icon, isExternal, isLicensed, link, title }) => {
 
   // Determines if this is the current page and to give navigation item an active state
