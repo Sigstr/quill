@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 
-import { Card } from "../Card";
 import { Menu } from "../Menu";
 import { NavigationItem } from "./navigationItem";
 

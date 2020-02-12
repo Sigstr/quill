@@ -7,8 +7,34 @@
   bottom: 0;
   left: 80px;
   white-space: nowrap;
+  min-width: 160px;
 }
 
+/* Make variable for blue color */
 .menu-item {
-  padding:
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 16px;
+  color: #00487C;
+  font-weight: 500;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 72, 124, 0.08);
+}
+
+.menu-item-icon {
+  display: inline-block;
+  font-size: 11px;
+  margin-right: 8px;
+  opacity: 50%;
+  width: 16px;
+  text-align: center;
+}
+
+.menu-item-title {
+  text-decoration: none;
+  font-size: 13px;
 }

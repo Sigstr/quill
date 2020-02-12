@@ -8,11 +8,14 @@ export const MenuItem = ({ icon, isExternal, isLicensed, link, title }) => {
   if (!isLicensed) return null;
 
   // TODO: Add FontAwesome Support
+  // TODO: Conditionally show/hide icon
   return (
-    <div className="menu-item">
-      <span>{icon}</span>
-      <a href={link} target={isExternal ? "_blank" : ""}>{title}</a>
-    </div>
+    <a className="menu-item" href={link} target={isExternal ? "_blank" : ""}>
+      {icon && (
+        <span class="menu-item-icon">{icon}</span>
+      )}
+      <span class="menu-item-title">{title}</span>
+    </a>
   );
 };
 

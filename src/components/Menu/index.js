@@ -9,7 +9,7 @@ import "./styles.css";
 // TODO: Populate User Menu
 export const Menu = ({ menuItems }) => (
   <div className="menu">
-    <Card>
+    <Card className="elevation-2">
       {
         // Build menu items
         menuItems.map(
