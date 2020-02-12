@@ -13,15 +13,15 @@ export const MenuItem = ({ icon, isExternal, isLicensed, link, title }) => {
   return (
     <a className="menu-item" href={link} target={isExternal ? "_blank" : ""}>
       {icon && (
-        <span class="menu-item-icon">{icon}</span>
+        <span className="menu-item-icon">{icon}</span>
       )}
-      <span class="menu-item-title">{title}</span>
+      <span className="menu-item-title">{title}</span>
     </a>
   );
 };
 
 MenuItem.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   isExternal: PropTypes.bool,
   isLicensed: PropTypes.bool,
   link: PropTypes.string.isRequired,
