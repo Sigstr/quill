@@ -22,6 +22,37 @@ App navigation
 
   <main style={{height: 800 + "px"}}>
     <Navigation
+    appswitcherItems={[
+        { 
+          icon: "⇥",
+          link: "/edit",
+          title: "Account Hub"
+        },
+        {
+          link: "/settings",
+          title: "Digital Ads"
+        },
+        {
+          link: "/verify",
+          title: "Email"
+        },
+        {
+          link: "/navigation",
+          title: "Measure"
+        },
+        {
+          icon: "C",
+          link: "/groovy",
+          isLicensed: true,
+          title: "Chat"
+        },
+        {
+          icon: "C",
+          link: "/groovy",
+          isLicensed: true,
+          title: "Web Personalization"
+        },
+      ]}
       navigationItems={[
         { 
           icon: "A",
