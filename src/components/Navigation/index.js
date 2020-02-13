@@ -7,36 +7,28 @@ import { NavigationItem } from "./navigationItem";
 
 import "./styles.css";
 
-export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteURL, usermenuAvatar, usermenuItems }) => {
-
+const PrimaryNavigationItems = ({ primaryNavigationItems }) => {
   return (
-    <nav className="navigation">
-      <div>
-        <AppSwitcher appswitcherItems={appswitcherItems} />
-        {
-          // Build primary navigation items
-          navigationItems.map(
-            ({ icon, isExternal, isLicensed, link, title, type }, i) => (
-              <NavigationItem
-                icon={icon}
-                isExternal={isExternal}
-                isLicensed={isLicensed}
-                link={link}
-                key={title}
-                title={title}
-                type={type}
-              />
-            )
-          )
-        }
-      </div>
-      <div>
-        <NavigationItem icon="H" isExternal link={supportWebsiteURL} title="Support Website" />
-        <UserMenu usermenuItems={usermenuItems} usermenuAvatar={usermenuAvatar} />
-      </div>
-    </nav>
+    primaryNavigationItems.map((item) => (
+      <NavigationItem
+        {...item}
+      />
+    ))
   );
-};
+}
+
+export const Navigation = ({ appswitcherItems, primaryNavigationItems, supportWebsiteURL, usermenuAvatar, usermenuItems }) => (
+  <nav className="navigation">
+    <div>
+      <AppSwitcher appswitcherItems={appswitcherItems} />
+      <PrimaryNavigationItems primaryNavigationItems={primaryNavigationItems} />
+    </div>
+    <div>
+      <NavigationItem icon="H" isExternal link={supportWebsiteURL} title="Support Website" />
+      <UserMenu usermenuItems={usermenuItems} usermenuAvatar={usermenuAvatar} />
+    </div>
+  </nav>
+);
 
 Navigation.propTypes = {
   appswitcherItems: PropTypes.arrayOf(Object).isRequired,
