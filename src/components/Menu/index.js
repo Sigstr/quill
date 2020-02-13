@@ -28,7 +28,7 @@ Menu.propTypes = {
     isSelected: PropTypes.bool,
     link: PropTypes.string,
     title: PropTypes.string,
-    type: PropTypes.oneOf("default", "header", "hr")
+    type: PropTypes.oneOf(["default", "header", "hr"])
   }]).isRequired,
   selectedItem: PropTypes.object
 };

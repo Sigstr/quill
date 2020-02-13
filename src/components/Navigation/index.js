@@ -9,9 +9,10 @@ import "./styles.css";
 
 const PrimaryNavigationItems = ({ primaryNavigationItems }) => {
   return (
-    primaryNavigationItems.map((item) => (
+    primaryNavigationItems.map((item, index) => (
       <NavigationItem
         {...item}
+        key={index}
       />
     ))
   );
@@ -32,7 +33,7 @@ export const Navigation = ({ appswitcherItems, primaryNavigationItems, supportWe
 
 Navigation.propTypes = {
   appswitcherItems: PropTypes.arrayOf(Object).isRequired,
-  navigationItems: PropTypes.arrayOf(Object).isRequired,
+  primaryNavigationItems: PropTypes.arrayOf(Object).isRequired,
   supportWebsiteURL: PropTypes.string.isRequired,
   usermenuAvatar: PropTypes.object.isRequired,
   usermenuItems: PropTypes.arrayOf(Object).isRequired,

@@ -22,11 +22,11 @@ export const NavigationItem = ({ icon, isExternal, isVisible, link, title, type 
 };
 
 NavigationItem.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   isExternal: PropTypes.bool,
   isVisible: PropTypes.bool,
-  link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  title: PropTypes.string,
   type: PropTypes.oneOf(["default", "hr"]).isRequired
 };
 
