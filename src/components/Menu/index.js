@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import { Card } from "../Card";
-import { MenuItem } from "./menuItem";
+import { MenuItem } from "./MenuItem";
 
 import "./styles.css";
 
