@@ -6,11 +6,11 @@ import React from "react";
 
 export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title, type }) => {
 
-  if (type == "hr") return (<hr className="menu-hr"></hr>);
+  if (type === "hr") return (<hr className="menu-hr"></hr>);
 
   if (!isLicensed) return null;
 
-  if (type == "header") return (<div className="menu-header">{title}</div>);
+  if (type === "header") return (<div className="menu-header">{title}</div>);
 
   // TODO: Add FontAwesome Support
   return (

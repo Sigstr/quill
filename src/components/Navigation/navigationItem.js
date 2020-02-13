@@ -7,7 +7,7 @@ export const NavigationItem = ({ icon, isExternal, isLicensed, link, title, type
   // TODO: Works with router
   const isActive = link === '/' + window.location.pathname.split('/')[1];
 
-  if (type == "hr") return (<hr className="navigation-hr"></hr>);
+  if (type === "hr") return (<hr className="navigation-hr"></hr>);
 
   if (!isLicensed) return null;
 
