@@ -18,7 +18,7 @@ export const Menu = ({ menuItems, selectedItem }) => (
               isExternal={isExternal}
               isLicensed={isLicensed}
               isSelected={selectedItem === menuItems[i]}
-              key={`${i}-${title}`}
+              key={title}
               link={link}
               title={title}
               type={type}
