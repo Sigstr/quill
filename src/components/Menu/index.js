@@ -10,10 +10,10 @@ export const Menu = ({ menuItems, selectedItem }) => (
   <div className="menu">
     <Card className="elevation-2">
       {
-        menuItems.map((item, index) =>
+        menuItems.map((item) =>
           <MenuItem
             {...item}
-            isSelected={selectedItem === menuItems[index]}
+            isSelected={selectedItem === item}
           />)
       };
     </Card>
