@@ -21,6 +21,14 @@ export const Menu = ({ menuItems, selectedItem }) => (
 );
 
 Menu.propTypes = {
-  menuItems: PropTypes.arrayOf(Object).isRequired,
+  menuItems: PropTypes.shape([{
+    icon: PropTypes.string,
+    isExternal: PropTypes.bool,
+    isVisible: PropTypes.bool,
+    isSelected: PropTypes.bool,
+    link: PropTypes.string,
+    title: PropTypes.string,
+    type: PropTypes.oneOf("default", "header", "hr")
+  }]).isRequired,
   selectedItem: PropTypes.object
 };
