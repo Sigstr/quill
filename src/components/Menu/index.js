@@ -15,7 +15,7 @@ export const Menu = ({ menuItems, selectedItem }) => (
             {...item}
             isSelected={selectedItem === item}
           />)
-      };
+      }
     </Card>
   </div>
 );
