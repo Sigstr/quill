@@ -10,10 +10,11 @@ export const Menu = ({ menuItems, selectedItem }) => (
   <div className="menu">
     <Card className="elevation-2">
       {
-        menuItems.map((item) =>
+        menuItems.map((item, index) =>
           <MenuItem
             {...item}
             isSelected={selectedItem === item}
+            key={index}
           />)
       }
     </Card>
@@ -21,7 +22,7 @@ export const Menu = ({ menuItems, selectedItem }) => (
 );
 
 Menu.propTypes = {
-  menuItems: PropTypes.shape([{
+  menuItems: PropTypes.arrayOf(PropTypes.shape({
     icon: PropTypes.string,
     isExternal: PropTypes.bool,
     isVisible: PropTypes.bool,
@@ -29,6 +30,6 @@ Menu.propTypes = {
     link: PropTypes.string,
     title: PropTypes.string,
     type: PropTypes.oneOf(["default", "header", "hr"])
-  }]).isRequired,
+  })).isRequired,
   selectedItem: PropTypes.object
 };
