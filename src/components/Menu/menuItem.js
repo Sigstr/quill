@@ -4,11 +4,11 @@ import React from "react";
 // TODO: Positioning in relation to the anchor element
 // TODO: Allowing menu items to take on click events as buttons instead of just acting as links
 
-export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title, type }) => {
+export const MenuItem = ({ icon, isExternal, isVisible, isSelected, link, title, type }) => {
 
   if (type === "hr") return (<hr className="menu-hr"></hr>);
 
-  if (!isLicensed) return null;
+  if (!isVisible) return null;
 
   if (type === "header") return (<div className="menu-header">{title}</div>);
 
@@ -33,7 +33,7 @@ export const MenuItem = ({ icon, isExternal, isLicensed, isSelected, link, title
 MenuItem.propTypes = {
   icon: PropTypes.string,
   isExternal: PropTypes.bool,
-  isLicensed: PropTypes.bool,
+  isVisible: PropTypes.bool,
   isSelected: PropTypes.bool,
   link: PropTypes.string,
   title: PropTypes.string,
@@ -42,7 +42,7 @@ MenuItem.propTypes = {
 
 MenuItem.defaultProps = {
   isExternal: false,
-  isLicensed: true,
+  isVisible: true,
   isSelected: false,
   type: "default"
 };
