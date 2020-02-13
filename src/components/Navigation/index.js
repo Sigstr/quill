@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import { AppSwitcher } from "./appSwitcher";
-import { UserMenu } from "./userMenu";
-import { NavigationItem } from "./navigationItem";
+import { AppSwitcher } from "./AppSwitcher";
+import { UserMenu } from "./UserMenu";
+import { NavigationItem } from "./NavigationItem";
 
 import "./styles.css";
 
