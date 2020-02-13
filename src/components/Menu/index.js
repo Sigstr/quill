@@ -10,22 +10,12 @@ export const Menu = ({ menuItems, selectedItem }) => (
   <div className="menu">
     <Card className="elevation-2">
       {
-        // Build menu items
-        menuItems.map(
-          ({ icon, isExternal, isLicensed, link, title, type }, i) => (
-            <MenuItem
-              icon={icon}
-              isExternal={isExternal}
-              isLicensed={isLicensed}
-              isSelected={selectedItem === menuItems[i]}
-              key={title}
-              link={link}
-              title={title}
-              type={type}
-            />
-          )
-        )
-      }
+        menuItems.map((item, index) =>
+          <MenuItem
+            {...item}
+            isSelected={selectedItem === menuItems[index]}
+          />)
+      };
     </Card>
   </div>
 );

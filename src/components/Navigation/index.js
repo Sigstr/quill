@@ -22,7 +22,7 @@ export const Navigation = ({ appswitcherItems, navigationItems, supportWebsiteUR
                 isExternal={isExternal}
                 isLicensed={isLicensed}
                 link={link}
-                key={`${i} -${title}`}
+                key={title}
                 title={title}
                 type={type}
               />
