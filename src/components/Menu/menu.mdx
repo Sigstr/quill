@@ -1,0 +1,44 @@
+---
+name: Menu
+route: /menu
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+
+import { Menu } from "./index.js";
+
+# Menu
+## Summary
+Menu
+
+## Props
+<Props of={Menu} />
+
+## Examples
+
+### Menu
+<Playground>
+  <Menu
+    menuItems={[
+      { 
+        icon: "A",
+        link: "/something",
+        isVisible: true,
+        title: "A Link"
+      },
+      {
+        icon: "B",
+        link: "/Menu",
+        isVisible: true,
+        title: "B link"
+      },
+      {
+        icon: "C",
+        link: "/groovy",
+        isVisible: false,
+        title: "C link"
+      }
+    ]}
+  />
+</Playground>

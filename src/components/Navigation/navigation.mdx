@@ -1,0 +1,126 @@
+---
+name: Navigation
+route: /navigation
+menu: Components
+---
+
+import { Playground, Props } from "docz";
+
+import { Navigation } from "./index.js";
+
+# Navigation
+## Summary
+App navigation
+
+## Props
+<Props of={Navigation} />
+
+## Examples
+
+### Navigation
+<Playground>
+
+  <main style={{height: 800 + "px"}}>
+    <Navigation
+    appswitcherItems={[
+        { 
+          icon: "A",
+          link: "http://localhost:3000/navigation",
+          title: "Account Hub"
+        },
+        {
+          icon: "D",
+          link: "http://localhost:3000/navigation",
+          title: "Digital Ads"
+        },
+        {
+          icon: "E",
+          link: "http://localhost:3000/navigation",
+          title: "Email"
+        },
+        {
+          icon: "M",
+          link: "http://localhost:3000/navigation",
+          title: "Measure"
+        },
+        {
+          title: "Coming Soon",
+          type: "header"
+        },
+        {
+          icon: "C",
+          title: "Chat"
+        },
+        {
+          icon: "C",
+          title: "Web Personalization"
+        },
+      ]}
+      primaryNavigationItems={[
+        { 
+          icon: "A",
+          link: "/something",
+          title: "A Link"
+        },
+        {
+          icon: "B",
+          link: "/navigation",
+          title: "B link"
+        },
+        {
+          icon: "C",
+          link: "/groovy",
+          isVisible: false,
+          title: "C link"
+        },
+        {
+          type: "hr"
+        },
+        { 
+          icon: "D",
+          link: "/something",
+          title: "D Link"
+        },
+        {
+          icon: "E",
+          link: "/navigation",
+          title: "E link"
+        },
+      ]}
+      supportWebsiteURL="https://help.sigstr.com/en/"
+      usermenuAvatar={
+        <span>S</span>
+      }
+      usermenuItems={[
+        {
+          link: "/edit",
+          title: "Edit Sigstr Profile"
+        },
+        {
+          link: "/settings",
+          title: "Sigstr Account Settings"
+        },
+        {
+          link: "/verify",
+          title: "Verify Sigstr"
+        },
+        {
+          type: "hr"
+        },
+        {
+          link: "/navigation",
+          title: "Sign Out"
+        },
+        {
+          icon: "C",
+          link: "/groovy",
+          isVisible: false,
+          title: "C link"
+        }
+      ]}
+    />
+    <div style={{marginLeft: 88 + "px"}}>
+      <h1>This is a page title</h1>
+    </div>
+  </main>
+</Playground>

@@ -1,0 +1,72 @@
+.menu {
+  position: absolute;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 3px;
+  line-height: 1;
+  bottom: 0;
+  left: 80px;
+  white-space: nowrap;
+  min-width: 160px;
+}
+
+.menu .card {
+  padding: 16px 0;
+}
+
+/* Make variable for blue color */
+.menu-item {
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 16px;
+  color: #00487C;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px;
+}
+
+/* Menu items in a disabled state */
+
+/* Don't show hover state if no link is passed */
+.menu-item[href]:hover {
+  background-color: rgba(0, 72, 124, 0.08);
+}
+
+/* Add opacity if no link is passed */
+.menu-item:not([href]) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.menu-item-icon {
+  display: inline-block;
+  font-size: 11px;
+  margin-right: 8px;
+  opacity: 50%;
+  width: 16px;
+  text-align: center;
+}
+
+.menu-item-title {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.menu-item-checked {
+  margin-right: 0;
+  margin-left: 32px;
+}
+
+.menu-hr {
+  border-color: rgba(0, 72, 124, 0.16);
+  border-width: 0.5px;
+  margin: 16px;
+}
+
+.menu-header {
+  margin: 16px 16px 4px;
+  color: #6A7171;
+  font-weight: 500;
+}
